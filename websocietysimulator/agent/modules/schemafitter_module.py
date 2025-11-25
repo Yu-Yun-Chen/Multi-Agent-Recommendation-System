@@ -66,7 +66,6 @@ class SchemaFitterIO(SchemaFitterBase):
         # Fit data to schema using LLM
         profiles = self(schema=schema, items=items, profile_type=profile_type)
         result = profiles[0] if profiles else {}
-        logger.info(f"  [SchemaFitter] Profile generated with keys: {list(result.keys())}")
         return result
 
     def create_prompt(self, schema, items, profile_type="user"):

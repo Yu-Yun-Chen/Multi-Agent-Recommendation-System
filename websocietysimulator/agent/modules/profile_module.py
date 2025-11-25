@@ -28,8 +28,6 @@ class ProfileBuilder:
         user_reviews = self.tool.get_reviews(user_id=user_id)
         user_reviews = _take_first_n(user_reviews, max_reviews)
         
-        logger.info(f"  [ProfileBuilder] User {user_id}: {len(user_reviews)} reviews")
-        
         return {
             "user_id": user_id,
             "user": user_record,
@@ -47,7 +45,6 @@ class ProfileBuilder:
         item_reviews = _take_first_n(item_reviews, max_reviews)
         
         title = item_record.get('title') or item_record.get('name', 'N/A') if item_record else 'N/A'
-        logger.info(f"  [ProfileBuilder] Item {item_id} ({title[:50]}): {len(item_reviews)} reviews")
         
         return {
             "item_id": item_id,

@@ -27,6 +27,9 @@ class MemoryBase:
     def __call__(self, current_situation: str = ''):
         if 'review:' in current_situation:
             self.addMemory(current_situation.replace('review:', ''))
+        elif 'profile:' in current_situation:
+            # Store profile generation trajectories
+            self.addMemory(current_situation.replace('profile:', ''))
         else:
             return self.retriveMemory(current_situation)
 
