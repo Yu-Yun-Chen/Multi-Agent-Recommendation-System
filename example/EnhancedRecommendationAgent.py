@@ -40,13 +40,15 @@ class EnhancedRecommendationAgent(EnhancedWorkflowMixin, EnhancedRecommendationA
             llm=llm,
         )
         
-        # Initialize InfoOrchestrator
+        # Initialize InfoOrchestrator with optimization settings
         # SchemaFitterIO will be initialized with interaction_tool later
         info_orchestrator = InfoOrchestrator(
             memory=memory,
             llm=llm,
             schema_fitter=None,  # Will be set when interaction_tool is available
-            interaction_tool=None  # Will be set when interaction_tool is available
+            interaction_tool=None,  # Will be set when interaction_tool is available
+            use_fixed_item_params=True,  # Use user-aligned params for all items (faster)
+            max_candidates_to_profile=None  # Profile all candidates (set to 10 for top-10 only)
         )
         
         super().__init__(

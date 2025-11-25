@@ -216,21 +216,10 @@ class EnhancedRecommendationAgentBase(RecommendationAgent):
         3. Calls schema_fitter to build profiles
         4. Returns consolidated profiles
         """
-        logging.info("=" * 80)
-        logging.info("BUILD_PROFILE: Starting profile generation workflow")
-        logging.info("=" * 80)
-        
         plan = context.get("plan", [])
         user_id = self.task.get("user_id")
-        
-        # Get first candidate item_id for book/item profile (optional)
         candidate_list = self.task.get("candidate_list", [])
         item_id = candidate_list[0] if candidate_list else None
-        
-        logging.info(f"  Preparing to call InfoOrchestrator:")
-        logging.info(f"    - Planner steps: {len(plan)} steps")
-        logging.info(f"    - User ID: {user_id}")
-        logging.info(f"    - Item ID: {item_id}")
         
         # Call InfoOrchestrator with planner steps and candidate list
         profile_results = info_orchestrator(
@@ -240,24 +229,18 @@ class EnhancedRecommendationAgentBase(RecommendationAgent):
             candidate_list=candidate_list
         )
         
-        logging.info("BUILD_PROFILE: Received profiles from InfoOrchestrator")
-        logging.info(f"  Profile results keys: {list(profile_results.keys())}")
-        
         # Store profiles in context
         if profile_results.get("user_profile"):
             context["user_persona"] = profile_results["user_profile"]
-            logging.info(f"  Stored user_profile in context['user_persona'] with keys: {list(profile_results['user_profile'].keys())}")
         else:
             context.setdefault("user_persona", {})
-            logging.info("  No user_profile returned, using empty dict")
         
-        if profile_results.get("item_profile"):
-            context["item_profile"] = profile_results["item_profile"]
-            logging.info(f"  Stored book/item profile in context with keys: {list(profile_results['item_profile'].keys())}")
-        else:
-            logging.info("  No book/item profile returned")
+        # Handle multiple item profiles (new structure)
+        if profile_results.get("item_profiles"):
+            context["item_profiles"] = profile_results["item_profiles"]
+        # Backward compatibility: handle single item_profile
+        elif profile_results.get("item_profile"):
+            context["item_profiles"] = [profile_results["item_profile"]]
         
-        logging.info("BUILD_PROFILE: Profile generation complete")
-        logging.info("=" * 80)
         return context
 

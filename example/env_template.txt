@@ -2,22 +2,16 @@
 # 
 # Instructions:
 # 1. Copy this file and rename it to: .env
-# 2. Replace the placeholder values with your actual API keys
+# 2. Replace the placeholder value with your actual Google API key
 # 3. The .env file will be automatically ignored by git (already in .gitignore)
 #
 # To create your .env file:
 #   cp env_template.txt .env
-#   then edit .env with your actual keys
+#   then edit .env with your actual key
 
 # ===== REQUIRED: Google Gemini API Key =====
 # Get your key from: https://aistudio.google.com/app/apikey
-# This uses your $50 GCP credits
+# This uses your $50 GCP credits for BOTH LLM calls AND embeddings
+# No other API keys needed!
 GOOGLE_API_KEY=
-
-# ===== OPTIONAL: OpenAI API Key =====
-# Get your key from: https://platform.openai.com/api-keys
-# Used for embeddings in the memory module
-# You only need ~$5 worth of credits for embeddings
-# If not provided, memory features will be limited
-OPENAI_API_KEY=
 
