@@ -1,0 +1,44 @@
+================================================================================
+WORKFLOW ACCURACY TEST RESULTS
+================================================================================
+
+Dataset: goodreads
+Number of tasks tested: 5
+Date: 2025-11-25 12:48:10
+
+================================================================================
+RESULTS TABLE
+================================================================================
+
+Workflow             Time(s)    top_1_hit_rate  top_3_hit_rate  top_5_hit_rate  average_hit_rate total_scenarios top_1_hits      top_3_hits      top_5_hits      
+--------------------------------------------------------------------------------
+tot_memory              320.6s         0.4000         0.6000         1.0000         0.6667         5.0000         2.0000         3.0000         5.0000  
+
+================================================================================
+BEST PERFORMER FOR EACH METRIC
+================================================================================
+
+top_1_hit_rate           : tot_memory      (0.4000)
+top_3_hit_rate           : tot_memory      (0.6000)
+top_5_hit_rate           : tot_memory      (1.0000)
+average_hit_rate         : tot_memory      (0.6667)
+total_scenarios          : tot_memory      (5.0000)
+top_1_hits               : tot_memory      (2.0000)
+top_3_hits               : tot_memory      (3.0000)
+top_5_hits               : tot_memory      (5.0000)
+
+================================================================================
+RECOMMENDATION
+================================================================================
+
+🏆 Best Overall (by average_hit_rate): TOT_MEMORY
+   average_hit_rate: 0.6667
+   Execution time: 320.6s
+
+⚡ Fastest Workflow: TOT_MEMORY
+   Time: 320.6s
+
+💡 Quality/Time Scores (higher is better):
+   tot_memory          : 0.1248
+
+================================================================================

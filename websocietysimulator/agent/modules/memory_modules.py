@@ -165,7 +165,7 @@ Ongoing task:
 {task_description}
 Plan:
 """
-            experience_plans.append(self.llm(messaage=prompt, temperature=0.1))
+            experience_plans.append(self.llm(messages=[{"role": "user", "content": prompt}], temperature=0.1))
             
         return 'Plan from successful attempt in similar task:\n' + '\n'.join(experience_plans)
 

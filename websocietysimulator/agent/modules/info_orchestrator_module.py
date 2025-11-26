@@ -97,11 +97,11 @@ class InfoOrchestrator:
             consolidated["item_profiles"] = item_profiles
         
         # Log raw JSON structure being returned to reasoning module
-        logger.info("=" * 80)
-        logger.info("PROFILE DATA STRUCTURE RETURNED TO REASONING MODULE:")
-        logger.info("=" * 80)
-        logger.info(json.dumps(consolidated, indent=2, default=str))
-        logger.info("=" * 80)
+        # logger.info("=" * 80)
+        # logger.info("PROFILE DATA STRUCTURE RETURNED TO REASONING MODULE:")
+        # logger.info("=" * 80)
+        # logger.info(json.dumps(consolidated, indent=2, default=str))
+        # logger.info("=" * 80)
         
         return consolidated
 

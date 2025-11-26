@@ -85,7 +85,7 @@ class EnhancedRecommendationAgentBase(RecommendationAgent):
         enriched_context = self._integrate_memory(profiled_context, memory_module)
         recommendations = self._reason_and_rank(enriched_context, reasoning_module)
 
-        logging.info("%s generated %s recommendations", workflow_name, len(recommendations))
+        # logging.info("%s generated %s recommendations", workflow_name, len(recommendations))
         return recommendations
 
     # ------------------------------------------------------------------ #

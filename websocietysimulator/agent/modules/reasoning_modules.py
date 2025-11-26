@@ -93,6 +93,11 @@ Here is the task:
             temperature=0.1,
             n=5
         )
+        # Ensure reasoning_results is a list of strings (Counter needs hashable items)
+        if not isinstance(reasoning_results, list):
+            reasoning_results = [str(reasoning_results)]
+        reasoning_results = [str(r) if not isinstance(r, str) else r for r in reasoning_results]
+        
         string_counts = Counter(reasoning_results)
         reasoning_result = string_counts.most_common(1)[0][0]
         return reasoning_result
@@ -113,10 +118,15 @@ Here is the task:
             temperature=0.1,
             n=3
         )
+        # Ensure reasoning_results is a list of strings
+        if not isinstance(reasoning_results, list):
+            reasoning_results = [str(reasoning_results)]
+        reasoning_results = [str(r) if not isinstance(r, str) else r for r in reasoning_results]
+        
         reasoning_result = self.get_votes(task_description, reasoning_results, examples)
         return reasoning_result
     def get_votes(self, task_description, reasoning_results, examples):
-        if 'think'  in reasoning_results[0].lower():
+        if reasoning_results and isinstance(reasoning_results[0], str) and 'think' in reasoning_results[0].lower():
             return reasoning_results[0]
         prompt = '''Given the reasoning process for two completed tasks and one ongoing task, and several answers for the next step, decide which answer best follows the reasoning process for example command format. Output "The best answer is {{s}}", where s is the integer id chosen.
 Here are some examples.
@@ -126,9 +136,9 @@ Here is the task:
 
 '''     
         prompt = prompt.format(task_description=task_description, examples=examples)
-        messages = [{"role": "user", "content": prompt}]
         for i, y in enumerate(reasoning_results, 1):
             prompt += f'Answer {i}:\n{y}\n'
+        messages = [{"role": "user", "content": prompt}]
         vote_outputs = self.llm(
             messages=messages,
             temperature=0.7,

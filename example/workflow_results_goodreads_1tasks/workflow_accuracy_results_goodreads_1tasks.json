@@ -1,0 +1,392 @@
+{
+  "default": {
+    "workflow": "default",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 35.92453908920288,
+    "avg_time_per_task": 35.92453908920288,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "voyager": {
+    "workflow": "voyager",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 34.59157991409302,
+    "avg_time_per_task": 34.59157991409302,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "self_refine": {
+    "workflow": "self_refine",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 35.94381904602051,
+    "avg_time_per_task": 35.94381904602051,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "cot_sc": {
+    "workflow": "cot_sc",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 42.37590026855469,
+    "avg_time_per_task": 42.37590026855469,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "voyager_memory": {
+    "workflow": "voyager_memory",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 37.65958094596863,
+    "avg_time_per_task": 37.65958094596863,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "openagi": {
+    "workflow": "openagi",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 36.44336986541748,
+    "avg_time_per_task": 36.44336986541748,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "hybrid": {
+    "workflow": "hybrid",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 38.741397857666016,
+    "avg_time_per_task": 38.741397857666016,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "tot": {
+    "workflow": "tot",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 42.68626689910889,
+    "avg_time_per_task": 42.68626689910889,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "td": {
+    "workflow": "td",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 38.55730724334717,
+    "avg_time_per_task": 38.55730724334717,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "deps": {
+    "workflow": "deps",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 40.05407691001892,
+    "avg_time_per_task": 40.05407691001892,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "all_voyager": {
+    "workflow": "all_voyager",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 38.25406002998352,
+    "avg_time_per_task": 38.25406002998352,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "dilu_memory": {
+    "workflow": "dilu_memory",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 38.9906530380249,
+    "avg_time_per_task": 38.9906530380249,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "simple": {
+    "workflow": "simple",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 36.998401165008545,
+    "avg_time_per_task": 36.998401165008545,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "tot_memory": {
+    "workflow": "tot_memory",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 59.38340210914612,
+    "avg_time_per_task": 59.38340210914612,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  },
+  "deps_refine": {
+    "workflow": "deps_refine",
+    "metrics": {
+      "type": "recommendation",
+      "metrics": {
+        "top_1_hit_rate": 0.0,
+        "top_3_hit_rate": 1.0,
+        "top_5_hit_rate": 1.0,
+        "average_hit_rate": 0.6666666666666666,
+        "total_scenarios": 1,
+        "top_1_hits": 0,
+        "top_3_hits": 1,
+        "top_5_hits": 1
+      },
+      "data_info": {
+        "evaluated_count": 1,
+        "original_simulation_count": 1,
+        "original_ground_truth_count": 400
+      }
+    },
+    "execution_time": 46.629652976989746,
+    "avg_time_per_task": 46.629652976989746,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": true
+  }
+}
