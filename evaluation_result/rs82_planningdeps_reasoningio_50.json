@@ -1,0 +1,29 @@
+{
+    "type": "recommendation",
+    "metrics": {
+        "top_1_hit_rate": 0.22,
+        "top_3_hit_rate": 0.46,
+        "top_5_hit_rate": 0.54,
+        "average_hit_rate": 0.40666666666666673,
+        "total_scenarios": 50,
+        "top_1_hits": 11,
+        "top_3_hits": 23,
+        "top_5_hits": 27
+    },
+    "data_info": {
+        "evaluated_count": 50,
+        "original_simulation_count": 50,
+        "original_ground_truth_count": 50
+    },
+    "run_info": {
+        "planning_module": "planningdeps",
+        "reasoning_module": "reasoningio",
+        "random_seed": 82,
+        "num_tasks": 50,
+        "total_time_seconds": 171.770605802536,
+        "avg_time_per_task_seconds": 3.43541211605072,
+        "max_workers": 10,
+        "max_reviews_per_profile": 70,
+        "limit_on_schema_fields(prompt_instruction)": "no more than 50 English words"
+    }
+}

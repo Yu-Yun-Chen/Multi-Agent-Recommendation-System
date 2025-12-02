@@ -2,6 +2,7 @@
 
 import json
 import logging
+import time
 from typing import Any, Dict, List, Optional
 
 from websocietysimulator.agent.modules.parameter_retriever_user_item import (
@@ -69,17 +70,14 @@ class InfoOrchestrator:
         item_id: Optional[str] = None,
         candidate_list: Optional[List[str]] = None
     ) -> Dict[str, Any]:
-        # Generate user profile
+        """Generate user and item profiles based on planner steps."""
         user_profile = self._generate_profile(planner_steps, user_id, self.USER_PROFILE, candidate_list) if user_id else {}
         
-        # Extract user parameters (excluding user_id)
         user_params = [k for k in user_profile.keys() if k != 'user_id'] if user_profile else None
         
-        # Log user profile keys
         if user_profile:
             logger.info(f"✓ User profile keys: {user_params}")
         
-        # Generate item profiles for ALL candidates using user-aligned parameters
         item_profiles = []
         if candidate_list and self._requires_profile(planner_steps, self.ITEM_PROFILE):
             item_profiles = self._generate_all_item_profiles(planner_steps, candidate_list, user_params)
@@ -96,13 +94,6 @@ class InfoOrchestrator:
         if item_profiles:
             consolidated["item_profiles"] = item_profiles
         
-        # Log raw JSON structure being returned to reasoning module
-        # logger.info("=" * 80)
-        # logger.info("PROFILE DATA STRUCTURE RETURNED TO REASONING MODULE:")
-        # logger.info("=" * 80)
-        # logger.info(json.dumps(consolidated, indent=2, default=str))
-        # logger.info("=" * 80)
-        
         return consolidated
 
     def _generate_profile(
@@ -112,6 +103,7 @@ class InfoOrchestrator:
         profile_type: str,
         candidate_list: Optional[List[str]] = None
     ) -> Dict[str, Any]:
+        """Generate a profile for a single entity (user or item)."""
         if not self._requires_profile(planner_steps, profile_type) or not self.schema_fitter or not entity_id:
             return {}
         
@@ -132,6 +124,7 @@ class InfoOrchestrator:
         return self._call_schema_fitter(params, entity_id, profile_type)
 
     def _requires_profile(self, steps: List[Dict[str, Any]], profile_type: str) -> bool:
+        """Check if planner steps require profile generation for given profile type."""
         keywords = self.PROFILE_CONFIG[profile_type]["detection_keywords"]
         step_text = json.dumps(steps, default=str).lower()
         matches = [kw for kw in keywords if kw in step_text]
@@ -147,18 +140,15 @@ class InfoOrchestrator:
         if not self.schema_fitter or not candidate_list:
             return []
         
-        # Determine item parameters based on user preferences
         if user_params:
             item_params = self._convert_user_to_item_params(user_params)
         else:
             item_params = ItemParameterRetriever.DEFAULT_PARAMETERS
         
-        # Limit number of candidates if specified
         candidates_to_profile = candidate_list
         if self.max_candidates_to_profile and len(candidate_list) > self.max_candidates_to_profile:
             candidates_to_profile = candidate_list[:self.max_candidates_to_profile]
         
-        # Generate profiles in batches for efficiency
         batch_size = 5
         item_profiles = []
         num_batches = (len(candidates_to_profile) + batch_size - 1) // batch_size
@@ -170,7 +160,6 @@ class InfoOrchestrator:
             
             logger.info(f"✓ Batch {batch_num}/{num_batches} (items {batch_start+1}-{batch_end}) using keys: {item_params}")
             
-            # Generate profiles for this batch
             for item_id in batch_ids:
                 try:
                     profile = self._call_schema_fitter(item_params, item_id, self.ITEM_PROFILE)
@@ -178,21 +167,19 @@ class InfoOrchestrator:
                         item_profiles.append(profile)
                 except Exception as e:
                     logger.warning(f"  ✗ Failed item {item_id}: {e}")
+                    time.sleep(2.0)
         
         return item_profiles
     
     def _convert_user_to_item_params(self, user_params: List[str]) -> List[str]:
-        """Use the same parameters for items as the user profile for direct comparison."""
-        # Return user params as-is (same keys for both user and items)
-        # This allows direct apples-to-apples comparison
-        
-        # Ensure we have at least 2-4 parameters
+        """Convert user parameters to item parameters for direct comparison."""
         if len(user_params) < 2:
             user_params = list(user_params) + ['genre', 'theme'][:2 - len(user_params)]
         
-        return user_params[:4]  # Cap at 4 parameters
+        return user_params[:4]
     
     def _call_schema_fitter(self, params: List[str], entity_id: Optional[str], profile_type: str) -> Dict[str, Any]:
+        """Call schema fitter to build profile from parameters."""
         if not self.schema_fitter or not entity_id:
             return {}
         
@@ -207,6 +194,7 @@ class InfoOrchestrator:
             return {}
     
     def _store_profile_in_memory(self, profile: Dict[str, Any], profile_type: str, planner_steps: List[Dict[str, Any]]):
+        """Store generated profile in memory for future retrieval."""
         if not self.memory or not profile:
             return
         

@@ -1,0 +1,38 @@
+2025-12-02 08:47:50,490 - websocietysimulator - INFO - Start initializing Simulator
+2025-12-02 08:47:50,490 - websocietysimulator - INFO - Using CacheInteractionTool
+2025-12-02 08:47:50,490 - websocietysimulator - INFO - Initializing InteractionTool with data directory: /Users/hoshuhan/Documents/UCLA/CS245/coursework/AgentSocietyChallenge/data_processed
+2025-12-02 08:47:51,311 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-12-02 08:47:52,832 - websocietysimulator - INFO - Simulator initialized
+2025-12-02 08:47:52,859 - websocietysimulator - INFO - Loaded 400 task-groundtruth pairs
+2025-12-02 08:47:52,860 - websocietysimulator - INFO - Agent class set
+2025-12-02 08:47:52,876 - websocietysimulator - INFO - ✓ Google embeddings: models/embedding-001
+2025-12-02 08:47:52,876 - websocietysimulator - INFO - LLM set
+2025-12-02 08:47:52,876 - websocietysimulator - INFO - Running simulation
+2025-12-02 08:47:52,876 - websocietysimulator - INFO - Total tasks: 50
+2025-12-02 08:47:52,887 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-12-02 08:47:53,008 - root - INFO - === Experiment config ===
+2025-12-02 08:47:53,008 - root - INFO - Planning module: PlanningVoyagerCustom
+2025-12-02 08:47:53,009 - root - INFO - Reasoning module: ReasoningIO
+2025-12-02 08:47:53,009 - root - INFO - Memory module: MemoryDILU
+2025-12-02 08:47:53,010 - root - INFO - Use pairwise rerank: True
+2025-12-02 08:47:53,010 - root - INFO - ---- Task start ---- user_id=31606898c01676313ca73672815b7782  #cands=20
+2025-12-02 08:48:06,723 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'character_preference', 'artwork_preference']
+2025-12-02 08:48:06,724 - websocietysimulator - INFO - ✓ Batch 1/2 (items 1-5) using keys: ['genre_preference', 'character_preference', 'artwork_preference']
+2025-12-02 08:48:26,322 - websocietysimulator - INFO - ✓ Batch 2/2 (items 6-10) using keys: ['genre_preference', 'character_preference', 'artwork_preference']
+2025-12-02 08:48:51,209 - root - INFO - RAW REASONING OUTPUT:
+["11375796", "26429283", "12387743", "18590059", "18044903", "35425030", "24603", "13588086", "4506584", "27406717", "1793039", "19545687", "936905", "31321081", "36444040", "27839748", "33033696", "25211861", "33534046", "2691607"]
+2025-12-02 08:48:51,210 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-12-02 08:48:51,211 - root - INFO - Ranked list (pre-pairwise): ['11375796', '26429283', '12387743', '18590059', '18044903', '35425030', '24603', '13588086', '4506584', '27406717', '1793039', '19545687', '936905', '31321081', '36444040', '27839748', '33033696', '25211861', '33534046', '2691607']
+2025-12-02 08:48:51,213 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-12-02 08:49:09,809 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-12-02 08:49:09,809 - root - INFO - Ranked list (post-pairwise): ['11375796', '26429283', '12387743', '18590059', '18044903', '35425030', '24603', '13588086', '4506584', '27406717', '1793039', '19545687', '936905', '31321081', '36444040', '27839748', '33033696', '25211861', '33534046', '2691607']
+2025-12-02 08:49:09,809 - root - INFO - FINAL RANKED LIST (len=20)
+2025-12-02 08:49:09,809 - root - INFO - Ranked list : ['11375796', '26429283', '12387743', '18590059', '18044903', '35425030', '24603', '13588086', '4506584', '27406717', '1793039', '19545687', '936905', '31321081', '36444040', '27839748', '33033696', '25211861', '33534046', '2691607']
+2025-12-02 08:49:09,809 - root - INFO - ---- Task end ----
+2025-12-02 08:49:09,809 - websocietysimulator - INFO - Simulation finished for task 0
+2025-12-02 08:49:09,813 - root - INFO - === Experiment config ===
+2025-12-02 08:49:09,813 - root - INFO - Planning module: PlanningVoyagerCustom
+2025-12-02 08:49:09,813 - root - INFO - Reasoning module: ReasoningIO
+2025-12-02 08:49:09,813 - root - INFO - Memory module: MemoryDILU
+2025-12-02 08:49:09,813 - root - INFO - Use pairwise rerank: True
+2025-12-02 08:49:09,813 - root - INFO - ---- Task start ---- user_id=21a8f051d56cc52c00445121e36071ec  #cands=20

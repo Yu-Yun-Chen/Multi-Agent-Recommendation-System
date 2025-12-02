@@ -1,0 +1,6 @@
+2025-12-02 07:23:47,916 - websocietysimulator - INFO - Start initializing Simulator
+2025-12-02 07:23:47,916 - websocietysimulator - INFO - Using Normal InteractionTool
+2025-12-02 07:23:47,916 - websocietysimulator - INFO - Initializing InteractionTool with data directory: /Users/hoshuhan/Documents/UCLA/CS245/coursework/AgentSocietyChallenge/data_processed
+2025-12-02 07:23:47,916 - websocietysimulator - INFO - Loading item data from /Users/hoshuhan/Documents/UCLA/CS245/coursework/AgentSocietyChallenge/data_processed/item.json
+2025-12-02 07:24:04,490 - websocietysimulator - INFO - Loading user data from /Users/hoshuhan/Documents/UCLA/CS245/coursework/AgentSocietyChallenge/data_processed/user.json
+2025-12-02 07:24:11,577 - websocietysimulator - INFO - Loading review data from /Users/hoshuhan/Documents/UCLA/CS245/coursework/AgentSocietyChallenge/data_processed/review.json

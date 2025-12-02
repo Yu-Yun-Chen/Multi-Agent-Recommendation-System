@@ -1,0 +1,22 @@
+2025-12-02 08:25:17,083 - websocietysimulator - INFO - Start initializing Simulator
+2025-12-02 08:25:17,083 - websocietysimulator - INFO - Using CacheInteractionTool
+2025-12-02 08:25:17,083 - websocietysimulator - INFO - Initializing InteractionTool with data directory: /Users/hoshuhan/Documents/UCLA/CS245/coursework/AgentSocietyChallenge/data_processed
+2025-12-02 08:25:17,902 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-12-02 08:25:19,316 - websocietysimulator - INFO - Simulator initialized
+2025-12-02 08:25:19,338 - websocietysimulator - INFO - Loaded 400 task-groundtruth pairs
+2025-12-02 08:25:19,339 - websocietysimulator - INFO - Agent class set
+2025-12-02 08:25:19,355 - websocietysimulator - INFO - ✓ Google embeddings: models/embedding-001
+2025-12-02 08:25:19,355 - websocietysimulator - INFO - LLM set
+2025-12-02 08:25:19,355 - websocietysimulator - INFO - Running simulation
+2025-12-02 08:25:19,355 - websocietysimulator - INFO - Total tasks: 50
+2025-12-02 08:25:19,367 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-12-02 08:25:19,479 - root - INFO - === Experiment config ===
+2025-12-02 08:25:19,479 - root - INFO - Planning module: PlanningVoyagerCustom
+2025-12-02 08:25:19,479 - root - INFO - Reasoning module: ReasoningIO
+2025-12-02 08:25:19,479 - root - INFO - Memory module: MemoryDILU
+2025-12-02 08:25:19,479 - root - INFO - Use pairwise rerank: True
+2025-12-02 08:25:19,479 - root - INFO - ---- Task start ---- user_id=31606898c01676313ca73672815b7782  #cands=20
+2025-12-02 08:25:31,869 - websocietysimulator - INFO - ✓ User profile keys: ['character_preference', 'art_style_preference', 'theme_preference']
+2025-12-02 08:25:31,870 - websocietysimulator - INFO - ✓ Batch 1/2 (items 1-5) using keys: ['character_preference', 'art_style_preference', 'theme_preference']
+2025-12-02 08:25:49,880 - websocietysimulator - INFO - ✓ Batch 2/2 (items 6-10) using keys: ['character_preference', 'art_style_preference', 'theme_preference']
+2025-12-02 08:26:11,755 - websocietysimulator - ERROR - Gemini API rate limit (429): 429 Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.

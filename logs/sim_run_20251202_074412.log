@@ -1,0 +1,21 @@
+2025-12-02 07:44:12,165 - websocietysimulator - INFO - Start initializing Simulator
+2025-12-02 07:44:12,165 - websocietysimulator - INFO - Using CacheInteractionTool
+2025-12-02 07:44:12,166 - websocietysimulator - INFO - Initializing InteractionTool with data directory: /Users/hoshuhan/Documents/UCLA/CS245/coursework/AgentSocietyChallenge/data_processed
+2025-12-02 07:44:13,099 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-12-02 07:44:14,667 - websocietysimulator - INFO - Simulator initialized
+2025-12-02 07:44:14,693 - websocietysimulator - INFO - Loaded 400 task-groundtruth pairs
+2025-12-02 07:44:14,694 - websocietysimulator - INFO - Agent class set
+2025-12-02 07:44:14,709 - websocietysimulator - INFO - ✓ Google embeddings: models/embedding-001
+2025-12-02 07:44:14,709 - websocietysimulator - INFO - LLM set
+2025-12-02 07:44:14,709 - websocietysimulator - INFO - Running simulation
+2025-12-02 07:44:14,709 - websocietysimulator - INFO - Total tasks: 50
+2025-12-02 07:44:14,720 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-12-02 07:44:14,831 - root - INFO - === Experiment config ===
+2025-12-02 07:44:14,831 - root - INFO - Planning module: PlanningVoyagerCustom
+2025-12-02 07:44:14,831 - root - INFO - Reasoning module: ReasoningIO
+2025-12-02 07:44:14,831 - root - INFO - Memory module: MemoryDILU
+2025-12-02 07:44:14,831 - root - INFO - Use pairwise rerank: True
+2025-12-02 07:44:14,832 - root - INFO - ---- Task start ---- user_id=31606898c01676313ca73672815b7782  #cands=20
+2025-12-02 07:44:35,824 - websocietysimulator - INFO - ✓ User profile keys: ['art_style_preference', 'character_preference', 'plot_novelty']
+2025-12-02 07:44:35,825 - websocietysimulator - INFO - ✓ Batch 1/2 (items 1-5) using keys: ['art_style_preference', 'character_preference', 'plot_novelty']
+2025-12-02 07:45:20,863 - websocietysimulator - INFO - ✓ Batch 2/2 (items 6-10) using keys: ['art_style_preference', 'character_preference', 'plot_novelty']

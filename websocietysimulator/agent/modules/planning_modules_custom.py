@@ -1,4 +1,3 @@
-# planning_recommendation_voyager.py
 """
 A custom Planning module for recommendation tasks,
 built on top of PlanningVoyager but with additional
@@ -9,7 +8,6 @@ import re
 import ast
 from websocietysimulator.agent.modules.planning_modules import PlanningBase
 
-# yelp
 yelp_guides = """
 You are solving a RECOMMENDATION planning task.
 
@@ -69,7 +67,7 @@ Your goal:
 2. Ensure subgoals enable a reasoning module to later rank 
    the candidate_list from most relevant to least relevant for the user.
 3. Keep subgoals high-level, concise, and logically ordered.
-4. For each subgoal, output both "description" and "reasoning instruction".
+4. For each subgoal, output "description", "reasoning instruction", and "tool instruction".
 """
 
 good_reads_guides = """
@@ -136,15 +134,21 @@ Your goal:
 2. Ensure subgoals enable a reasoning module to later rank 
    the candidate_list from most relevant to least relevant for the user.
 3. Keep subgoals high-level, concise, and logically ordered.
-4. For each subgoal, output both "description" and "reasoning instruction".
+4. For each subgoal, output "description", "reasoning instruction", and "tool instruction".
 """
 
 FIELD_GUIDE = good_reads_guides
 
 OUTPUT_STYLE_GUIDE = """
-You must output a list of subgoals in the following style:
-sub-task 1: {"description": "...", "reasoning instruction": "..."}
-sub-task 2: {"description": "...", "reasoning instruction": "..."}
+- Output ONLY lines of the form:
+  sub-task k: {"description": "...", "reasoning instruction": "...", "tool instruction": "..."}
+- Inside { }, use valid Python dict syntax:
+  - keys must be exactly "description", "reasoning instruction", and "tool instruction"
+  - keys and values must be double-quoted
+  - no trailing commas, no comments
+- Do NOT use any braces { } or quotes " inside the values; keep them as plain text.
+- Put EACH sub-task on a single line (no line breaks inside the {...} part).
+- Do NOT output any extra text before or after the list of sub-tasks.
 """
 
 
@@ -167,9 +171,7 @@ class PlanningVoyagerCustom(PlanningBase):
         - adds lightweight field descriptions
         - adds recommendation task goals
         """
-        # relevant datasets need to add instruction for each features
-
-        # build few-shot block if provided
+        
         FEW_SHOT_BLOCK = build_few_shot_block(few_shot)
 
         if feedback == "":

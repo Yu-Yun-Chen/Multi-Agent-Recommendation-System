@@ -1,0 +1,758 @@
+2025-11-28 03:38:50,404 - websocietysimulator - INFO - Start initializing Simulator
+2025-11-28 03:38:50,404 - websocietysimulator - INFO - Using Normal InteractionTool
+2025-11-28 03:38:50,404 - websocietysimulator - INFO - Initializing InteractionTool with data directory: ./data
+2025-11-28 03:38:50,404 - websocietysimulator - INFO - Loading item data from ./data/item.json
+2025-11-28 03:39:02,300 - websocietysimulator - INFO - Loading user data from ./data/user.json
+2025-11-28 03:39:07,996 - websocietysimulator - INFO - Loading review data from ./data/review.json
+2025-11-28 03:39:45,270 - websocietysimulator - INFO - Building review indices
+2025-11-28 03:39:56,991 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-28 03:39:58,465 - websocietysimulator - INFO - Simulator initialized
+2025-11-28 03:39:58,563 - websocietysimulator - INFO - Loaded 400 task-groundtruth pairs
+2025-11-28 03:39:58,564 - websocietysimulator - INFO - Agent class set
+2025-11-28 03:39:58,564 - websocietysimulator - INFO - LLM set
+2025-11-28 03:39:58,564 - websocietysimulator - INFO - Running simulation
+2025-11-28 03:39:58,564 - websocietysimulator - INFO - Total tasks: 30
+2025-11-28 03:39:58,564 - websocietysimulator - INFO - Running with 10 threads
+2025-11-28 03:39:58,666 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-28 03:39:58,762 - root - INFO - === Experiment config ===
+2025-11-28 03:39:58,762 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:39:58,763 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:39:58,763 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:39:58,763 - root - INFO - ---- Task start ---- user_id=6551622f988381066adf56bc3ef9ccc4  #cands=20
+2025-11-28 03:39:58,778 - root - INFO - === Experiment config ===
+2025-11-28 03:39:58,778 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:39:58,778 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:39:58,778 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:39:58,779 - root - INFO - ---- Task start ---- user_id=1c944ee4877ea9829e3c8c019e5122c3  #cands=20
+2025-11-28 03:39:58,782 - root - INFO - === Experiment config ===
+2025-11-28 03:39:58,783 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:39:58,783 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:39:58,783 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:39:58,783 - root - INFO - ---- Task start ---- user_id=02d5dd00d4e653f7ded9f185e5eb42e3  #cands=20
+2025-11-28 03:39:58,785 - root - INFO - === Experiment config ===
+2025-11-28 03:39:58,785 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:39:58,785 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:39:58,786 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:39:58,786 - root - INFO - ---- Task start ---- user_id=3aaad4ffd2ef6a2f357156131fd9b923  #cands=20
+2025-11-28 03:39:58,786 - root - INFO - === Experiment config ===
+2025-11-28 03:39:58,786 - root - INFO - === Experiment config ===
+2025-11-28 03:39:58,786 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:39:58,787 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:39:58,787 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:39:58,788 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:39:58,788 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:39:58,787 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:39:58,789 - root - INFO - ---- Task start ---- user_id=78ebcb5ac91acf19fcae2c0d8f136001  #cands=20
+2025-11-28 03:39:58,789 - root - INFO - === Experiment config ===
+2025-11-28 03:39:58,790 - root - INFO - ---- Task start ---- user_id=5c23d6183093168f20213c7ff6cfc065  #cands=20
+2025-11-28 03:39:58,790 - root - INFO - === Experiment config ===
+2025-11-28 03:39:58,790 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:39:58,791 - root - INFO - === Experiment config ===
+2025-11-28 03:39:58,792 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:39:58,792 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:39:58,793 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:39:58,793 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:39:58,793 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:39:58,793 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:39:58,793 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:39:58,794 - root - INFO - ---- Task start ---- user_id=4903bdbe3fd2daa637aa6a2f190dd329  #cands=20
+2025-11-28 03:39:58,794 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:39:58,799 - root - INFO - ---- Task start ---- user_id=672a15b10b7c8a981a4291d48cf58627  #cands=20
+2025-11-28 03:39:58,799 - root - INFO - ---- Task start ---- user_id=3c888db39b6a45539d24783e9fecba6e  #cands=20
+2025-11-28 03:39:58,812 - root - INFO - === Experiment config ===
+2025-11-28 03:39:58,812 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:39:58,813 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:39:58,813 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:39:58,813 - root - INFO - ---- Task start ---- user_id=d0a94b65475b4578576aa87867bba70e  #cands=20
+2025-11-28 03:40:39,405 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'writing_style_preference', 'theme_preference']
+2025-11-28 03:40:39,406 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'writing_style_preference', 'theme_preference']
+2025-11-28 03:40:42,381 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 17.611391735s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 17
+}
+]
+2025-11-28 03:40:42,724 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 17.268294188s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 17
+}
+]
+2025-11-28 03:40:42,740 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'writing_style_preference', 'theme_preference']
+2025-11-28 03:40:42,740 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'writing_style_preference', 'theme_preference']
+2025-11-28 03:40:42,833 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 17.160139925s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 17
+}
+]
+2025-11-28 03:40:44,642 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 15.349157407s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 15
+}
+]
+2025-11-28 03:40:45,464 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 14.528537366s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 14
+}
+]
+2025-11-28 03:40:45,578 - websocietysimulator - INFO - ✓ User profile keys: ['author_preference', 'genre_preference', 'review_sentiment']
+2025-11-28 03:40:45,578 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['author_preference', 'genre_preference', 'review_sentiment']
+2025-11-28 03:40:45,674 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 14.318669512s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 14
+}
+]
+2025-11-28 03:40:45,819 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 14.172260781s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 14
+}
+]
+2025-11-28 03:40:45,937 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 14.058446986s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 14
+}
+]
+2025-11-28 03:40:47,729 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 12.264587818s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 12
+}
+]
+2025-11-28 03:40:48,546 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 11.447584291s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 11
+}
+]
+2025-11-28 03:40:48,772 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 11.220793131s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 11
+}
+]
+2025-11-28 03:40:48,919 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 11.074107956s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 11
+}
+]
+2025-11-28 03:40:49,031 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 10.961382004s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 10
+}
+]
+2025-11-28 03:40:49,539 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 10.453030154s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 10
+}
+]
+2025-11-28 03:40:50,805 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 9.188252663s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 9
+}
+]
+2025-11-28 03:40:51,572 - websocietysimulator - INFO - ✓ User profile keys: ['plot_pacing', 'reading_style', 'series_preference']
+2025-11-28 03:40:51,572 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['plot_pacing', 'reading_style', 'series_preference']
+2025-11-28 03:40:51,659 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 8.333349231s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 8
+}
+]
+2025-11-28 03:40:51,873 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 8.119395552s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 8
+}
+]
+2025-11-28 03:40:52,627 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 7.364449774s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 7
+}
+]
+2025-11-28 03:40:52,628 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 7.362881461s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 7
+}
+]
+2025-11-28 03:40:52,628 - websocietysimulator - ERROR - Error calling schema_fitter: RetryError[<Future at 0x96407dea0 state=finished raised ResourceExhausted>]
+Traceback (most recent call last):
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/rec_agent_experiment/gemini.py", line 168, in __call__
+    raise e
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/rec_agent_experiment/gemini.py", line 87, in __call__
+    response = self.client.generate_content(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 869, in generate_content
+    response = rpc(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 7.362881461s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 7
+}
+]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/info_orchestrator_module.py", line 268, in _call_schema_fitter
+    result = self.schema_fitter.build_profile(
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/schemafitter_module.py", line 72, in build_profile
+    profiles = self(schema=schema, items=items, profile_type=profile_type)
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/schemafitter_module.py", line 142, in __call__
+    raw_output = self.llm(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x96407dea0 state=finished raised ResourceExhausted>]
+2025-11-28 03:40:52,633 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre', 'reading_level']
+2025-11-28 03:40:52,710 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 7.281497126s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 7
+}
+]
+2025-11-28 03:40:52,999 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 6.992751423s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-11-28 03:40:53,000 - websocietysimulator - ERROR - Error calling schema_fitter: RetryError[<Future at 0x96407f3a0 state=finished raised ResourceExhausted>]
+Traceback (most recent call last):
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/rec_agent_experiment/gemini.py", line 168, in __call__
+    raise e
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/rec_agent_experiment/gemini.py", line 87, in __call__
+    response = self.client.generate_content(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 869, in generate_content
+    response = rpc(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 6.992751423s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 6
+}
+]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/info_orchestrator_module.py", line 268, in _call_schema_fitter
+    result = self.schema_fitter.build_profile(
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/schemafitter_module.py", line 72, in build_profile
+    profiles = self(schema=schema, items=items, profile_type=profile_type)
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/schemafitter_module.py", line 142, in __call__
+    raw_output = self.llm(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x96407f3a0 state=finished raised ResourceExhausted>]
+2025-11-28 03:40:53,000 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre', 'reading_level']
+2025-11-28 03:40:53,172 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 6.820315551s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-11-28 03:40:53,248 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 6.743547387s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-11-28 03:40:53,248 - websocietysimulator - ERROR - Error calling schema_fitter: RetryError[<Future at 0x96407c3a0 state=finished raised ResourceExhausted>]
+Traceback (most recent call last):
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/rec_agent_experiment/gemini.py", line 168, in __call__
+    raise e
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/rec_agent_experiment/gemini.py", line 87, in __call__
+    response = self.client.generate_content(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 869, in generate_content
+    response = rpc(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 6.743547387s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 6
+}
+]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/info_orchestrator_module.py", line 268, in _call_schema_fitter
+    result = self.schema_fitter.build_profile(
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/schemafitter_module.py", line 72, in build_profile
+    profiles = self(schema=schema, items=items, profile_type=profile_type)
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/schemafitter_module.py", line 142, in __call__
+    raw_output = self.llm(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x96407c3a0 state=finished raised ResourceExhausted>]
+2025-11-28 03:40:53,339 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 6.652936919s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-11-28 03:40:54,843 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 5.151234738s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-11-28 03:40:54,913 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 5.079216456s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-11-28 03:40:54,913 - websocietysimulator - ERROR - Error calling schema_fitter: RetryError[<Future at 0x96407f280 state=finished raised ResourceExhausted>]
+Traceback (most recent call last):
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/rec_agent_experiment/gemini.py", line 168, in __call__
+    raise e
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/rec_agent_experiment/gemini.py", line 87, in __call__
+    response = self.client.generate_content(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 869, in generate_content
+    response = rpc(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 5.079216456s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 5
+}
+]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/info_orchestrator_module.py", line 268, in _call_schema_fitter
+    result = self.schema_fitter.build_profile(
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/schemafitter_module.py", line 72, in build_profile
+    profiles = self(schema=schema, items=items, profile_type=profile_type)
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/schemafitter_module.py", line 142, in __call__
+    raw_output = self.llm(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x96407f280 state=finished raised ResourceExhausted>]
+2025-11-28 03:40:54,914 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre', 'reading_level']
+2025-11-28 03:40:55,053 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 4.939400851s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-11-28 03:40:55,718 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 4.274923253s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-11-28 03:40:55,877 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 4.117515773s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-11-28 03:40:55,973 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 4.019271923s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-11-28 03:40:55,973 - websocietysimulator - ERROR - Error calling schema_fitter: RetryError[<Future at 0x94b5c4af0 state=finished raised ResourceExhausted>]
+Traceback (most recent call last):
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/rec_agent_experiment/gemini.py", line 168, in __call__
+    raise e
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/rec_agent_experiment/gemini.py", line 87, in __call__
+    response = self.client.generate_content(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 869, in generate_content
+    response = rpc(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/google/api_core/grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 4.019271923s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 4
+}
+]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/info_orchestrator_module.py", line 268, in _call_schema_fitter
+    result = self.schema_fitter.build_profile(
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/schemafitter_module.py", line 72, in build_profile
+    profiles = self(schema=schema, items=items, profile_type=profile_type)
+  File "/Users/ming/Desktop/COM_SCI_245/cs245_project/AgentSocietyChallenge/websocietysimulator/agent/modules/schemafitter_module.py", line 142, in __call__
+    raw_output = self.llm(
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/Users/ming/opt/anaconda3/envs/ucla/lib/python3.10/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x94b5c4af0 state=finished raised ResourceExhausted>]
+2025-11-28 03:40:56,134 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 3.858589519s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 3
+}
+]
+2025-11-28 03:40:56,272 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 3.720568023s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 3
+}
+]
+2025-11-28 03:40:56,435 - websocietysimulator - ERROR - Gemini API Exception: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model, limit: 25, model: gemini-3-pro
+Please retry in 3.558247729s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+, retry_delay {
+  seconds: 3
+}
+]

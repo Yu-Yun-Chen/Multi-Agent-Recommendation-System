@@ -1,0 +1,118 @@
+2025-11-27 23:57:47,215 - websocietysimulator - INFO - Start initializing Simulator
+2025-11-27 23:57:47,216 - websocietysimulator - INFO - Using Normal InteractionTool
+2025-11-27 23:57:47,216 - websocietysimulator - INFO - Initializing InteractionTool with data directory: ./data
+2025-11-27 23:57:47,216 - websocietysimulator - INFO - Loading item data from ./data/item.json
+2025-11-27 23:57:58,616 - websocietysimulator - INFO - Loading user data from ./data/user.json
+2025-11-27 23:58:03,159 - websocietysimulator - INFO - Loading review data from ./data/review.json
+2025-11-27 23:58:40,154 - websocietysimulator - INFO - Building review indices
+2025-11-27 23:58:50,689 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-27 23:58:52,248 - websocietysimulator - INFO - Simulator initialized
+2025-11-27 23:58:52,338 - websocietysimulator - INFO - Loaded 400 task-groundtruth pairs
+2025-11-27 23:58:52,339 - websocietysimulator - INFO - Agent class set
+2025-11-27 23:58:52,339 - websocietysimulator - INFO - LLM set
+2025-11-27 23:58:52,340 - websocietysimulator - INFO - Running simulation
+2025-11-27 23:58:52,340 - websocietysimulator - INFO - Total tasks: 10
+2025-11-27 23:58:52,340 - websocietysimulator - INFO - Running with 10 threads
+2025-11-27 23:58:52,443 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-27 23:58:52,552 - root - INFO - === Experiment config ===
+2025-11-27 23:58:52,552 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:58:52,552 - root - INFO - Reasoning module: ReasoningTOT
+2025-11-27 23:58:52,552 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:58:52,552 - root - INFO - ---- Task start ---- user_id=5c23d6183093168f20213c7ff6cfc065  #cands=20
+2025-11-27 23:58:52,563 - root - INFO - === Experiment config ===
+2025-11-27 23:58:52,563 - root - INFO - === Experiment config ===
+2025-11-27 23:58:52,565 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:58:52,565 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:58:52,566 - root - INFO - Reasoning module: ReasoningTOT
+2025-11-27 23:58:52,567 - root - INFO - Reasoning module: ReasoningTOT
+2025-11-27 23:58:52,568 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:58:52,569 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:58:52,569 - root - INFO - ---- Task start ---- user_id=02d5dd00d4e653f7ded9f185e5eb42e3  #cands=20
+2025-11-27 23:58:52,570 - root - INFO - === Experiment config ===
+2025-11-27 23:58:52,570 - root - INFO - === Experiment config ===
+2025-11-27 23:58:52,571 - root - INFO - === Experiment config ===
+2025-11-27 23:58:52,571 - root - INFO - === Experiment config ===
+2025-11-27 23:58:52,571 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:58:52,571 - root - INFO - ---- Task start ---- user_id=3aaad4ffd2ef6a2f357156131fd9b923  #cands=20
+2025-11-27 23:58:52,572 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:58:52,572 - root - INFO - === Experiment config ===
+2025-11-27 23:58:52,572 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:58:52,573 - root - INFO - === Experiment config ===
+2025-11-27 23:58:52,573 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:58:52,573 - root - INFO - Reasoning module: ReasoningTOT
+2025-11-27 23:58:52,573 - root - INFO - Reasoning module: ReasoningTOT
+2025-11-27 23:58:52,574 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:58:52,574 - root - INFO - Reasoning module: ReasoningTOT
+2025-11-27 23:58:52,574 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:58:52,574 - root - INFO - Reasoning module: ReasoningTOT
+2025-11-27 23:58:52,574 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:58:52,574 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:58:52,574 - root - INFO - Reasoning module: ReasoningTOT
+2025-11-27 23:58:52,574 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:58:52,575 - root - INFO - Reasoning module: ReasoningTOT
+2025-11-27 23:58:52,575 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:58:52,575 - root - INFO - ---- Task start ---- user_id=4903bdbe3fd2daa637aa6a2f190dd329  #cands=20
+2025-11-27 23:58:52,575 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:58:52,575 - root - INFO - ---- Task start ---- user_id=3c888db39b6a45539d24783e9fecba6e  #cands=20
+2025-11-27 23:58:52,575 - root - INFO - ---- Task start ---- user_id=6551622f988381066adf56bc3ef9ccc4  #cands=20
+2025-11-27 23:58:52,575 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:58:52,575 - root - INFO - ---- Task start ---- user_id=78ebcb5ac91acf19fcae2c0d8f136001  #cands=20
+2025-11-27 23:58:52,576 - root - INFO - ---- Task start ---- user_id=d0a94b65475b4578576aa87867bba70e  #cands=20
+2025-11-27 23:58:52,577 - root - INFO - ---- Task start ---- user_id=672a15b10b7c8a981a4291d48cf58627  #cands=20
+2025-11-27 23:58:52,604 - root - INFO - === Experiment config ===
+2025-11-27 23:58:52,604 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:58:52,604 - root - INFO - Reasoning module: ReasoningTOT
+2025-11-27 23:58:52,604 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:58:52,605 - root - INFO - ---- Task start ---- user_id=1c944ee4877ea9829e3c8c019e5122c3  #cands=20
+2025-11-27 23:59:20,626 - websocietysimulator - INFO - ✓ User profile keys: ['theme_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-27 23:59:20,627 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['theme_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-27 23:59:22,264 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:59:22,264 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:59:23,084 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'reading_style_preference', 'theme_preference']
+2025-11-27 23:59:23,085 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'reading_style_preference', 'theme_preference']
+2025-11-27 23:59:23,247 - websocietysimulator - INFO - ✓ User profile keys: ['author_preference', 'genre_preference', 'writing_style_preference']
+2025-11-27 23:59:23,248 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['author_preference', 'genre_preference', 'writing_style_preference']
+2025-11-27 23:59:23,356 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'author_preference', 'writing_style_preference', 'theme_preference']
+2025-11-27 23:59:23,356 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'author_preference', 'writing_style_preference', 'theme_preference']
+2025-11-27 23:59:23,902 - websocietysimulator - INFO - ✓ User profile keys: ['reading_style_preference', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:59:23,902 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['reading_style_preference', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:59:27,691 - websocietysimulator - INFO - ✓ User profile keys: ['reading_style', 'theme_preference', 'plot_complexity']
+2025-11-27 23:59:27,692 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['reading_style', 'theme_preference', 'plot_complexity']
+2025-11-27 23:59:31,633 - websocietysimulator - INFO - ✓ User profile keys: ['author_preference', 'genre_preference', 'plot_pacing', 'reading_style']
+2025-11-27 23:59:31,633 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['author_preference', 'genre_preference', 'plot_pacing', 'reading_style']
+2025-11-27 23:59:38,994 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'nostalgia_preference', 'plot_complexity_preference']
+2025-11-27 23:59:38,994 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'nostalgia_preference', 'plot_complexity_preference']
+2025-11-27 23:59:42,979 - websocietysimulator - INFO - ✓ User profile keys: ['character_preference', 'plot_complexity', 'artwork_quality_preference', 'writing_style_preference']
+2025-11-27 23:59:42,979 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['character_preference', 'plot_complexity', 'artwork_quality_preference', 'writing_style_preference']
+2025-11-27 23:59:52,543 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['theme_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-27 23:59:56,855 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['reading_style_preference', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:59:58,551 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 00:00:00,973 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['author_preference', 'genre_preference', 'writing_style_preference']
+2025-11-28 00:00:04,583 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['reading_style', 'theme_preference', 'plot_complexity']
+2025-11-28 00:00:06,485 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'author_preference', 'writing_style_preference', 'theme_preference']
+2025-11-28 00:00:09,597 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'reading_style_preference', 'theme_preference']
+2025-11-28 00:00:22,458 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['author_preference', 'genre_preference', 'plot_pacing', 'reading_style']
+2025-11-28 00:00:23,360 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['character_preference', 'plot_complexity', 'artwork_quality_preference', 'writing_style_preference']
+2025-11-28 00:00:30,159 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['theme_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-28 00:00:31,486 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 00:00:46,705 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['reading_style_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 00:00:47,063 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['reading_style', 'theme_preference', 'plot_complexity']
+2025-11-28 00:00:48,040 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'author_preference', 'writing_style_preference', 'theme_preference']
+2025-11-28 00:00:50,328 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['author_preference', 'genre_preference', 'writing_style_preference']
+2025-11-28 00:00:52,992 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'reading_style_preference', 'theme_preference']
+2025-11-28 00:00:59,955 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['character_preference', 'plot_complexity', 'artwork_quality_preference', 'writing_style_preference']
+2025-11-28 00:01:01,541 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'nostalgia_preference', 'plot_complexity_preference']
+2025-11-28 00:01:05,763 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['theme_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-28 00:01:07,737 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['author_preference', 'genre_preference', 'plot_pacing', 'reading_style']
+2025-11-28 00:01:09,422 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 00:01:28,589 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['reading_style', 'theme_preference', 'plot_complexity']
+2025-11-28 00:01:29,343 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'author_preference', 'writing_style_preference', 'theme_preference']
+2025-11-28 00:01:31,699 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['reading_style_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 00:01:37,545 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['author_preference', 'genre_preference', 'writing_style_preference']
+2025-11-28 00:01:39,680 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'reading_style_preference', 'theme_preference']
+2025-11-28 00:01:39,941 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['character_preference', 'plot_complexity', 'artwork_quality_preference', 'writing_style_preference']
+2025-11-28 00:01:46,955 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['author_preference', 'genre_preference', 'plot_pacing', 'reading_style']
+2025-11-28 00:01:47,698 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'nostalgia_preference', 'plot_complexity_preference']
+2025-11-28 00:02:25,663 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'nostalgia_preference', 'plot_complexity_preference']
+2025-11-28 00:03:04,364 - websocietysimulator - WARNING - Gemini output truncated by max tokens (finish_reason=FinishReason.MAX_TOKENS [MAX_TOKENS]); using partial content.
+2025-11-28 00:03:04,364 - websocietysimulator - ERROR - Gemini: Empty content parts (no valid Part in candidate).

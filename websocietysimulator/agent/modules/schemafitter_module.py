@@ -24,7 +24,6 @@ class SchemaFitterBase:
         messages = [{"role": "user", "content": prompt}]
         raw_output = self.llm(messages=messages, temperature=0.1)
 
-        # Extract JSON-like dicts from output
         dict_strings = re.findall(r"\{[^{}]*\}", raw_output)
         dicts = []
         for ds in dict_strings:
@@ -57,13 +56,11 @@ class SchemaFitterIO(SchemaFitterBase):
         if not self.profile_builder:
             raise ValueError("interaction_tool required for build_profile")
         
-        # Fetch data from profile module
         if profile_type == "user":
             items = self.profile_builder.build_user_profile_data(entity_id, max_reviews)
         else:
             items = self.profile_builder.build_item_profile_data(entity_id, max_reviews)
         
-        # Fit data to schema using LLM
         profiles = self(schema=schema, items=items, profile_type=profile_type)
         result = profiles[0] if profiles else {}
         return result
@@ -114,17 +111,14 @@ Output JSON array:"""
 
     def __call__(self, schema, items, profile_type="user"):
         """Execute the summarization / schema-fitting call."""
-        # Normalize inputs
         if isinstance(schema, list):
             schema = {param: "string" for param in schema}
         if isinstance(items, dict):
             items = [items]
         
-        # Get LLM response
         prompt = self.create_prompt(schema, items, profile_type)
         raw_output = self.llm(messages=[{"role": "user", "content": prompt}], temperature=0.1)
         
-        # Extract JSON array
         json_array_str = self._extract_json_array(raw_output)
         if json_array_str:
             try:

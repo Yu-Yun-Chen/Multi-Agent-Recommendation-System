@@ -49,9 +49,9 @@ class PlanningBase():
         raise NotImplementedError("Subclasses should implement this method")
     
     def __call__(self, task_type, task_description, feedback, few_shot='few_shot'):
+        """Generate plan from task description."""
         prompt = self.create_prompt(task_type, task_description, feedback, few_shot)
         
-        # Use the new LLM call method
         messages = [{"role": "user", "content": prompt}]
         string = self.llm(
             messages=messages,
@@ -82,6 +82,7 @@ class PlanningBase():
     
 class PlanningIO(PlanningBase):
     def create_prompt(self, task_type, task_description, feedback, few_shot):
+        """Create prompt for IO planning."""
         few_shot_block = build_few_shot_block(few_shot)
         field_guide_block = FIELD_GUIDE if task_type == "recommendation" else ""
         
@@ -102,6 +103,7 @@ Task:{task_description}
 
 class PlanningDEPS(PlanningBase):
     def create_prompt(self, task_type, task_description, feedback, few_shot):
+        """Create prompt for DEPS multi-hop planning."""
         few_shot_block = build_few_shot_block(few_shot)
         field_guide_block = FIELD_GUIDE if task_type == "recommendation" else ""
         
@@ -122,6 +124,7 @@ Task:{task_description}
 
 class PlanningTD(PlanningBase):
     def create_prompt(self, task_type, task_description, feedback, few_shot):
+        """Create prompt for temporal dependency planning."""
         few_shot_block = build_few_shot_block(few_shot)
         field_guide_block = FIELD_GUIDE if task_type == "recommendation" else ""
         
@@ -144,6 +147,7 @@ Task:{task_description}
 
 class PlanningVoyager(PlanningBase):
     def create_prompt(self, task_type, task_description, feedback, few_shot):
+        """Create prompt for Voyager subgoal planning."""
         few_shot_block = build_few_shot_block(few_shot)
         field_guide_block = FIELD_GUIDE if task_type == "recommendation" else ""
         
@@ -174,6 +178,7 @@ task:{task_description}
 
 class PlanningOPENAGI(PlanningBase):
     def create_prompt(self, task_type, task_description, feedback, few_shot):
+        """Create prompt for OpenAGI todo-list planning."""
         few_shot_block = build_few_shot_block(few_shot)
         field_guide_block = FIELD_GUIDE if task_type == "recommendation" else ""
         
@@ -200,6 +205,7 @@ Task:{task_description}
 
 class PlanningHUGGINGGPT(PlanningBase):
     def create_prompt(self, task_type, task_description, feedback, few_shot):
+        """Create prompt for HuggingGPT dependency-aware planning."""
         few_shot_block = build_few_shot_block(few_shot)
         field_guide_block = FIELD_GUIDE if task_type == "recommendation" else ""
         

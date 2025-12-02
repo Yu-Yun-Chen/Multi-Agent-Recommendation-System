@@ -92,11 +92,6 @@ class MyRecommendationAgent(RecommendationAgent):
         Returns:
             list: Sorted list of item IDs
         """
-        # plan = self.planning(task_type='Recommendation Task',
-        #                      task_description="Please make a plan to query user information, you can choose to query user, item, and review information",
-        #                      feedback='',
-        #                      few_shot='')
-        # print(f"The plan is :{plan}")
         plan = [
          {'description': 'First I need to find user information'},
          {'description': 'Next, I need to find item information'},
@@ -121,7 +116,6 @@ class MyRecommendationAgent(RecommendationAgent):
                     keys_to_extract = ['item_id', 'name','stars','review_count','attributes','title', 'average_rating', 'rating_number','description','ratings_count','title_without_series']
                     filtered_item = {key: item[key] for key in keys_to_extract if key in item}
                 item_list.append(filtered_item)
-                # print(item)
             elif 'review' in sub_task['description']:
                 history_review = str(self.interaction_tool.get_reviews(user_id=self.task['user_id']))
                 input_tokens = num_tokens_from_string(history_review)
@@ -147,14 +141,12 @@ class MyRecommendationAgent(RecommendationAgent):
         result = self.reasoning(task_description)
 
         try:
-            # print('Meta Output:',result)
             match = re.search(r"\[.*\]", result, re.DOTALL)
             if match:
                 result = match.group()
             else:
                 print("No list found.")
             print('Processed Output:',eval(result))
-            # time.sleep(4)
             return eval(result)
         except:
             print('format error')
@@ -162,24 +154,17 @@ class MyRecommendationAgent(RecommendationAgent):
 
 
 if __name__ == "__main__":
-    task_set = "amazon" # "goodreads" or "yelp"
-    # Initialize Simulator
+    task_set = "goodreads"
     simulator = Simulator(data_dir="your data_dir", device="auto", cache=True)
 
-    # Load scenarios
     simulator.set_task_and_groundtruth(task_dir=f"./track2/{task_set}/tasks", groundtruth_dir=f"./track2/{task_set}/groundtruth")
 
-    # Set your custom agent
     simulator.set_agent(MyRecommendationAgent)
 
-    # Set LLM client
     simulator.set_llm(InfinigenceLLM(api_key="your api_key"))
 
-    # Run evaluation
-    # If you don't set the number of tasks, the simulator will run all tasks.
     agent_outputs = simulator.run_simulation(number_of_tasks=None, enable_threading=True, max_workers=10)
 
-    # Evaluate the agent
     evaluation_results = simulator.evaluate()
     with open(f'./evaluation_results_track2_{task_set}.json', 'w') as f:
         json.dump(evaluation_results, f, indent=4)

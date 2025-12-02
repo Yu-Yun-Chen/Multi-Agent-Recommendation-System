@@ -1,0 +1,29 @@
+{
+    "type": "recommendation",
+    "metrics": {
+        "top_1_hit_rate": 0.12,
+        "top_3_hit_rate": 0.28,
+        "top_5_hit_rate": 0.38,
+        "average_hit_rate": 0.26,
+        "total_scenarios": 50,
+        "top_1_hits": 6,
+        "top_3_hits": 14,
+        "top_5_hits": 19
+    },
+    "data_info": {
+        "evaluated_count": 50,
+        "original_simulation_count": 50,
+        "original_ground_truth_count": 50
+    },
+    "run_info": {
+        "planning_module": "planningvoyagercustom",
+        "reasoning_module": "reasoningio",
+        "random_seed": 82,
+        "num_tasks": 50,
+        "total_time_seconds": 1328.6956400871277,
+        "avg_time_per_task_seconds": 26.573912801742555,
+        "max_workers": 10,
+        "max_reviews_per_profile": 70,
+        "limit_on_schema_fields(prompt_instruction)": "50_English_words_per_field"
+    }
+}

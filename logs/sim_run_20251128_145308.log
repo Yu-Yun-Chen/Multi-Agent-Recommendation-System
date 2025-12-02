@@ -1,0 +1,6 @@
+2025-11-28 14:53:08,679 - websocietysimulator - INFO - Start initializing Simulator
+2025-11-28 14:53:08,679 - websocietysimulator - INFO - Using Normal InteractionTool
+2025-11-28 14:53:08,679 - websocietysimulator - INFO - Initializing InteractionTool with data directory: ./data
+2025-11-28 14:53:08,679 - websocietysimulator - INFO - Loading item data from ./data/item.json
+2025-11-28 14:53:19,902 - websocietysimulator - INFO - Loading user data from ./data/user.json
+2025-11-28 14:53:24,329 - websocietysimulator - INFO - Loading review data from ./data/review.json

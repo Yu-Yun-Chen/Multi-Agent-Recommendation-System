@@ -75,7 +75,6 @@ Category name:
         messages = [{"role": "user", "content": prompt}]
         category_name = self.llm(messages=messages, temperature=0.1).split(':')[-1].strip()
         
-        # Matching and retrieving tools
         matched_tools = {}
         for d in self.dicts[task_description]:
             if d.get('category name').lower().strip() == category_name.lower().strip():

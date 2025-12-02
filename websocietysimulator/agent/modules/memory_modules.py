@@ -28,7 +28,6 @@ class MemoryBase:
         if 'review:' in current_situation:
             self.addMemory(current_situation.replace('review:', ''))
         elif 'profile:' in current_situation:
-            # Store profile generation trajectories
             self.addMemory(current_situation.replace('profile:', ''))
         else:
             return self.retriveMemory(current_situation)
@@ -44,30 +43,25 @@ class MemoryDILU(MemoryBase):
         super().__init__(memory_type='dilu', llm=llm)
 
     def retriveMemory(self, query_scenario: str):
-        # Extract task name from query scenario
+        """Retrieve most similar memory trajectory."""
         task_name = query_scenario
         
-        # Return empty string if memory is empty
         if self.scenario_memory._collection.count() == 0:
             return ''
             
-        # Find most similar memory
         similarity_results = self.scenario_memory.similarity_search_with_score(
             task_name, k=1)
             
-        # Extract task trajectories from results
         task_trajectories = [
             result[0].metadata['task_trajectory'] for result in similarity_results
         ]
         
-        # Join trajectories with newlines and return
         return '\n'.join(task_trajectories)
 
     def addMemory(self, current_situation: str):
-        # Extract task description
+        """Add trajectory to memory store."""
         task_name = current_situation
         
-        # Create document with metadata
         memory_doc = Document(
             page_content=task_name,
             metadata={
@@ -76,7 +70,6 @@ class MemoryDILU(MemoryBase):
             }
         )
         
-        # Add to memory store
         self.scenario_memory.add_documents([memory_doc])
 
 class MemoryGenerative(MemoryBase):
@@ -84,26 +77,22 @@ class MemoryGenerative(MemoryBase):
         super().__init__(memory_type='generative', llm=llm)
 
     def retriveMemory(self, query_scenario: str):
-        # Extract task name from query
+        """Retrieve memory with importance scoring."""
         task_name = query_scenario
         
-        # Return empty if no memories exist
         if self.scenario_memory._collection.count() == 0:
             return ''
             
-        # Get top 3 similar memories
         similarity_results = self.scenario_memory.similarity_search_with_score(
             task_name, k=3)
             
         fewshot_results = []
         importance_scores = []
 
-        # Score each memory's relevance
         for result in similarity_results:
             trajectory = result[0].metadata['task_trajectory']
             fewshot_results.append(trajectory)
             
-            # Generate prompt to evaluate importance
             prompt = f'''You will be given a successful case where you successfully complete the task. Then you will be given an ongoing task. Do not summarize these two cases, but rather evaluate how relevant and helpful the successful case is for the ongoing task, on a scale of 1-10.
 Success Case:
 {trajectory}
@@ -112,20 +101,17 @@ Ongoing task:
 Your output format should be:
 Score: '''
 
-            # Get importance score
             response = self.llm(messages=[{"role": "user", "content": prompt}], temperature=0.1, stop_strs=['\n'])
             score = int(re.search(r'\d+', response).group()) if re.search(r'\d+', response) else 0
             importance_scores.append(score)
 
-        # Return trajectory with highest importance score
         max_score_idx = importance_scores.index(max(importance_scores))
         return similarity_results[max_score_idx][0].metadata['task_trajectory']
     
     def addMemory(self, current_situation: str):
-        # Extract task description
+        """Add trajectory to memory store."""
         task_name = current_situation
         
-        # Create document with metadata
         memory_doc = Document(
             page_content=task_name,
             metadata={
@@ -134,7 +120,6 @@ Score: '''
             }
         )
         
-        # Add to memory store
         self.scenario_memory.add_documents([memory_doc])
 
 class MemoryTP(MemoryBase):
