@@ -6,7 +6,7 @@ accuracy metrics (NDCG@10, Hit Rate@10, Precision@10) to determine which
 workflow performs best.
 
 Usage:
-    python test_recommendation_accuracy.py                                    # Test default workflows
+    pation_accuracy.py ython test_recommend                                   # Test default workflows
     python test_recommendation_accuracy.py --num-tasks 20                     # Test on 20 tasks
     python test_recommendation_accuracy.py --workflows default self_refine    # Test specific workflows
     python test_recommendation_accuracy.py --dataset amazon                   # Test on amazon data
