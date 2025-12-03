@@ -1,4 +1,0 @@
-2025-12-02 08:07:29,347 - websocietysimulator - INFO - Start initializing Simulator
-2025-12-02 08:07:29,348 - websocietysimulator - INFO - Using CacheInteractionTool
-2025-12-02 08:07:29,348 - websocietysimulator - INFO - Initializing InteractionTool with data directory: /Users/hoshuhan/Documents/UCLA/CS245/coursework/AgentSocietyChallenge/data_processed
-2025-12-02 08:07:30,316 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
