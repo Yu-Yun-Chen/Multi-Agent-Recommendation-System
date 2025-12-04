@@ -1,0 +1,13 @@
+{
+  "default": {
+    "workflow": "default",
+    "metrics": {
+      "error": "Error embedding content: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 0\n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 0\n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 0\n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 0 [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/embed_content_free_tier_requests\"\n  quota_id: \"EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier\"\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/embed_content_free_tier_requests\"\n  quota_id: \"EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier\"\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/embed_content_free_tier_requests\"\n  quota_id: \"EmbedContentRequestsPerMinutePerProjectPerModel-FreeTier\"\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/embed_content_free_tier_requests\"\n  quota_id: \"EmbedContentRequestsPerDayPerProjectPerModel-FreeTier\"\n}\n]"
+    },
+    "execution_time": 107.66607284545898,
+    "avg_time_per_task": 107.66607284545898,
+    "num_tasks": 1,
+    "dataset": "goodreads",
+    "success": false
+  }
+}

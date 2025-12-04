@@ -185,8 +185,6 @@ Given several answers, decide which answer is most promising. Output "The best a
                 vote = int(match.groups()[0]) - 1
                 if vote in range(len(strings)):
                     vote_results[vote] += 1
-            else:
-                print(f'vote no match: {[vote_output]}')
         ids = list(range(len(strings)))
         select_id = sorted(ids, key=lambda x: vote_results[x], reverse=True)[0]
         return strings[select_id]
@@ -231,8 +229,6 @@ Given several answers, decide which answer is most promising. Output "The best a
                 vote = int(match.groups()[0]) - 1
                 if vote in range(len(strings)):
                     vote_results[vote] += 1
-            else:
-                print(f'vote no match: {[vote_output]}')
         ids = list(range(len(strings)))
         select_id = sorted(ids, key=lambda x: vote_results[x], reverse=True)[0]
         return strings[select_id]

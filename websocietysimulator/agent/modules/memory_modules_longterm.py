@@ -63,9 +63,6 @@ def load_tasks_and_groundtruth(
         groundtruth_path = os.path.join(gt_dir, groundtruth_file)
 
         if not os.path.exists(groundtruth_path):
-            logging.warning(
-                f"Groundtruth file {groundtruth_file} not found for task {task_file}"
-            )
             continue
 
         task_path = os.path.join(tasks_dir, task_file)
@@ -78,7 +75,6 @@ def load_tasks_and_groundtruth(
         tasks.append(task_data)
         groundtruth_data.append(gt_data)
 
-    logging.info(f"Loaded {len(tasks)} task-groundtruth pairs (local train loader)")
     return tasks, groundtruth_data
 
 
@@ -127,14 +123,10 @@ class Track2TrainAgent(RecommendationAgent):
         - evaluate whether groundtruth is in the top-5
         - write trajectory into memory ONLY if groundtruth is in top-5
         """
-        print("\n===== TRAIN: Planning + Memory (single task) =====\n")
-
         task_description = json.dumps(task, indent=2)
-
         user_id = task.get("user_id", "")
         category = task.get("candidate_category", "")
         task_info = f"user={user_id}, category={category}"
-
         few_shot = ""
 
         plan = self.planning(
@@ -143,11 +135,6 @@ class Track2TrainAgent(RecommendationAgent):
             feedback="",
             few_shot=few_shot,
         )
-        print("[Plan]")
-        for step in plan:
-            print(f"  - Step: {step['description']}")
-            print(f"    Reasoning Instruction: {step['reasoning instruction']}")
-        print("----")
 
         if self.info_orchestrator and self.interaction_tool:
             if self.info_orchestrator.schema_fitter is None:
@@ -181,9 +168,6 @@ class Track2TrainAgent(RecommendationAgent):
         )
 
         reasoning_output = self.reasoning(reasoning_prompt)
-        print("===== RAW REASONING OUTPUT =====")
-        print(reasoning_output)
-
         ranked_list = []
         try:
             match = re.search(r"\[.*?\]", reasoning_output, re.DOTALL)
@@ -214,12 +198,6 @@ class Track2TrainAgent(RecommendationAgent):
             rank_pos = ranked_filtered.index(groundtruth_item_id) + 1  # 1-based
         is_top5 = rank_pos is not None and rank_pos <= 5
 
-        print("[Evaluation]")
-        print("  Ground truth item:", groundtruth_item_id)
-        print("  Ranked list (first 10):", ranked_filtered[:10])
-        print("  Ground truth rank position:", rank_pos)
-        print("  Correct@3:", is_top5)
-
         trajectory = (
             f"Task:\n"
             f"    {task_description}\n\n"
@@ -240,14 +218,10 @@ class Track2TrainAgent(RecommendationAgent):
         )
 
         if is_top5:
-            print("\n[Trajectory to Memory]:", trajectory)
             self.memory_dilu("review: " + trajectory)
             self.memory_gen("review: " + trajectory)
             self.memory_tp("review: " + trajectory)
             self.memory_voyager("review: " + trajectory)
-            print("[Memory Added]\n")
-        else:
-            print("\n[Trajectory NOT added to Memory] (incorrect prediction)\n")
 
         return {
             "few_shot": few_shot,
@@ -261,12 +235,7 @@ class Track2TrainAgent(RecommendationAgent):
 
 
 if __name__ == "__main__":
-    print(
-        "\n===== Track2 Train: multi-task loop over track2_test (build long-term memory) =====\n"
-    )
-
     llm_google = GoogleGeminiLLM(api_key=GOOGLE_API_KEY, model="gemini-2.0-flash")
-
     agent = Track2TrainAgent(llm_google, dataset="goodreads")
 
     tasks, groundtruth_data = load_tasks_and_groundtruth(
@@ -280,11 +249,6 @@ if __name__ == "__main__":
 
     for idx, (task, gt_dict) in enumerate(zip(tasks, groundtruth_data)):
         gt_item = gt_dict.get("ground truth")
-
-        print(f"\n========== Training on Task {idx} ==========")
-        print("Task user_id:", task.get("user_id"))
-        print("Candidate count:", len(task.get("candidate_list", [])))
-        print("Ground truth:", gt_item)
 
         run_info = agent.workflow(task, gt_item)
 
@@ -321,9 +285,4 @@ if __name__ == "__main__":
     with open(out_path_runs, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    print(f"\n===== Training Summary =====")
-    print(f"Total tasks: {total}")
-    print(f"Correct@5: {correct_cnt}/{total}")
-    print(f"Training run log saved to: {out_path_runs}")
-    print("Long-term memory stored under ./db/dilu (to be reused in Simulator).")
 

@@ -41,9 +41,8 @@ class ReasoningBase:
         return str(profile)
 
 class ReasoningIO(ReasoningBase):
-    def __call__(self, task_description: str, feedback :str= '', user_id: str = None):
+    def __call__(self, task_description: str, feedback: str = '', user_id: str = None):
         """Execute IO reasoning with examples and user profile."""
-    def __call__(self, task_description: str, feedback :str= '', user_id: str = None):
         examples, profile_block = self.build_prompt_context(task_description, user_id=user_id)
         prompt = '''Your instructions must follow the examples.
 Here are some examples.
@@ -57,7 +56,6 @@ Here is the task:
             messages=messages,
             temperature=0.1,
         )
-        
         return reasoning_result
     
 class ReasoningCOT(ReasoningBase):
@@ -155,8 +153,6 @@ Here is the task:
                 vote = int(match.groups()[0]) - 1
                 if vote in range(len(reasoning_results)):
                     vote_results[vote] += 1
-            else:
-                print(f'vote no match: {[vote_output]}')
         ids = list(range(len(reasoning_results)))
         select_id = sorted(ids, key=lambda x: vote_results[x], reverse=True)[0]
         return reasoning_results[select_id]

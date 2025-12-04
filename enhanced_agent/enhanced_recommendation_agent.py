@@ -78,7 +78,6 @@ class EnhancedRecommendationAgent(EnhancedWorkflowMixin, EnhancedRecommendationA
 
 
 if __name__ == "__main__":
-    logging.info("Initializing simulator...")
     task_set = "goodreads"
     data_dir = "../data_processed"
 
@@ -90,15 +89,10 @@ if __name__ == "__main__":
     simulator.set_agent(EnhancedRecommendationAgent)
     simulator.set_llm(InfinigenceLLM(api_key="your_api_key_here"))
 
-    logging.info("Starting recommendation simulation...")
     simulator.run_simulation(number_of_tasks=10, enable_threading=True, max_workers=5)
-    logging.info("Evaluating results...")
     evaluation_results = simulator.evaluate()
 
     output_file = f"./evaluation_results_enhanced_track2_{task_set}.json"
     with open(output_file, "w", encoding="utf-8") as file_handle:
         json.dump(evaluation_results, file_handle, indent=4)
-
-    logging.info("Evaluation complete! Results saved to %s", output_file)
-    logging.info("Results: %s", evaluation_results)
 

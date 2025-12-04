@@ -71,17 +71,12 @@ class EnhancedRecommendationAgentBase(RecommendationAgent):
         reasoning_module,
         info_orchestrator,
     ):
-        """
-        Shared execution pipeline. Every caller must pass the three modules.
-        """
-        logging.info("Executing %s", workflow_name)
-
+        """Shared execution pipeline. Every caller must pass the three modules."""
         plan = self._generate_plan(planning_module)
         context = self._gather_context(plan)
         profiled_context = self._build_profile(context, info_orchestrator)
         enriched_context = self._integrate_memory(profiled_context, memory_module)
         recommendations = self._reason_and_rank(enriched_context, reasoning_module)
-
         return recommendations
 
     def _generate_plan(self, planning_module) -> List[Dict[str, str]]:

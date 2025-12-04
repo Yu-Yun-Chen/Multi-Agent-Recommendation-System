@@ -138,8 +138,6 @@ class EnhancedSimulationAgent(SimulationAgent):
         )
         
         self.memory = MemoryDILU(llm=self.llm)
-        
-        logging.info("EnhancedSimulationAgent initialized with Planning, Reasoning, and Memory modules")
     
     def workflow(self):
         """
@@ -149,8 +147,6 @@ class EnhancedSimulationAgent(SimulationAgent):
             dict: Contains 'stars' (float) and 'review' (str)
         """
         try:
-            logging.info(f"Creating plan for user {self.task['user_id']} and item {self.task['item_id']}")
-            
             plan = [
                 {
                     'description': 'Retrieve the target user profile and behavior',
@@ -180,11 +176,9 @@ class EnhancedSimulationAgent(SimulationAgent):
                 
                 if 'user profile' in description or 'user behavior' in description:
                     user_info = self.interaction_tool.get_user(user_id=self.task['user_id'])
-                    logging.info(f"Retrieved user info for {self.task['user_id']}")
                 
                 elif 'business' in description or 'item' in description:
                     business_info = self.interaction_tool.get_item(item_id=self.task['item_id'])
-                    logging.info(f"Retrieved business info for {self.task['item_id']}")
                 
                 elif 'other users' in description or 'relevant reviews' in description:
                     reviews = self.interaction_tool.get_reviews(item_id=self.task['item_id'])
@@ -193,11 +187,9 @@ class EnhancedSimulationAgent(SimulationAgent):
                             if 'text' in review and review['text']:
                                 self.memory(f"review: {review['text']}")
                                 other_reviews.append(review)
-                    logging.info(f"Retrieved {len(other_reviews)} reviews about the business")
                 
                 elif 'user.*review history' in description or 'own review' in description:
                     user_reviews = self.interaction_tool.get_reviews(user_id=self.task['user_id'])
-                    logging.info(f"Retrieved {len(user_reviews)} historical reviews from user")
             
             relevant_context = ""
             if user_reviews and len(user_reviews) > 0:
@@ -245,15 +237,11 @@ stars: [1.0, 2.0, 3.0, 4.0, or 5.0]
 review: [2-4 sentences matching the user's style]
 """
             
-            logging.info("Generating review using reasoning module")
             result = self.reasoning(task_description)
-            
             stars, review_text = self._parse_result(result)
             
             if len(review_text) > 512:
                 review_text = review_text[:512]
-            
-            logging.info(f"Generated review with {stars} stars")
             
             return {
                 "stars": stars,
@@ -399,8 +387,6 @@ review: [2-4 sentences matching the user's style]
             dict: Contains 'stars' (float) and 'review' (str)
         """
         try:
-            logging.info("Using DILU Reasoning approach")
-            
             dilu_reasoning = ReasoningDILU(
                 profile_type_prompt='You are a realistic user on a review platform.',
                 memory=self.memory,
@@ -457,7 +443,6 @@ review: [2-4 sentences matching the user's style]
             if len(review_text) > 512:
                 review_text = review_text[:512]
             
-            logging.info(f"DILU workflow generated review with {stars} stars")
             return {"stars": stars, "review": review_text}
             
         except Exception as e:
@@ -475,8 +460,6 @@ review: [2-4 sentences matching the user's style]
             dict: Contains 'stars' (float) and 'review' (str)
         """
         try:
-            logging.info("Using Self-Refine Reasoning approach")
-            
             self_refine_reasoning = ReasoningSelfRefine(
                 profile_type_prompt='You are a realistic user on a review platform.',
                 memory=self.memory,
@@ -526,7 +509,6 @@ review: [2-4 sentences]
             if len(review_text) > 512:
                 review_text = review_text[:512]
             
-            logging.info(f"Self-Refine workflow generated review with {stars} stars")
             return {"stars": stars, "review": review_text}
             
         except Exception as e:
@@ -545,8 +527,6 @@ review: [2-4 sentences]
             dict: Contains 'stars' (float) and 'review' (str)
         """
         try:
-            logging.info("Using StepBack Reasoning approach")
-            
             stepback_reasoning = ReasoningStepBack(
                 profile_type_prompt='You are a realistic user on a review platform.',
                 memory=self.memory,
@@ -596,7 +576,6 @@ review: [2-4 sentences]
             if len(review_text) > 512:
                 review_text = review_text[:512]
             
-            logging.info(f"StepBack workflow generated review with {stars} stars")
             return {"stars": stars, "review": review_text}
             
         except Exception as e:
@@ -615,8 +594,6 @@ review: [2-4 sentences]
             dict: Contains 'stars' (float) and 'review' (str)
         """
         try:
-            logging.info("Using Voyager Memory approach")
-            
             voyager_memory = MemoryVoyager(llm=self.llm)
             
             other_reviews = self.interaction_tool.get_reviews(item_id=self.task['item_id'])
@@ -668,7 +645,6 @@ review: [2-4 sentences matching the user's style]
             if len(review_text) > 512:
                 review_text = review_text[:512]
             
-            logging.info(f"Voyager Memory workflow generated review with {stars} stars")
             return {"stars": stars, "review": review_text}
             
         except Exception as e:
@@ -686,8 +662,6 @@ review: [2-4 sentences matching the user's style]
             dict: Contains 'stars' (float) and 'review' (str)
         """
         try:
-            logging.info("Using OpenAGI Planning approach")
-            
             openagi_planning = PlanningOPENAGI(llm=self.llm)
             
             plan_task = f"Simulate a review from user {self.task['user_id']} for item {self.task['item_id']}"
@@ -697,8 +671,6 @@ review: [2-4 sentences matching the user's style]
                 feedback='',
                 few_shot='sub-task 1: {"description": "Get user profile", "reasoning instruction": "Understand preferences"}'
             )
-            
-            logging.info(f"Generated OpenAGI plan with {len(plan)} subtasks")
             
             user_info = self.interaction_tool.get_user(user_id=self.task['user_id'])
             business_info = self.interaction_tool.get_item(item_id=self.task['item_id'])
@@ -733,7 +705,6 @@ review: [2-4 sentences]
             if len(review_text) > 512:
                 review_text = review_text[:512]
             
-            logging.info(f"OpenAGI workflow generated review with {stars} stars")
             return {"stars": stars, "review": review_text}
             
         except Exception as e:
@@ -754,8 +725,6 @@ review: [2-4 sentences]
             dict: Contains 'stars' (float) and 'review' (str)
         """
         try:
-            logging.info("Using Hybrid Advanced approach (HuggingGPT + Generative Memory + COT-SC)")
-            
             huggingpt_planning = PlanningHUGGINGGPT(llm=self.llm)
             generative_memory = MemoryGenerative(llm=self.llm)
             cotsc_reasoning = ReasoningCOTSC(
@@ -771,8 +740,6 @@ review: [2-4 sentences]
                 feedback='',
                 few_shot='sub-task 1: {"description": "Analyze user first", "reasoning instruction": "Must complete before writing review"}'
             )
-            
-            logging.info(f"Generated HuggingGPT plan with {len(plan)} subtasks")
             
             user_info = self.interaction_tool.get_user(user_id=self.task['user_id'])
             business_info = self.interaction_tool.get_item(item_id=self.task['item_id'])
@@ -823,7 +790,6 @@ review: [2-4 sentences matching the user's style]
             if len(review_text) > 512:
                 review_text = review_text[:512]
             
-            logging.info(f"Hybrid Advanced workflow generated review with {stars} stars")
             return {"stars": stars, "review": review_text}
             
         except Exception as e:
@@ -835,7 +801,6 @@ if __name__ == "__main__":
     task_set = "goodreads"
     data_dir = "../data_processed"
     
-    logging.info("Initializing simulator...")
     simulator = Simulator(
         data_dir=data_dir,
         device="auto",
@@ -848,23 +813,17 @@ if __name__ == "__main__":
     )
     
     simulator.set_agent(EnhancedSimulationAgent)
-    
     simulator.set_llm(InfinigenceLLM(api_key="your_api_key_here"))
     
-    logging.info("Starting simulation...")
     outputs = simulator.run_simulation(
         number_of_tasks=10,
         enable_threading=True,
         max_workers=5
     )
     
-    logging.info("Evaluating results...")
     evaluation_results = simulator.evaluate()
     
     output_file = f'./evaluation_results_enhanced_track1_{task_set}.json'
     with open(output_file, 'w') as f:
         json.dump(evaluation_results, f, indent=4)
-    
-    logging.info(f"Evaluation complete! Results saved to {output_file}")
-    logging.info(f"Results: {evaluation_results}")
 

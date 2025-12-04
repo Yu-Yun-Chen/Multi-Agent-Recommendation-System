@@ -63,12 +63,9 @@ class GoogleGeminiLLM(LLMBase):
                 self.embedding_model = GoogleGenerativeAIEmbeddings(
                     model=embedding_model, google_api_key=self.api_key
                 )
-                logger.info(f"✓ Google embeddings: {embedding_model}")
-            except Exception as e:
-                logger.error(f"Embedding init failed: {e}")
+            except Exception:
                 self.embedding_model = None
         else:
-            logger.error("Install: pip install langchain-google-genai")
             self.embedding_model = None
     
     @retry(
@@ -128,28 +125,14 @@ class GoogleGeminiLLM(LLMBase):
                 if response.candidates and response.candidates[0].content.parts:
                     responses.append(response.text)
                 else:
-                    finish_reason = response.candidates[0].finish_reason if response.candidates else 'UNKNOWN'
-                    logger.warning(f"Response blocked: {finish_reason}")
                     responses.append("[Response blocked by safety filters]")
-            except google_exceptions.ResourceExhausted as e:
-                logger.error(f"Gemini API rate limit (429): {str(e)[:200]}")
+            except google_exceptions.ResourceExhausted:
                 raise
-            except Exception as e:
-                logger.error(f"Gemini API error: {type(e).__name__}: {str(e)[:200]}")
+            except Exception:
                 raise
         
         return responses[0] if n == 1 else responses
     
     def get_embedding_model(self):
         """Get embedding model (GoogleGenerativeAIEmbeddings or None)."""
-        if self.embedding_model is None:
-            logger.warning("Install: pip install langchain-google-genai")
         return self.embedding_model
-
-
-if __name__ == "__main__":
-    llm = GoogleGeminiLLM()
-    print("✓ Gemini LLM initialized (gemini-2.0-flash)")
-    response = llm(messages=[{"role": "user", "content": "Say hello!"}])
-    print(f"Response: {response}")
-    print(f"✓ Embeddings: {llm.get_embedding_model() is not None}")

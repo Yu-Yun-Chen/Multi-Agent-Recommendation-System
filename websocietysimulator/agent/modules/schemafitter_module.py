@@ -126,9 +126,8 @@ Output JSON array:"""
                 if isinstance(dicts, list) and dicts:
                     self.output = dicts
                     return dicts
-            except json.JSONDecodeError as e:
-                logger.error(f"  [SchemaFitter] JSON decode error: {e}")
+            except json.JSONDecodeError:
+                pass
         
-        logger.error(f"  [SchemaFitter] FAILED to extract valid JSON array from LLM response!")
         self.output = []
         return []

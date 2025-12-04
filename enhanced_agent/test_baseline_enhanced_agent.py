@@ -1,27 +1,29 @@
-import random
-import sys
-import os
+"""Baseline recommendation agent test script."""
+
 import json
 import logging
+import os
+import random
 import re
+import sys
 import time
-
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, ROOT)
-sys.path.insert(0, CURRENT_DIR)
 
 from dotenv import load_dotenv
 from websocietysimulator import Simulator
 from websocietysimulator.agent import RecommendationAgent
 from websocietysimulator.llm import LLMBase
-from websocietysimulator.agent.modules.reasoning_modules import *
+from websocietysimulator.agent.modules.reasoning_modules import ReasoningIO
 from websocietysimulator.agent.modules.info_orchestrator_module import InfoOrchestrator
 from websocietysimulator.agent.modules.schemafitter_module import SchemaFitterIO
 from websocietysimulator.agent.modules.pairwise_modules import PairwiseRanker
 from google_gemini_llm import GoogleGeminiLLM
-from websocietysimulator.agent.modules.planning_modules_custom import *
-from websocietysimulator.agent.modules.memory_modules_custom import *
+from websocietysimulator.agent.modules.planning_modules_custom import PlanningVoyagerCustom
+from websocietysimulator.agent.modules.memory_modules_custom import MemoryDILU
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, ROOT)
+sys.path.insert(0, CURRENT_DIR)
 
 logs_dir = os.path.join(ROOT, "logs")
 os.makedirs(logs_dir, exist_ok=True)
@@ -38,6 +40,64 @@ logging.basicConfig(
 
 USE_PAIRWISE = True
 PAIRWISE_TOP_K = 5
+
+
+def parse_ranked_list(reasoning_output, candidate_list):
+    """Parse ranked list from reasoning output."""
+    ranked_list = []
+    try:
+        match = re.search(r"\[.*?\]", reasoning_output, re.DOTALL)
+        if match:
+            list_str = match.group(0)
+            parsed = eval(list_str)
+            if isinstance(parsed, list):
+                ranked_list = parsed
+    except Exception:
+        ranked_list = []
+
+    seen = set()
+    ranked_filtered = []
+    for cid in ranked_list:
+        if isinstance(cid, str) and cid in candidate_list and cid not in seen:
+            seen.add(cid)
+            ranked_filtered.append(cid)
+    for cid in candidate_list:
+        if cid not in seen:
+            ranked_filtered.append(cid)
+    return ranked_filtered
+
+
+def build_pairwise_context(interaction_tool, user_id, top_ids):
+    """Build context for pairwise ranking."""
+    raw_user_info = interaction_tool.get_user(user_id=user_id)
+    user_reviews = interaction_tool.get_reviews(user_id=user_id)
+
+    clean_history = []
+    if isinstance(user_reviews, list):
+        for r in user_reviews[:10]:
+            clean_history.append({
+                "item_id": r.get("item_id"),
+                "rating": r.get("stars", r.get("rating", "N/A")),
+                "text": r.get("text", "")[:200],
+            })
+
+    rich_user_profile = {
+        "basic_info": raw_user_info,
+        "history_reviews": clean_history,
+        "instruction": "Please infer user taste from history_reviews.",
+    }
+
+    item_profiles_for_pairwise = []
+    for item_id in top_ids:
+        info = interaction_tool.get_item(item_id=item_id)
+        if info:
+            info["item_id"] = item_id
+            item_profiles_for_pairwise.append(info)
+
+    return {
+        "user_profile": rich_user_profile,
+        "item_profiles": item_profiles_for_pairwise,
+    }
 
 
 class MyRecommendationAgent(RecommendationAgent):
@@ -69,11 +129,6 @@ class MyRecommendationAgent(RecommendationAgent):
         )
         self._schema_fitter_llm = self.llm
         self.pairwise_ranker = PairwiseRanker(self.llm) if USE_PAIRWISE else None
-        logging.info("=== Experiment config ===")
-        logging.info("Planning module: %s", type(self.planning).__name__)
-        logging.info("Reasoning module: %s", type(self.reasoning).__name__)
-        logging.info("Memory module: %s", type(self.memory).__name__)
-        logging.info("Use pairwise rerank: %s", USE_PAIRWISE)
 
     def set_interaction_tool(self, interaction_tool):
         """Wire interaction_tool into InfoOrchestrator."""
@@ -87,21 +142,9 @@ class MyRecommendationAgent(RecommendationAgent):
             self.info_orchestrator.interaction_tool = interaction_tool
 
     def workflow(self):
-        """
-        Main workflow for a single recommendation task.
-        Simulator will call this once per task.
-
-        Returns:
-            list[str]: Ranked list of candidate item IDs.
-        """
+        """Main workflow for a single recommendation task."""
         task = self.task
-        logging.info(
-            "---- Task start ---- user_id=%s  #cands=%d",
-            task.get("user_id"),
-            len(task.get("candidate_list", [])),
-        )
         task_description = json.dumps(task, indent=2)
-
         task_query = json.dumps(task, ensure_ascii=False)
         few_shot = self.memory(task_query) or ""
 
@@ -137,108 +180,33 @@ class MyRecommendationAgent(RecommendationAgent):
         )
 
         reasoning_output = self.reasoning(reasoning_prompt)
-        logging.info("RAW REASONING OUTPUT:\n%s", reasoning_output)
-
-        ranked_list = []
-        try:
-            match = re.search(r"\[.*?\]", reasoning_output, re.DOTALL)
-            if match:
-                list_str = match.group(0)
-                parsed = eval(list_str)
-                if isinstance(parsed, list):
-                    ranked_list = parsed
-        except Exception:
-            ranked_list = []
-
-        seen = set()
-        ranked_filtered = []
-        for cid in ranked_list:
-            if (
-                isinstance(cid, str)
-                and cid in task["candidate_list"]
-                and cid not in seen
-            ):
-                seen.add(cid)
-                ranked_filtered.append(cid)
-        for cid in task["candidate_list"]:
-            if cid not in seen:
-                ranked_filtered.append(cid)
-        logging.info("RANKED LIST BEFORE PAIRWISE (len=%d)", len(ranked_filtered))
-        logging.info("Ranked list (pre-pairwise): %s", ranked_filtered)
+        ranked_filtered = parse_ranked_list(reasoning_output, task["candidate_list"])
 
         if self.pairwise_ranker and self.interaction_tool:
             user_id = task.get("user_id")
-            raw_user_info = self.interaction_tool.get_user(user_id=user_id)
-            user_reviews = self.interaction_tool.get_reviews(user_id=user_id)
-
-            clean_history = []
-            if isinstance(user_reviews, list):
-                for r in user_reviews[:10]:
-                    clean_history.append(
-                        {
-                            "item_id": r.get("item_id"),
-                            "rating": r.get("stars", r.get("rating", "N/A")),
-                            "text": r.get("text", "")[:200],
-                        }
-                    )
-
-            rich_user_profile = {
-                "basic_info": raw_user_info,
-                "history_reviews": clean_history,
-                "instruction": "Please infer user taste from history_reviews.",
-            }
-
             top_ids = ranked_filtered[:PAIRWISE_TOP_K]
-            item_profiles_for_pairwise = []
-            for item_id in top_ids:
-                info = self.interaction_tool.get_item(item_id=item_id)
-                if info:
-                    info["item_id"] = item_id
-                    item_profiles_for_pairwise.append(info)
-
-            pairwise_context = {
-                "user_profile": rich_user_profile,
-                "item_profiles": item_profiles_for_pairwise,
-            }
-
-            logging.info(
-                "[Pairwise] Reranking top %d candidates (have %d profiles)",
-                PAIRWISE_TOP_K,
-                len(item_profiles_for_pairwise),
+            pairwise_context = build_pairwise_context(
+                self.interaction_tool, user_id, top_ids
             )
             ranked_filtered = self.pairwise_ranker.rerank(
                 ranked_filtered, pairwise_context
             )
-            logging.info("RANKED LIST AFTER PAIRWISE (len=%d)", len(ranked_filtered))
-            logging.info("Ranked list (post-pairwise): %s", ranked_filtered)
 
-        logging.info("FINAL RANKED LIST (len=%d)", len(ranked_filtered))
-        logging.info("Ranked list : %s", ranked_filtered)
-        logging.info("---- Task end ----")
         return ranked_filtered
 
 
-if __name__ == "__main__":
-    load_dotenv()
-    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-    if not GOOGLE_API_KEY:
-        raise ValueError("Missing GOOGLE_API_KEY in environment variables")
-
-    task_set = "goodreads"
-    task_dir = os.path.join(ROOT, "example", "track2", task_set, "tasks")
-    groundtruth_dir = os.path.join(ROOT, "example", "track2", task_set, "groundtruth")
-
-    data_dir = os.path.join(ROOT, "data_processed")
+def setup_simulator(task_set, data_dir):
+    """Setup and configure simulator."""
     simulator = Simulator(data_dir=data_dir, device="auto", cache=True)
-
     simulator.set_task_and_groundtruth(
-        task_dir=task_dir,
-        groundtruth_dir=groundtruth_dir,
+        task_dir=os.path.join(ROOT, "example", "track2", task_set, "tasks"),
+        groundtruth_dir=os.path.join(ROOT, "example", "track2", task_set, "groundtruth"),
     )
+    return simulator
 
-    k = 50
 
-    seed = 82
+def select_random_tasks(simulator, k, seed):
+    """Select k random tasks from simulator."""
     random.seed(seed)
     num_tasks_available = len(simulator.tasks)
     if num_tasks_available == 0:
@@ -249,19 +217,46 @@ if __name__ == "__main__":
     selected = random.sample(all_indices, k=k)
     simulator.tasks = [simulator.tasks[i] for i in selected]
     simulator.groundtruth_data = [simulator.groundtruth_data[i] for i in selected]
+    return k
+
+
+def save_evaluation_results(evaluation_results, seed, planning_name, reasoning_name, k):
+    """Save evaluation results to file."""
+    eval_dir = os.path.join(ROOT, "evaluation_result")
+    os.makedirs(eval_dir, exist_ok=True)
+    
+    filename = f"rs{seed}_{planning_name}_{reasoning_name}_{k}.json"
+    out_path = os.path.join(eval_dir, filename)
+
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(evaluation_results, f, indent=4, ensure_ascii=False)
+    return out_path
+
+
+if __name__ == "__main__":
+    load_dotenv()
+    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+    if not GOOGLE_API_KEY:
+        raise ValueError("Missing GOOGLE_API_KEY in environment variables")
+
+    task_set = "goodreads"
+    data_dir = os.path.join(ROOT, "data_processed")
+    simulator = setup_simulator(task_set, data_dir)
+
+    k = 50
+    seed = 82
+    k = select_random_tasks(simulator, k, seed)
 
     simulator.set_agent(MyRecommendationAgent)
-
     llm_google = GoogleGeminiLLM(api_key=GOOGLE_API_KEY, model="gemini-2.0-flash")
     simulator.set_llm(llm_google)
 
     start = time.time()
-    agent_outputs = simulator.run_simulation(
+    simulator.run_simulation(
         number_of_tasks=None,
         enable_threading=False,
         max_workers=1,
     )
-
     evaluation_results = simulator.evaluate()
     end = time.time()
 
@@ -285,15 +280,6 @@ if __name__ == "__main__":
         "limit_on_schema_fields(prompt_instruction)": "no more than 50 English words",
     }
 
-    eval_dir = os.path.join(ROOT, "evaluation_result")
-    os.makedirs(eval_dir, exist_ok=True)
-    
-    filename = f"rs{seed}_{planning_name}_{reasoning_name}_{k}.json"
-    out_path = os.path.join(eval_dir, filename)
-
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(evaluation_results, f, indent=4, ensure_ascii=False)
-
-    print(f"The evaluation_results is: {evaluation_results}")
-    print(f"Saved evaluation results to: {out_path}")
-    print(f"Simulation + evaluation for {k} tasks took {total_time:.1f} seconds")
+    out_path = save_evaluation_results(
+        evaluation_results, seed, planning_name, reasoning_name, k
+    )

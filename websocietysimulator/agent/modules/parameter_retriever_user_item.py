@@ -53,8 +53,7 @@ Return JSON: ["genre_preference", "character_preference", "plot_complexity"]"""
             if params:
                 return params
             return self.DEFAULT_PARAMETERS
-        except Exception as e:
-            logger.error(f"  [UserParameterRetriever] Error: {e}")
+        except Exception:
             return self.DEFAULT_PARAMETERS
 
 
@@ -109,8 +108,7 @@ Return JSON: ["genre", "theme", "writing_style"]"""
             if params:
                 return params
             return self.DEFAULT_PARAMETERS
-        except Exception as e:
-            logger.error(f"  [ItemParameterRetriever] Error: {e}")
+        except Exception:
             return self.DEFAULT_PARAMETERS
     
     def _format_item_metadata(self, item: Dict[str, Any]) -> str:

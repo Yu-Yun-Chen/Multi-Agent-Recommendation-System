@@ -75,9 +75,6 @@ class InfoOrchestrator:
         
         user_params = [k for k in user_profile.keys() if k != 'user_id'] if user_profile else None
         
-        if user_profile:
-            logger.info(f"✓ User profile keys: {user_params}")
-        
         item_profiles = []
         if candidate_list and self._requires_profile(planner_steps, self.ITEM_PROFILE):
             item_profiles = self._generate_all_item_profiles(planner_steps, candidate_list, user_params)
@@ -156,17 +153,13 @@ class InfoOrchestrator:
         for batch_start in range(0, len(candidates_to_profile), batch_size):
             batch_end = min(batch_start + batch_size, len(candidates_to_profile))
             batch_ids = candidates_to_profile[batch_start:batch_end]
-            batch_num = batch_start // batch_size + 1
-            
-            logger.info(f"✓ Batch {batch_num}/{num_batches} (items {batch_start+1}-{batch_end}) using keys: {item_params}")
             
             for item_id in batch_ids:
                 try:
                     profile = self._call_schema_fitter(item_params, item_id, self.ITEM_PROFILE)
                     if profile:
                         item_profiles.append(profile)
-                except Exception as e:
-                    logger.warning(f"  ✗ Failed item {item_id}: {e}")
+                except Exception:
                     time.sleep(2.0)
         
         return item_profiles
@@ -189,8 +182,7 @@ class InfoOrchestrator:
         try:
             result = self.schema_fitter.build_profile(schema=schema, entity_id=entity_id, profile_type=profile_type, max_reviews=50)
             return result if isinstance(result, dict) else {}
-        except Exception as e:
-            logger.error(f"Error calling schema_fitter: {e}", exc_info=True)
+        except Exception:
             return {}
     
     def _store_profile_in_memory(self, profile: Dict[str, Any], profile_type: str, planner_steps: List[Dict[str, Any]]):
@@ -211,5 +203,5 @@ Structure: {json.dumps({k: 'generated' for k in param_keys}, indent=2)}"""
                 self.memory.addMemory(trajectory)
             elif hasattr(self.memory, '__call__'):
                 self.memory(f"profile:{trajectory}")
-        except Exception as e:
-            logger.warning(f"  [InfoOrchestrator] Failed to store in memory: {e}")
+        except Exception:
+            pass

@@ -63,20 +63,7 @@ class PlanningBase():
             dict_strings = re.findall(r"\{[^{}]*\}", string)
             dicts = [ast.literal_eval(ds) for ds in dict_strings]
         except (ValueError, SyntaxError) as exc:
-            logging.error(
-                "Planning module %s failed to parse LLM output. Prompt:\n%s\nRaw output:\n%s",
-                type(self).__name__,
-                prompt,
-                string,
-            )
             raise
-
-        if not dicts:
-            logging.warning(
-                "Planning module %s returned no structured plan. Raw output:\n%s",
-                type(self).__name__,
-                string,
-            )
         self.plan = dicts
         return self.plan
     

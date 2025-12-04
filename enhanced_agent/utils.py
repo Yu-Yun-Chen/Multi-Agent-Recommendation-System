@@ -51,23 +51,16 @@ def parse_recommendation_result(result: str) -> List[str]:
             try:
                 ranked_list = eval(list_str)  # noqa: S307
                 if isinstance(ranked_list, list):
-                    logging.info(
-                        "Successfully parsed recommendation list with %s items",
-                        len(ranked_list),
-                    )
                     return ranked_list
             except Exception:  # pylint: disable=broad-except
-                logging.warning("Failed to eval the matched list string")
+                pass
 
         items = re.findall(r'["\']([^"\']+)["\']', result)
         if items:
-            logging.info("Extracted %s items using regex", len(items))
             return items
 
-        logging.warning("Could not parse recommendation result")
         return []
-    except Exception as exc:  # pylint: disable=broad-except
-        logging.error("Error parsing recommendation result: %s", exc)
+    except Exception:  # pylint: disable=broad-except
         return []
 
 
@@ -83,9 +76,4 @@ def validate_recommendations(ranked_list, candidate_list):
     for item_id in candidate_list:
         if item_id not in seen:
             unique_list.append(item_id)
-    logging.info(
-        "Validated list: %s items (original: %s)",
-        len(unique_list),
-        len(ranked_list),
-    )
     return unique_list
