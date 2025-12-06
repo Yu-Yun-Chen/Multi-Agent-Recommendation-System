@@ -1,0 +1,1191 @@
+2025-11-28 18:38:50,685 - websocietysimulator - INFO - Start initializing Simulator
+2025-11-28 18:38:50,685 - websocietysimulator - INFO - Using Normal InteractionTool
+2025-11-28 18:38:50,686 - websocietysimulator - INFO - Initializing InteractionTool with data directory: ./data
+2025-11-28 18:38:50,686 - websocietysimulator - INFO - Loading item data from ./data/item.json
+2025-11-28 18:39:01,751 - websocietysimulator - INFO - Loading user data from ./data/user.json
+2025-11-28 18:39:06,074 - websocietysimulator - INFO - Loading review data from ./data/review.json
+2025-11-28 18:39:39,156 - websocietysimulator - INFO - Building review indices
+2025-11-28 18:39:49,219 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-28 18:39:50,832 - websocietysimulator - INFO - Simulator initialized
+2025-11-28 18:39:50,915 - websocietysimulator - INFO - Loaded 400 task-groundtruth pairs
+2025-11-28 18:39:50,916 - websocietysimulator - INFO - Agent class set
+2025-11-28 18:39:50,916 - websocietysimulator - INFO - LLM set
+2025-11-28 18:39:50,916 - websocietysimulator - INFO - Running simulation
+2025-11-28 18:39:50,916 - websocietysimulator - INFO - Total tasks: 50
+2025-11-28 18:39:50,916 - websocietysimulator - INFO - Running with 10 threads
+2025-11-28 18:39:51,014 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-28 18:39:51,113 - root - INFO - === Experiment config ===
+2025-11-28 18:39:51,113 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:39:51,114 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:39:51,114 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:39:51,114 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:39:51,115 - root - INFO - === Experiment config ===
+2025-11-28 18:39:51,115 - root - INFO - ---- Task start ---- user_id=135f2e5f64db2a4e675822271756274f  #cands=20
+2025-11-28 18:39:51,115 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:39:51,116 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:39:51,116 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:39:51,117 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:39:51,118 - root - INFO - ---- Task start ---- user_id=21a8f051d56cc52c00445121e36071ec  #cands=20
+2025-11-28 18:39:51,119 - root - INFO - === Experiment config ===
+2025-11-28 18:39:51,121 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:39:51,121 - root - INFO - === Experiment config ===
+2025-11-28 18:39:51,121 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:39:51,121 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:39:51,122 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:39:51,122 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:39:51,123 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:39:51,123 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:39:51,124 - root - INFO - ---- Task start ---- user_id=930e505746d0f45ee9c2b923887c82e4  #cands=20
+2025-11-28 18:39:51,124 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:39:51,125 - root - INFO - === Experiment config ===
+2025-11-28 18:39:51,126 - root - INFO - ---- Task start ---- user_id=c2a49914f29862c29bba7507d6f674bb  #cands=20
+2025-11-28 18:39:51,126 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:39:51,127 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:39:51,127 - root - INFO - === Experiment config ===
+2025-11-28 18:39:51,127 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:39:51,128 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:39:51,128 - root - INFO - === Experiment config ===
+2025-11-28 18:39:51,128 - root - INFO - === Experiment config ===
+2025-11-28 18:39:51,128 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:39:51,128 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:39:51,129 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:39:51,129 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:39:51,129 - root - INFO - ---- Task start ---- user_id=619963e457f4b9cc7bfa41f34d67ec4f  #cands=20
+2025-11-28 18:39:51,129 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:39:51,130 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:39:51,130 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:39:51,130 - root - INFO - === Experiment config ===
+2025-11-28 18:39:51,136 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:39:51,136 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:39:51,136 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:39:51,136 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:39:51,137 - root - INFO - ---- Task start ---- user_id=b34abe7794efd6dbb775a9f2920a9834  #cands=20
+2025-11-28 18:39:51,137 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:39:51,137 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:39:51,137 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:39:51,138 - root - INFO - ---- Task start ---- user_id=0fc27120251e5874c18aa73fe2b8ed11  #cands=20
+2025-11-28 18:39:51,139 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:39:51,139 - root - INFO - ---- Task start ---- user_id=d289f9033dc386bfe2301a1f7eda73b6  #cands=20
+2025-11-28 18:39:51,140 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:39:51,141 - root - INFO - ---- Task start ---- user_id=37f1704160bf97aaccaff6e23eae8fff  #cands=20
+2025-11-28 18:39:51,154 - root - INFO - === Experiment config ===
+2025-11-28 18:39:51,154 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:39:51,154 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:39:51,154 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:39:51,154 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:39:51,154 - root - INFO - ---- Task start ---- user_id=31606898c01676313ca73672815b7782  #cands=20
+2025-11-28 18:39:54,649 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'age_appropriateness', 'review_sentiment']
+2025-11-28 18:39:54,650 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'age_appropriateness', 'review_sentiment']
+2025-11-28 18:39:54,702 - websocietysimulator - INFO - ✓ User profile keys: ['author_preference', 'writing_style_preference', 'theme_preference']
+2025-11-28 18:39:54,703 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['author_preference', 'writing_style_preference', 'theme_preference']
+2025-11-28 18:39:54,818 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'character_preference', 'artwork_preference']
+2025-11-28 18:39:54,818 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'character_preference', 'artwork_preference']
+2025-11-28 18:39:55,206 - websocietysimulator - INFO - ✓ User profile keys: ['art_instruction', 'classical_literature', 'high_school_interest']
+2025-11-28 18:39:55,207 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['art_instruction', 'classical_literature', 'high_school_interest']
+2025-11-28 18:39:55,434 - websocietysimulator - INFO - ✓ User profile keys: ['childrens_literature_preference', 'fantasy_preference', 'positive_review_sentiment', 'theme_preference_positive_message']
+2025-11-28 18:39:55,434 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['childrens_literature_preference', 'fantasy_preference', 'positive_review_sentiment', 'theme_preference_positive_message']
+2025-11-28 18:39:56,557 - websocietysimulator - INFO - ✓ User profile keys: ['theme_preference', 'review_sentiment', 'genre_preference', 'writing_style_preference']
+2025-11-28 18:39:56,558 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['theme_preference', 'review_sentiment', 'genre_preference', 'writing_style_preference']
+2025-11-28 18:39:56,584 - websocietysimulator - INFO - ✓ User profile keys: ['character_preference', 'theme_preference', 'review_sentiment']
+2025-11-28 18:39:56,585 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['character_preference', 'theme_preference', 'review_sentiment']
+2025-11-28 18:39:56,701 - websocietysimulator - INFO - ✓ User profile keys: ['review_sentiment', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:39:56,702 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['review_sentiment', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:39:56,731 - websocietysimulator - INFO - ✓ User profile keys: ['author_preference', 'nostalgia_preference', 'theme_preference', 'audiobook_preference']
+2025-11-28 18:39:56,732 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['author_preference', 'nostalgia_preference', 'theme_preference', 'audiobook_preference']
+2025-11-28 18:39:56,991 - websocietysimulator - INFO - ✓ User profile keys: ['review_sentiment', 'genre_preference', 'character_preference']
+2025-11-28 18:39:56,992 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['review_sentiment', 'genre_preference', 'character_preference']
+2025-11-28 18:39:59,353 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'character_preference', 'artwork_preference']
+2025-11-28 18:39:59,854 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'age_appropriateness', 'review_sentiment']
+2025-11-28 18:40:00,323 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['art_instruction', 'classical_literature', 'high_school_interest']
+2025-11-28 18:40:00,466 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['author_preference', 'writing_style_preference', 'theme_preference']
+2025-11-28 18:40:01,164 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['childrens_literature_preference', 'fantasy_preference', 'positive_review_sentiment', 'theme_preference_positive_message']
+2025-11-28 18:40:01,546 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['review_sentiment', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:40:01,832 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['review_sentiment', 'genre_preference', 'character_preference']
+2025-11-28 18:40:02,121 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['character_preference', 'theme_preference', 'review_sentiment']
+2025-11-28 18:40:02,320 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['theme_preference', 'review_sentiment', 'genre_preference', 'writing_style_preference']
+2025-11-28 18:40:02,467 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['author_preference', 'nostalgia_preference', 'theme_preference', 'audiobook_preference']
+2025-11-28 18:40:03,940 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'character_preference', 'artwork_preference']
+2025-11-28 18:40:05,130 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'age_appropriateness', 'review_sentiment']
+2025-11-28 18:40:06,099 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['art_instruction', 'classical_literature', 'high_school_interest']
+2025-11-28 18:40:06,155 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['author_preference', 'writing_style_preference', 'theme_preference']
+2025-11-28 18:40:07,173 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['character_preference', 'theme_preference', 'review_sentiment']
+2025-11-28 18:40:07,258 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['review_sentiment', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:40:07,435 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['review_sentiment', 'genre_preference', 'character_preference']
+2025-11-28 18:40:07,609 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['childrens_literature_preference', 'fantasy_preference', 'positive_review_sentiment', 'theme_preference_positive_message']
+2025-11-28 18:40:08,009 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['author_preference', 'nostalgia_preference', 'theme_preference', 'audiobook_preference']
+2025-11-28 18:40:08,359 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['theme_preference', 'review_sentiment', 'genre_preference', 'writing_style_preference']
+2025-11-28 18:40:08,534 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'character_preference', 'artwork_preference']
+2025-11-28 18:40:10,055 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'age_appropriateness', 'review_sentiment']
+2025-11-28 18:40:10,516 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['author_preference', 'writing_style_preference', 'theme_preference']
+2025-11-28 18:40:10,984 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['art_instruction', 'classical_literature', 'high_school_interest']
+2025-11-28 18:40:11,801 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['review_sentiment', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:40:12,038 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['character_preference', 'theme_preference', 'review_sentiment']
+2025-11-28 18:40:12,209 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['review_sentiment', 'genre_preference', 'character_preference']
+2025-11-28 18:40:13,515 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['author_preference', 'nostalgia_preference', 'theme_preference', 'audiobook_preference']
+2025-11-28 18:40:13,571 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['theme_preference', 'review_sentiment', 'genre_preference', 'writing_style_preference']
+2025-11-28 18:40:13,660 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['childrens_literature_preference', 'fantasy_preference', 'positive_review_sentiment', 'theme_preference_positive_message']
+2025-11-28 18:40:14,935 - root - INFO - RAW REASONING OUTPUT:
+```python
+["11375796", "36444040", "26429283", "33033696", "12387743", "25211861", "18590059", "2691607", "27839748", "936905", "35425030", "18044903", "31321081", "27406717", "13588086", "4506584", "19545687", "24603", "1793039", "33534046"]
+```
+2025-11-28 18:40:14,937 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:14,938 - root - INFO - Ranked list (pre-pairwise): ['11375796', '36444040', '26429283', '33033696', '12387743', '25211861', '18590059', '2691607', '27839748', '936905', '35425030', '18044903', '31321081', '27406717', '13588086', '4506584', '19545687', '24603', '1793039', '33534046']
+2025-11-28 18:40:14,939 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:16,222 - root - INFO - RAW REASONING OUTPUT:
+["8013976", "25820299", "20564294", "7020875", "242822", "828003", "5983286", "3580", "6835195", "33534046", "25656972", "763167", "469082", "2028276", "6827353", "1259833", "10235716", "22464826", "25111243", "13695"]
+
+2025-11-28 18:40:16,224 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:16,224 - root - INFO - Ranked list (pre-pairwise): ['8013976', '25820299', '20564294', '7020875', '242822', '828003', '5983286', '3580', '6835195', '33534046', '25656972', '763167', '469082', '2028276', '6827353', '1259833', '10235716', '22464826', '25111243', '13695']
+2025-11-28 18:40:16,225 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:16,803 - root - INFO - RAW REASONING OUTPUT:
+["33395520", "13541722", "27753594", "13414334", "25483530", "12100674", "24069836", "1169556", "3017558", "152381", "137078", "18248582", "22029052", "7995079", "2216229", "1829970", "120351", "22587293", "29885356", "36426775"]
+
+2025-11-28 18:40:16,803 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:16,803 - root - INFO - Ranked list (pre-pairwise): ['33395520', '13541722', '27753594', '13414334', '25483530', '12100674', '24069836', '1169556', '3017558', '152381', '137078', '18248582', '22029052', '7995079', '2216229', '1829970', '120351', '22587293', '29885356', '36426775']
+2025-11-28 18:40:16,804 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:17,154 - root - INFO - RAW REASONING OUTPUT:
+["258108", "25674658", "30070023", "21451268", "760255", "31949119", "6547817", "31132673", "13324433", "25806572", "9939751", "7725878", "9022655", "25041", "17126721", "2011312", "4569087", "24124906", "3570596", "5967226"]
+
+2025-11-28 18:40:17,155 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:17,157 - root - INFO - Ranked list (pre-pairwise): ['258108', '25674658', '30070023', '21451268', '760255', '31949119', '6547817', '31132673', '13324433', '25806572', '9939751', '7725878', '9022655', '25041', '17126721', '2011312', '4569087', '24124906', '3570596', '5967226']
+2025-11-28 18:40:17,158 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:17,845 - root - INFO - RAW REASONING OUTPUT:
+['4017679', '17166323', '2111592', '2841734', '26371913', '15815945', '30312557', '6904828', '3910435', '2767287', '13591349', '293067', '24799204', '7000468', '1641695', '33302743', '24317633', '27245025', '33016664', '1032567']
+
+2025-11-28 18:40:17,846 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:17,846 - root - INFO - Ranked list (pre-pairwise): ['4017679', '17166323', '2111592', '2841734', '26371913', '15815945', '30312557', '6904828', '3910435', '2767287', '13591349', '293067', '24799204', '7000468', '1641695', '33302743', '24317633', '27245025', '33016664', '1032567']
+2025-11-28 18:40:17,847 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:17,962 - root - INFO - RAW REASONING OUTPUT:
+["1832506", "21877909", "1898916", "24848552", "17636019", "35206718", "12202083", "2548658", "5832775", "3999244", "2216252", "1261287", "31343718", "5137176", "1024467", "1741839", "13542718", "3308947", "1357158", "34739671"]
+
+2025-11-28 18:40:17,963 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:17,963 - root - INFO - Ranked list (pre-pairwise): ['1832506', '21877909', '1898916', '24848552', '17636019', '35206718', '12202083', '2548658', '5832775', '3999244', '2216252', '1261287', '31343718', '5137176', '1024467', '1741839', '13542718', '3308947', '1357158', '34739671']
+2025-11-28 18:40:17,964 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:19,074 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:19,074 - root - INFO - Ranked list (post-pairwise): ['36444040', '11375796', '26429283', '33033696', '12387743', '25211861', '18590059', '2691607', '27839748', '936905', '35425030', '18044903', '31321081', '27406717', '13588086', '4506584', '19545687', '24603', '1793039', '33534046']
+2025-11-28 18:40:19,074 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:19,074 - root - INFO - Ranked list : ['36444040', '11375796', '26429283', '33033696', '12387743', '25211861', '18590059', '2691607', '27839748', '936905', '35425030', '18044903', '31321081', '27406717', '13588086', '4506584', '19545687', '24603', '1793039', '33534046']
+2025-11-28 18:40:19,074 - root - INFO - ---- Task end ----
+2025-11-28 18:40:19,076 - websocietysimulator - INFO - Simulation finished for task 0
+2025-11-28 18:40:19,083 - root - INFO - === Experiment config ===
+2025-11-28 18:40:19,083 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:19,083 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:19,084 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:19,084 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:19,084 - root - INFO - ---- Task start ---- user_id=78f0757e99d4184ab6dccad627ed8f12  #cands=20
+2025-11-28 18:40:19,346 - root - INFO - RAW REASONING OUTPUT:
+['22895338', '284727', '12909234', '20712371', '7883871', '15945585', '29790420', '168696', '29429569', '6757324', '1995178', '7829352', '167387', '844910', '17719271', '11339144', '1084195', '6503723', '7766777', '744299']
+
+2025-11-28 18:40:19,346 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:19,346 - root - INFO - Ranked list (pre-pairwise): ['22895338', '284727', '12909234', '20712371', '7883871', '15945585', '29790420', '168696', '29429569', '6757324', '1995178', '7829352', '167387', '844910', '17719271', '11339144', '1084195', '6503723', '7766777', '744299']
+2025-11-28 18:40:19,346 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:20,447 - root - INFO - RAW REASONING OUTPUT:
+["601120", "19378201", "1103150", "24200161", "8076575", "2337894", "1325805", "1890684", "30027079", "17657920", "3240020", "1859384", "103814", "33540347", "13042808", "18318332", "22327571", "403156", "12187615", "7952927"]
+
+2025-11-28 18:40:20,447 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:20,447 - root - INFO - Ranked list (pre-pairwise): ['601120', '19378201', '1103150', '24200161', '8076575', '2337894', '1325805', '1890684', '30027079', '17657920', '3240020', '1859384', '103814', '33540347', '13042808', '18318332', '22327571', '403156', '12187615', '7952927']
+2025-11-28 18:40:20,447 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:20,589 - root - INFO - RAW REASONING OUTPUT:
+["8985804", "18285700", "1610629", "30168597", "7629601", "7093860", "19544008", "2437856", "2092139", "276952", "21259433", "17664643", "1248292", "16288562", "24862883", "17225840", "2880235", "2955703", "31990", "29277187"]
+
+2025-11-28 18:40:20,592 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:20,592 - root - INFO - Ranked list (pre-pairwise): ['8985804', '18285700', '1610629', '30168597', '7629601', '7093860', '19544008', '2437856', '2092139', '276952', '21259433', '17664643', '1248292', '16288562', '24862883', '17225840', '2880235', '2955703', '31990', '29277187']
+2025-11-28 18:40:20,592 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:21,172 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:21,173 - root - INFO - Ranked list (post-pairwise): ['7020875', '8013976', '25820299', '20564294', '242822', '828003', '5983286', '3580', '6835195', '33534046', '25656972', '763167', '469082', '2028276', '6827353', '1259833', '10235716', '22464826', '25111243', '13695']
+2025-11-28 18:40:21,173 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:21,173 - root - INFO - Ranked list : ['7020875', '8013976', '25820299', '20564294', '242822', '828003', '5983286', '3580', '6835195', '33534046', '25656972', '763167', '469082', '2028276', '6827353', '1259833', '10235716', '22464826', '25111243', '13695']
+2025-11-28 18:40:21,173 - root - INFO - ---- Task end ----
+2025-11-28 18:40:21,175 - websocietysimulator - INFO - Simulation finished for task 8
+2025-11-28 18:40:21,186 - root - INFO - === Experiment config ===
+2025-11-28 18:40:21,187 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:21,187 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:21,187 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:21,187 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:21,187 - root - INFO - ---- Task start ---- user_id=9c15c742b8f59a3ce82251bd8048a670  #cands=20
+2025-11-28 18:40:21,893 - root - INFO - RAW REASONING OUTPUT:
+```python
+["18568536", "15001657", "33825959", "19253529", "77395", "25817512", "18142380", "3729701", "16131112", "22360", "1920140", "20702450", "7160009", "15984375", "3243495", "295769", "30301048", "4114897", "552364", "11988532"]
+```
+2025-11-28 18:40:21,893 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:21,893 - root - INFO - Ranked list (pre-pairwise): ['18568536', '15001657', '33825959', '19253529', '77395', '25817512', '18142380', '3729701', '16131112', '22360', '1920140', '20702450', '7160009', '15984375', '3243495', '295769', '30301048', '4114897', '552364', '11988532']
+2025-11-28 18:40:21,893 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:22,445 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'age_appropriateness', 'performance_preference']
+2025-11-28 18:40:22,446 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'age_appropriateness', 'performance_preference']
+2025-11-28 18:40:22,655 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:22,655 - root - INFO - Ranked list (post-pairwise): ['760255', '258108', '25674658', '30070023', '21451268', '31949119', '6547817', '31132673', '13324433', '25806572', '9939751', '7725878', '9022655', '25041', '17126721', '2011312', '4569087', '24124906', '3570596', '5967226']
+2025-11-28 18:40:22,656 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:22,656 - root - INFO - Ranked list : ['760255', '258108', '25674658', '30070023', '21451268', '31949119', '6547817', '31132673', '13324433', '25806572', '9939751', '7725878', '9022655', '25041', '17126721', '2011312', '4569087', '24124906', '3570596', '5967226']
+2025-11-28 18:40:22,656 - root - INFO - ---- Task end ----
+2025-11-28 18:40:22,657 - websocietysimulator - INFO - Simulation finished for task 5
+2025-11-28 18:40:22,666 - root - INFO - === Experiment config ===
+2025-11-28 18:40:22,667 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:22,667 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:22,667 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:22,667 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:22,667 - root - INFO - ---- Task start ---- user_id=ad8ef4d7eea000d62ecd43530d933b77  #cands=20
+2025-11-28 18:40:23,103 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:23,103 - root - INFO - Ranked list (post-pairwise): ['24848552', '1832506', '21877909', '1898916', '17636019', '35206718', '12202083', '2548658', '5832775', '3999244', '2216252', '1261287', '31343718', '5137176', '1024467', '1741839', '13542718', '3308947', '1357158', '34739671']
+2025-11-28 18:40:23,103 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:23,104 - root - INFO - Ranked list : ['24848552', '1832506', '21877909', '1898916', '17636019', '35206718', '12202083', '2548658', '5832775', '3999244', '2216252', '1261287', '31343718', '5137176', '1024467', '1741839', '13542718', '3308947', '1357158', '34739671']
+2025-11-28 18:40:23,104 - root - INFO - ---- Task end ----
+2025-11-28 18:40:23,105 - websocietysimulator - INFO - Simulation finished for task 4
+2025-11-28 18:40:23,113 - root - INFO - === Experiment config ===
+2025-11-28 18:40:23,113 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:23,113 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:23,114 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:23,114 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:23,114 - root - INFO - ---- Task start ---- user_id=ec84cd8312db79cac6159102e5ec3c0b  #cands=20
+2025-11-28 18:40:23,272 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:23,273 - root - INFO - Ranked list (post-pairwise): ['26371913', '4017679', '17166323', '2111592', '2841734', '15815945', '30312557', '6904828', '3910435', '2767287', '13591349', '293067', '24799204', '7000468', '1641695', '33302743', '24317633', '27245025', '33016664', '1032567']
+2025-11-28 18:40:23,273 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:23,273 - root - INFO - Ranked list : ['26371913', '4017679', '17166323', '2111592', '2841734', '15815945', '30312557', '6904828', '3910435', '2767287', '13591349', '293067', '24799204', '7000468', '1641695', '33302743', '24317633', '27245025', '33016664', '1032567']
+2025-11-28 18:40:23,273 - root - INFO - ---- Task end ----
+2025-11-28 18:40:23,275 - websocietysimulator - INFO - Simulation finished for task 6
+2025-11-28 18:40:23,284 - root - INFO - === Experiment config ===
+2025-11-28 18:40:23,284 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:23,284 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:23,284 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:23,284 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:23,284 - root - INFO - ---- Task start ---- user_id=def372350df22658880455f3ac22ffbd  #cands=20
+2025-11-28 18:40:23,360 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:23,360 - root - INFO - Ranked list (post-pairwise): ['13414334', '33395520', '13541722', '27753594', '25483530', '12100674', '24069836', '1169556', '3017558', '152381', '137078', '18248582', '22029052', '7995079', '2216229', '1829970', '120351', '22587293', '29885356', '36426775']
+2025-11-28 18:40:23,360 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:23,361 - root - INFO - Ranked list : ['13414334', '33395520', '13541722', '27753594', '25483530', '12100674', '24069836', '1169556', '3017558', '152381', '137078', '18248582', '22029052', '7995079', '2216229', '1829970', '120351', '22587293', '29885356', '36426775']
+2025-11-28 18:40:23,361 - root - INFO - ---- Task end ----
+2025-11-28 18:40:23,363 - websocietysimulator - INFO - Simulation finished for task 9
+2025-11-28 18:40:23,370 - root - INFO - === Experiment config ===
+2025-11-28 18:40:23,371 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:23,371 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:23,371 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:23,371 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:23,371 - root - INFO - ---- Task start ---- user_id=b433de17575bf1719a3cf5f0161fdaf8  #cands=20
+2025-11-28 18:40:24,440 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:24,440 - root - INFO - Ranked list (post-pairwise): ['7883871', '22895338', '284727', '12909234', '20712371', '15945585', '29790420', '168696', '29429569', '6757324', '1995178', '7829352', '167387', '844910', '17719271', '11339144', '1084195', '6503723', '7766777', '744299']
+2025-11-28 18:40:24,440 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:24,440 - root - INFO - Ranked list : ['7883871', '22895338', '284727', '12909234', '20712371', '15945585', '29790420', '168696', '29429569', '6757324', '1995178', '7829352', '167387', '844910', '17719271', '11339144', '1084195', '6503723', '7766777', '744299']
+2025-11-28 18:40:24,440 - root - INFO - ---- Task end ----
+2025-11-28 18:40:24,441 - websocietysimulator - INFO - Simulation finished for task 3
+2025-11-28 18:40:24,448 - root - INFO - === Experiment config ===
+2025-11-28 18:40:24,448 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:24,448 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:24,448 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:24,448 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:24,449 - root - INFO - ---- Task start ---- user_id=51521e5245a0f518c1a5055767527b44  #cands=20
+2025-11-28 18:40:25,392 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:25,392 - root - INFO - Ranked list (post-pairwise): ['18285700', '8985804', '1610629', '30168597', '7629601', '7093860', '19544008', '2437856', '2092139', '276952', '21259433', '17664643', '1248292', '16288562', '24862883', '17225840', '2880235', '2955703', '31990', '29277187']
+2025-11-28 18:40:25,392 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:25,392 - root - INFO - Ranked list : ['18285700', '8985804', '1610629', '30168597', '7629601', '7093860', '19544008', '2437856', '2092139', '276952', '21259433', '17664643', '1248292', '16288562', '24862883', '17225840', '2880235', '2955703', '31990', '29277187']
+2025-11-28 18:40:25,392 - root - INFO - ---- Task end ----
+2025-11-28 18:40:25,392 - websocietysimulator - INFO - Simulation finished for task 7
+2025-11-28 18:40:25,397 - root - INFO - === Experiment config ===
+2025-11-28 18:40:25,397 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:25,397 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:25,397 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:25,397 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:25,398 - root - INFO - ---- Task start ---- user_id=f2ceb7abbc0daa1a96966775328f6b27  #cands=20
+2025-11-28 18:40:25,713 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:25,713 - root - INFO - Ranked list (post-pairwise): ['8076575', '601120', '19378201', '1103150', '24200161', '2337894', '1325805', '1890684', '30027079', '17657920', '3240020', '1859384', '103814', '33540347', '13042808', '18318332', '22327571', '403156', '12187615', '7952927']
+2025-11-28 18:40:25,715 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:25,715 - root - INFO - Ranked list : ['8076575', '601120', '19378201', '1103150', '24200161', '2337894', '1325805', '1890684', '30027079', '17657920', '3240020', '1859384', '103814', '33540347', '13042808', '18318332', '22327571', '403156', '12187615', '7952927']
+2025-11-28 18:40:25,715 - root - INFO - ---- Task end ----
+2025-11-28 18:40:25,717 - websocietysimulator - INFO - Simulation finished for task 2
+2025-11-28 18:40:25,725 - root - INFO - === Experiment config ===
+2025-11-28 18:40:25,725 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:25,725 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:25,725 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:25,725 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:25,726 - root - INFO - ---- Task start ---- user_id=b5c90b6601db5c7359a53f7b14cff6e8  #cands=20
+2025-11-28 18:40:26,996 - websocietysimulator - INFO - ✓ User profile keys: ['plot_coherence', 'ending_satisfaction', 'review_sentiment']
+2025-11-28 18:40:26,997 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['plot_coherence', 'ending_satisfaction', 'review_sentiment']
+2025-11-28 18:40:27,205 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'age_appropriateness', 'performance_preference']
+2025-11-28 18:40:27,439 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:27,437 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'nostalgia_factor']
+2025-11-28 18:40:27,439 - root - INFO - Ranked list (post-pairwise): ['33825959', '18568536', '15001657', '19253529', '77395', '25817512', '18142380', '3729701', '16131112', '22360', '1920140', '20702450', '7160009', '15984375', '3243495', '295769', '30301048', '4114897', '552364', '11988532']
+2025-11-28 18:40:27,439 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'nostalgia_factor']
+2025-11-28 18:40:27,439 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:27,441 - root - INFO - Ranked list : ['33825959', '18568536', '15001657', '19253529', '77395', '25817512', '18142380', '3729701', '16131112', '22360', '1920140', '20702450', '7160009', '15984375', '3243495', '295769', '30301048', '4114897', '552364', '11988532']
+2025-11-28 18:40:27,442 - root - INFO - ---- Task end ----
+2025-11-28 18:40:27,442 - websocietysimulator - INFO - Simulation finished for task 1
+2025-11-28 18:40:27,448 - root - INFO - === Experiment config ===
+2025-11-28 18:40:27,448 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:27,448 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:27,448 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:27,448 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:27,448 - root - INFO - ---- Task start ---- user_id=225b5a962432870e7f7d0d4a9db53347  #cands=20
+2025-11-28 18:40:27,583 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'theme_preference', 'plot_complexity']
+2025-11-28 18:40:27,584 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'theme_preference', 'plot_complexity']
+2025-11-28 18:40:27,903 - websocietysimulator - INFO - ✓ User profile keys: ['classic_literature_preference', 'positive_review_sentiment', 'accessible_writing_style']
+2025-11-28 18:40:27,903 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['classic_literature_preference', 'positive_review_sentiment', 'accessible_writing_style']
+2025-11-28 18:40:27,993 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'character_preference', 'plot_complexity']
+2025-11-28 18:40:27,994 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'character_preference', 'plot_complexity']
+2025-11-28 18:40:29,347 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'theme_preference', 'author_preference']
+2025-11-28 18:40:29,348 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'theme_preference', 'author_preference']
+2025-11-28 18:40:30,120 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'aesthetic_appreciation', 'review_sentiment']
+2025-11-28 18:40:30,121 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'aesthetic_appreciation', 'review_sentiment']
+2025-11-28 18:40:30,844 - websocietysimulator - INFO - ✓ User profile keys: ['character_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 18:40:30,847 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['character_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 18:40:31,897 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'nostalgia_factor']
+2025-11-28 18:40:32,278 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'theme_preference', 'plot_complexity']
+2025-11-28 18:40:32,415 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'age_appropriateness', 'performance_preference']
+2025-11-28 18:40:32,532 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['plot_coherence', 'ending_satisfaction', 'review_sentiment']
+2025-11-28 18:40:32,938 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['classic_literature_preference', 'positive_review_sentiment', 'accessible_writing_style']
+2025-11-28 18:40:33,373 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'character_preference', 'plot_complexity']
+2025-11-28 18:40:33,893 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'character_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:40:33,894 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'character_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:40:34,094 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'theme_preference', 'author_preference']
+2025-11-28 18:40:35,375 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'aesthetic_appreciation', 'review_sentiment']
+2025-11-28 18:40:36,063 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['character_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 18:40:36,226 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'nostalgia_factor']
+2025-11-28 18:40:37,096 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'age_appropriateness', 'performance_preference']
+2025-11-28 18:40:37,124 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['plot_coherence', 'ending_satisfaction', 'review_sentiment']
+2025-11-28 18:40:37,269 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'theme_preference', 'plot_complexity']
+2025-11-28 18:40:37,708 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'character_preference', 'plot_complexity']
+2025-11-28 18:40:38,056 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['classic_literature_preference', 'positive_review_sentiment', 'accessible_writing_style']
+2025-11-28 18:40:39,229 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'character_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:40:39,586 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'theme_preference', 'author_preference']
+2025-11-28 18:40:40,196 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'aesthetic_appreciation', 'review_sentiment']
+2025-11-28 18:40:40,427 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['character_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 18:40:40,701 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'nostalgia_factor']
+2025-11-28 18:40:41,901 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['plot_coherence', 'ending_satisfaction', 'review_sentiment']
+2025-11-28 18:40:41,943 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'theme_preference', 'plot_complexity']
+2025-11-28 18:40:42,414 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'character_preference', 'plot_complexity']
+2025-11-28 18:40:42,905 - root - INFO - RAW REASONING OUTPUT:
+['17605488', '1094828', '757460', '8652326', '6679017', '22750337', '181372', '27912783', '8079154', '1302737', '2107363', '228063', '27415873', '1016178', '1117211', '8468008', '28018929', '18246558', '18114298', '6710255']
+
+2025-11-28 18:40:42,908 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:42,908 - root - INFO - Ranked list (pre-pairwise): ['17605488', '1094828', '757460', '8652326', '6679017', '22750337', '181372', '27912783', '8079154', '1302737', '2107363', '228063', '27415873', '1016178', '1117211', '8468008', '28018929', '18246558', '18114298', '6710255']
+2025-11-28 18:40:42,909 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:43,136 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['classic_literature_preference', 'positive_review_sentiment', 'accessible_writing_style']
+2025-11-28 18:40:44,303 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'theme_preference', 'author_preference']
+2025-11-28 18:40:44,365 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'character_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:40:45,373 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'aesthetic_appreciation', 'review_sentiment']
+2025-11-28 18:40:45,666 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['character_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 18:40:46,925 - root - INFO - RAW REASONING OUTPUT:
+```python
+['7311812', '14867303', '3294438', '1341149', '999317', '13398059', '6285650', '23569293', '6645435', '16255247', '1619441', '1907428', '6443200', '16148261', '6363098', '1402075', '707620', '23304587', '18331865', '10407287']
+```
+2025-11-28 18:40:46,926 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:46,926 - root - INFO - Ranked list (pre-pairwise): ['7311812', '14867303', '3294438', '1341149', '999317', '13398059', '6285650', '23569293', '6645435', '16255247', '1619441', '1907428', '6443200', '16148261', '6363098', '1402075', '707620', '23304587', '18331865', '10407287']
+2025-11-28 18:40:46,926 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:47,651 - root - INFO - RAW REASONING OUTPUT:
+["141019", "11797098", "290502", "6154165", "1579317", "1087358", "29756071", "9519032", "34828721", "1126629", "23212943", "2853185", "9834867", "29966676", "16160979", "12283407", "16668421", "1391667", "1075518", "10927860"]
+
+2025-11-28 18:40:47,654 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:47,654 - root - INFO - Ranked list (pre-pairwise): ['141019', '11797098', '290502', '6154165', '1579317', '1087358', '29756071', '9519032', '34828721', '1126629', '23212943', '2853185', '9834867', '29966676', '16160979', '12283407', '16668421', '1391667', '1075518', '10927860']
+2025-11-28 18:40:47,654 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:48,065 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:48,066 - root - INFO - Ranked list (post-pairwise): ['6679017', '17605488', '1094828', '757460', '8652326', '22750337', '181372', '27912783', '8079154', '1302737', '2107363', '228063', '27415873', '1016178', '1117211', '8468008', '28018929', '18246558', '18114298', '6710255']
+2025-11-28 18:40:48,066 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:48,066 - root - INFO - Ranked list : ['6679017', '17605488', '1094828', '757460', '8652326', '22750337', '181372', '27912783', '8079154', '1302737', '2107363', '228063', '27415873', '1016178', '1117211', '8468008', '28018929', '18246558', '18114298', '6710255']
+2025-11-28 18:40:48,066 - root - INFO - ---- Task end ----
+2025-11-28 18:40:48,068 - websocietysimulator - INFO - Simulation finished for task 10
+2025-11-28 18:40:48,076 - root - INFO - === Experiment config ===
+2025-11-28 18:40:48,076 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:48,076 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:48,077 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:48,077 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:48,077 - root - INFO - ---- Task start ---- user_id=0b06156a6adaaa8ec3ac5a9c72a97fad  #cands=20
+2025-11-28 18:40:48,211 - root - INFO - RAW REASONING OUTPUT:
+["17356900", "32314812", "1005715", "21562236", "6497297", "18747242", "25457145", "16219585", "7022318", "2796700", "33385925", "10135392", "3898229", "11113302", "27881904", "115299", "4720500", "1571336", "30529590", "418894"]
+
+2025-11-28 18:40:48,212 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:48,212 - root - INFO - Ranked list (pre-pairwise): ['17356900', '32314812', '1005715', '21562236', '6497297', '18747242', '25457145', '16219585', '7022318', '2796700', '33385925', '10135392', '3898229', '11113302', '27881904', '115299', '4720500', '1571336', '30529590', '418894']
+2025-11-28 18:40:48,212 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:48,529 - root - INFO - RAW REASONING OUTPUT:
+["7844544", "25263852", "513188", "204698", "18608859", "163497", "25618818", "11196108", "1463675", "19670522", "69497", "2171325", "9969671", "1898952", "18309168", "6339890", "15271379", "2360694", "5028019", "6346265"]
+
+2025-11-28 18:40:48,531 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:48,531 - root - INFO - Ranked list (pre-pairwise): ['7844544', '25263852', '513188', '204698', '18608859', '163497', '25618818', '11196108', '1463675', '19670522', '69497', '2171325', '9969671', '1898952', '18309168', '6339890', '15271379', '2360694', '5028019', '6346265']
+2025-11-28 18:40:48,531 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:49,573 - root - INFO - RAW REASONING OUTPUT:
+['21470719', '21086880', '1148712', '1211312', '17409480', '60851', '4543344', '34320073', '24612771', '555206', '609330', '20698792', '103654', '27249202', '18691077', '27155758', '18130429', '30527751', '1422912', '2406772']
+
+2025-11-28 18:40:49,573 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:49,574 - root - INFO - Ranked list (pre-pairwise): ['21470719', '21086880', '1148712', '1211312', '17409480', '60851', '4543344', '34320073', '24612771', '555206', '609330', '20698792', '103654', '27249202', '18691077', '27155758', '18130429', '30527751', '1422912', '2406772']
+2025-11-28 18:40:49,574 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:49,842 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'character_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:40:50,575 - root - INFO - RAW REASONING OUTPUT:
+["28503616", "6217645", "13153242", "18919200", "83492", "17672011", "4109746", "26201816", "35183739", "1048692", "1788943", "31324982", "11515747", "23399252", "1420211", "7834510", "2321749", "17976136", "2184304", "12676019"]
+
+2025-11-28 18:40:50,576 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:50,577 - root - INFO - Ranked list (pre-pairwise): ['28503616', '6217645', '13153242', '18919200', '83492', '17672011', '4109746', '26201816', '35183739', '1048692', '1788943', '31324982', '11515747', '23399252', '1420211', '7834510', '2321749', '17976136', '2184304', '12676019']
+2025-11-28 18:40:50,578 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:51,651 - websocietysimulator - INFO - ✓ User profile keys: ['character_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 18:40:51,653 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['character_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 18:40:52,002 - root - INFO - RAW REASONING OUTPUT:
+["17592993", "897296", "17307142", "94804", "24885834", "35497101", "15901554", "25627777", "11029820", "17861035", "10893115", "19621094", "17937221", "8192273", "2618329", "10421662", "27827347", "26079531", "36252513", "9757482"]
+
+2025-11-28 18:40:52,003 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:52,004 - root - INFO - Ranked list (pre-pairwise): ['17592993', '897296', '17307142', '94804', '24885834', '35497101', '15901554', '25627777', '11029820', '17861035', '10893115', '19621094', '17937221', '8192273', '2618329', '10421662', '27827347', '26079531', '36252513', '9757482']
+2025-11-28 18:40:52,004 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:52,147 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:52,147 - root - INFO - Ranked list (post-pairwise): ['141019', '11797098', '290502', '6154165', '1579317', '1087358', '29756071', '9519032', '34828721', '1126629', '23212943', '2853185', '9834867', '29966676', '16160979', '12283407', '16668421', '1391667', '1075518', '10927860']
+2025-11-28 18:40:52,147 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:52,147 - root - INFO - Ranked list : ['141019', '11797098', '290502', '6154165', '1579317', '1087358', '29756071', '9519032', '34828721', '1126629', '23212943', '2853185', '9834867', '29966676', '16160979', '12283407', '16668421', '1391667', '1075518', '10927860']
+2025-11-28 18:40:52,147 - root - INFO - ---- Task end ----
+2025-11-28 18:40:52,150 - websocietysimulator - INFO - Simulation finished for task 12
+2025-11-28 18:40:52,158 - root - INFO - === Experiment config ===
+2025-11-28 18:40:52,158 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:52,158 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:52,158 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:52,159 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:52,159 - root - INFO - ---- Task start ---- user_id=11d95eb71af3944af1a9135b91b24767  #cands=20
+2025-11-28 18:40:53,103 - root - INFO - RAW REASONING OUTPUT:
+```python
+["29150895", "7749484", "23442193", "1401747", "1671804", "36050102", "855613", "30736029", "20321882", "15853886", "1910032", "7755178", "393095", "28523938", "880765", "18747937", "7841582", "25147292", "352827", "586"]
+```
+2025-11-28 18:40:53,104 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:53,105 - root - INFO - Ranked list (pre-pairwise): ['29150895', '7749484', '23442193', '1401747', '1671804', '36050102', '855613', '30736029', '20321882', '15853886', '1910032', '7755178', '393095', '28523938', '880765', '18747937', '7841582', '25147292', '352827', '586']
+2025-11-28 18:40:53,105 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:53,222 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:53,223 - root - INFO - Ranked list (post-pairwise): ['999317', '7311812', '14867303', '3294438', '1341149', '13398059', '6285650', '23569293', '6645435', '16255247', '1619441', '1907428', '6443200', '16148261', '6363098', '1402075', '707620', '23304587', '18331865', '10407287']
+2025-11-28 18:40:53,224 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:53,224 - root - INFO - Ranked list : ['999317', '7311812', '14867303', '3294438', '1341149', '13398059', '6285650', '23569293', '6645435', '16255247', '1619441', '1907428', '6443200', '16148261', '6363098', '1402075', '707620', '23304587', '18331865', '10407287']
+2025-11-28 18:40:53,224 - root - INFO - ---- Task end ----
+2025-11-28 18:40:53,225 - websocietysimulator - INFO - Simulation finished for task 15
+2025-11-28 18:40:53,229 - root - INFO - === Experiment config ===
+2025-11-28 18:40:53,229 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:53,229 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:53,229 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:53,229 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:53,229 - root - INFO - ---- Task start ---- user_id=4d6176e0bc7947b4bdbee30abafdec44  #cands=20
+2025-11-28 18:40:53,246 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:53,246 - root - INFO - Ranked list (post-pairwise): ['6497297', '17356900', '32314812', '1005715', '21562236', '18747242', '25457145', '16219585', '7022318', '2796700', '33385925', '10135392', '3898229', '11113302', '27881904', '115299', '4720500', '1571336', '30529590', '418894']
+2025-11-28 18:40:53,246 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:53,246 - root - INFO - Ranked list : ['6497297', '17356900', '32314812', '1005715', '21562236', '18747242', '25457145', '16219585', '7022318', '2796700', '33385925', '10135392', '3898229', '11113302', '27881904', '115299', '4720500', '1571336', '30529590', '418894']
+2025-11-28 18:40:53,246 - root - INFO - ---- Task end ----
+2025-11-28 18:40:53,247 - websocietysimulator - INFO - Simulation finished for task 11
+2025-11-28 18:40:53,249 - root - INFO - === Experiment config ===
+2025-11-28 18:40:53,249 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:53,249 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:53,249 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:53,249 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:53,250 - root - INFO - ---- Task start ---- user_id=9a01eeb64f0c4b09def1ecbddfa99f3f  #cands=20
+2025-11-28 18:40:54,440 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:54,440 - root - INFO - Ranked list (post-pairwise): ['1148712', '21470719', '21086880', '1211312', '17409480', '60851', '4543344', '34320073', '24612771', '555206', '609330', '20698792', '103654', '27249202', '18691077', '27155758', '18130429', '30527751', '1422912', '2406772']
+2025-11-28 18:40:54,440 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:54,441 - root - INFO - Ranked list : ['1148712', '21470719', '21086880', '1211312', '17409480', '60851', '4543344', '34320073', '24612771', '555206', '609330', '20698792', '103654', '27249202', '18691077', '27155758', '18130429', '30527751', '1422912', '2406772']
+2025-11-28 18:40:54,441 - root - INFO - ---- Task end ----
+2025-11-28 18:40:54,442 - websocietysimulator - INFO - Simulation finished for task 16
+2025-11-28 18:40:54,446 - root - INFO - === Experiment config ===
+2025-11-28 18:40:54,446 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:54,447 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:54,447 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:54,447 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:54,447 - root - INFO - ---- Task start ---- user_id=2e454627650e60e9755973dfe3ac51cc  #cands=20
+2025-11-28 18:40:54,562 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:54,563 - root - INFO - Ranked list (post-pairwise): ['25263852', '7844544', '513188', '204698', '18608859', '163497', '25618818', '11196108', '1463675', '19670522', '69497', '2171325', '9969671', '1898952', '18309168', '6339890', '15271379', '2360694', '5028019', '6346265']
+2025-11-28 18:40:54,563 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:54,563 - root - INFO - Ranked list : ['25263852', '7844544', '513188', '204698', '18608859', '163497', '25618818', '11196108', '1463675', '19670522', '69497', '2171325', '9969671', '1898952', '18309168', '6339890', '15271379', '2360694', '5028019', '6346265']
+2025-11-28 18:40:54,563 - root - INFO - ---- Task end ----
+2025-11-28 18:40:54,566 - websocietysimulator - INFO - Simulation finished for task 13
+2025-11-28 18:40:54,574 - root - INFO - === Experiment config ===
+2025-11-28 18:40:54,574 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:54,574 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:54,574 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:54,574 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:54,575 - root - INFO - ---- Task start ---- user_id=a55483e34c0c2fbd4cc36b17edf0487e  #cands=20
+2025-11-28 18:40:55,404 - websocietysimulator - INFO - ✓ User profile keys: ['childhood_favorites', 'reread_frequency', 'nostalgia_factor']
+2025-11-28 18:40:55,404 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['childhood_favorites', 'reread_frequency', 'nostalgia_factor']
+2025-11-28 18:40:55,755 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:55,755 - root - INFO - Ranked list (post-pairwise): ['28503616', '6217645', '13153242', '18919200', '83492', '17672011', '4109746', '26201816', '35183739', '1048692', '1788943', '31324982', '11515747', '23399252', '1420211', '7834510', '2321749', '17976136', '2184304', '12676019']
+2025-11-28 18:40:55,755 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:55,756 - root - INFO - Ranked list : ['28503616', '6217645', '13153242', '18919200', '83492', '17672011', '4109746', '26201816', '35183739', '1048692', '1788943', '31324982', '11515747', '23399252', '1420211', '7834510', '2321749', '17976136', '2184304', '12676019']
+2025-11-28 18:40:55,756 - root - INFO - ---- Task end ----
+2025-11-28 18:40:55,758 - websocietysimulator - INFO - Simulation finished for task 18
+2025-11-28 18:40:55,766 - root - INFO - === Experiment config ===
+2025-11-28 18:40:55,766 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:55,767 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:55,767 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:55,767 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:55,767 - root - INFO - ---- Task start ---- user_id=1bf3ed77198dbe16b00d6f077f9dfe7b  #cands=20
+2025-11-28 18:40:56,156 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['character_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 18:40:56,415 - root - INFO - RAW REASONING OUTPUT:
+["24858528", "13559844", "929582", "838746", "379882", "23167737", "29431080", "12758952", "24611845", "30324092", "13572514", "4705397", "19427077", "9952988", "5649665", "1380094", "16290040", "26089489", "31326914", "673669"]
+
+2025-11-28 18:40:56,417 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:40:56,418 - root - INFO - Ranked list (pre-pairwise): ['24858528', '13559844', '929582', '838746', '379882', '23167737', '29431080', '12758952', '24611845', '30324092', '13572514', '4705397', '19427077', '9952988', '5649665', '1380094', '16290040', '26089489', '31326914', '673669']
+2025-11-28 18:40:56,418 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:40:57,110 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:57,110 - root - INFO - Ranked list (post-pairwise): ['24885834', '17592993', '897296', '17307142', '94804', '35497101', '15901554', '25627777', '11029820', '17861035', '10893115', '19621094', '17937221', '8192273', '2618329', '10421662', '27827347', '26079531', '36252513', '9757482']
+2025-11-28 18:40:57,110 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:57,111 - root - INFO - Ranked list : ['24885834', '17592993', '897296', '17307142', '94804', '35497101', '15901554', '25627777', '11029820', '17861035', '10893115', '19621094', '17937221', '8192273', '2618329', '10421662', '27827347', '26079531', '36252513', '9757482']
+2025-11-28 18:40:57,111 - root - INFO - ---- Task end ----
+2025-11-28 18:40:57,112 - websocietysimulator - INFO - Simulation finished for task 17
+2025-11-28 18:40:57,120 - root - INFO - === Experiment config ===
+2025-11-28 18:40:57,120 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:57,121 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:57,121 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:57,121 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:57,121 - root - INFO - ---- Task start ---- user_id=5d1ad8c0d475a2fbade1c69882936ff8  #cands=20
+2025-11-28 18:40:57,162 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'character_preference', 'humor_appreciation', 'writing_style_preference']
+2025-11-28 18:40:57,162 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'character_preference', 'humor_appreciation', 'writing_style_preference']
+2025-11-28 18:40:57,314 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:40:57,314 - root - INFO - Ranked list (post-pairwise): ['23442193', '29150895', '7749484', '1401747', '1671804', '36050102', '855613', '30736029', '20321882', '15853886', '1910032', '7755178', '393095', '28523938', '880765', '18747937', '7841582', '25147292', '352827', '586']
+2025-11-28 18:40:57,314 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:40:57,314 - root - INFO - Ranked list : ['23442193', '29150895', '7749484', '1401747', '1671804', '36050102', '855613', '30736029', '20321882', '15853886', '1910032', '7755178', '393095', '28523938', '880765', '18747937', '7841582', '25147292', '352827', '586']
+2025-11-28 18:40:57,314 - root - INFO - ---- Task end ----
+2025-11-28 18:40:57,315 - websocietysimulator - INFO - Simulation finished for task 14
+2025-11-28 18:40:57,319 - root - INFO - === Experiment config ===
+2025-11-28 18:40:57,319 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:40:57,319 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:40:57,319 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:40:57,320 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:40:57,320 - root - INFO - ---- Task start ---- user_id=3325d9b5842708cc6b3db1795548cedb  #cands=20
+2025-11-28 18:40:59,089 - websocietysimulator - INFO - ✓ User profile keys: ['character_preference', 'plot_complexity', 'theme_preference']
+2025-11-28 18:40:59,091 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['character_preference', 'plot_complexity', 'theme_preference']
+2025-11-28 18:40:59,494 - websocietysimulator - INFO - ✓ User profile keys: ['nostalgic_childrens_literature', 'talking_animal_stories', 'plot_lightheartedness']
+2025-11-28 18:40:59,495 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['nostalgic_childrens_literature', 'talking_animal_stories', 'plot_lightheartedness']
+2025-11-28 18:41:00,304 - websocietysimulator - INFO - ✓ User profile keys: ['plot_complexity', 'theme_preference', 'genre_preference']
+2025-11-28 18:41:00,305 - websocietysimulator - INFO - ✓ User profile keys: ['theme_preference', 'character_focus', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:41:00,305 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['plot_complexity', 'theme_preference', 'genre_preference']
+2025-11-28 18:41:00,305 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['theme_preference', 'character_focus', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:41:00,535 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'art_style_preference', 'adaptation_preference']
+2025-11-28 18:41:00,535 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'art_style_preference', 'adaptation_preference']
+2025-11-28 18:41:00,656 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['childhood_favorites', 'reread_frequency', 'nostalgia_factor']
+2025-11-28 18:41:00,799 - websocietysimulator - INFO - ✓ User profile keys: ['theme_preference', 'plot_complexity', 'spoiler_sensitivity']
+2025-11-28 18:41:00,799 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['theme_preference', 'plot_complexity', 'spoiler_sensitivity']
+2025-11-28 18:41:00,856 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:00,856 - root - INFO - Ranked list (post-pairwise): ['13559844', '24858528', '929582', '838746', '379882', '23167737', '29431080', '12758952', '24611845', '30324092', '13572514', '4705397', '19427077', '9952988', '5649665', '1380094', '16290040', '26089489', '31326914', '673669']
+2025-11-28 18:41:00,856 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:00,856 - root - INFO - Ranked list : ['13559844', '24858528', '929582', '838746', '379882', '23167737', '29431080', '12758952', '24611845', '30324092', '13572514', '4705397', '19427077', '9952988', '5649665', '1380094', '16290040', '26089489', '31326914', '673669']
+2025-11-28 18:41:00,856 - root - INFO - ---- Task end ----
+2025-11-28 18:41:00,859 - websocietysimulator - INFO - Simulation finished for task 19
+2025-11-28 18:41:00,864 - root - INFO - === Experiment config ===
+2025-11-28 18:41:00,864 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:00,864 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:00,864 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:00,864 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:00,864 - root - INFO - ---- Task start ---- user_id=403735da795e54a49d3b661973c9e266  #cands=20
+2025-11-28 18:41:01,087 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['character_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 18:41:02,252 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'character_preference', 'humor_appreciation', 'writing_style_preference']
+2025-11-28 18:41:03,363 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['character_preference', 'plot_complexity', 'theme_preference']
+2025-11-28 18:41:04,298 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['nostalgic_childrens_literature', 'talking_animal_stories', 'plot_lightheartedness']
+2025-11-28 18:41:04,823 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['plot_complexity', 'theme_preference', 'genre_preference']
+2025-11-28 18:41:05,199 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'art_style_preference', 'adaptation_preference']
+2025-11-28 18:41:05,343 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['theme_preference', 'character_focus', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:41:05,659 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['childhood_favorites', 'reread_frequency', 'nostalgia_factor']
+2025-11-28 18:41:05,815 - websocietysimulator - INFO - ✓ User profile keys: ['self_improvement_focus', 'manga_preference', 'practical_application_interest']
+2025-11-28 18:41:05,816 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['self_improvement_focus', 'manga_preference', 'practical_application_interest']
+2025-11-28 18:41:06,172 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['theme_preference', 'plot_complexity', 'spoiler_sensitivity']
+2025-11-28 18:41:06,347 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['character_preference', 'theme_preference', 'writing_style_preference']
+2025-11-28 18:41:07,269 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'character_preference', 'humor_appreciation', 'writing_style_preference']
+2025-11-28 18:41:07,826 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['character_preference', 'plot_complexity', 'theme_preference']
+2025-11-28 18:41:09,420 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['nostalgic_childrens_literature', 'talking_animal_stories', 'plot_lightheartedness']
+2025-11-28 18:41:09,630 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'art_style_preference', 'adaptation_preference']
+2025-11-28 18:41:09,892 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['plot_complexity', 'theme_preference', 'genre_preference']
+2025-11-28 18:41:10,272 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['self_improvement_focus', 'manga_preference', 'practical_application_interest']
+2025-11-28 18:41:10,414 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['childhood_favorites', 'reread_frequency', 'nostalgia_factor']
+2025-11-28 18:41:10,589 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['theme_preference', 'character_focus', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:41:11,288 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['theme_preference', 'plot_complexity', 'spoiler_sensitivity']
+2025-11-28 18:41:12,417 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['character_preference', 'plot_complexity', 'theme_preference']
+2025-11-28 18:41:12,594 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'character_preference', 'humor_appreciation', 'writing_style_preference']
+2025-11-28 18:41:12,737 - root - INFO - RAW REASONING OUTPUT:
+["5762251", "280049", "25904029", "9531534", "22394657", "565503", "10968887", "7804987", "8437224", "3099475", "21029140", "26635783", "2698324", "2930100", "6891569", "23148043", "24839861", "1251171", "1857775", "1296100"]
+
+2025-11-28 18:41:12,738 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:12,739 - root - INFO - Ranked list (pre-pairwise): ['5762251', '280049', '25904029', '9531534', '22394657', '565503', '10968887', '7804987', '8437224', '3099475', '21029140', '26635783', '2698324', '2930100', '6891569', '23148043', '24839861', '1251171', '1857775', '1296100']
+2025-11-28 18:41:12,739 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:14,044 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'art_style_preference', 'adaptation_preference']
+2025-11-28 18:41:14,218 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['self_improvement_focus', 'manga_preference', 'practical_application_interest']
+2025-11-28 18:41:14,393 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['plot_complexity', 'theme_preference', 'genre_preference']
+2025-11-28 18:41:14,919 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['nostalgic_childrens_literature', 'talking_animal_stories', 'plot_lightheartedness']
+2025-11-28 18:41:15,442 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['theme_preference', 'character_focus', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:41:15,702 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['theme_preference', 'plot_complexity', 'spoiler_sensitivity']
+2025-11-28 18:41:16,979 - root - INFO - RAW REASONING OUTPUT:
+["6601795", "26244590", "14342146", "26252823", "25220856", "1759648", "2166968", "2803401", "211514", "6375187", "24387947", "9321869", "13572355", "253525", "8531602", "2155644", "6640852", "12979103", "20879098", "18007645"]
+
+2025-11-28 18:41:16,979 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:16,980 - root - INFO - Ranked list (pre-pairwise): ['6601795', '26244590', '14342146', '26252823', '25220856', '1759648', '2166968', '2803401', '211514', '6375187', '24387947', '9321869', '13572355', '253525', '8531602', '2155644', '6640852', '12979103', '20879098', '18007645']
+2025-11-28 18:41:16,980 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:17,647 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:17,648 - root - INFO - Ranked list (post-pairwise): ['5762251', '280049', '25904029', '9531534', '22394657', '565503', '10968887', '7804987', '8437224', '3099475', '21029140', '26635783', '2698324', '2930100', '6891569', '23148043', '24839861', '1251171', '1857775', '1296100']
+2025-11-28 18:41:17,648 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:17,648 - root - INFO - Ranked list : ['5762251', '280049', '25904029', '9531534', '22394657', '565503', '10968887', '7804987', '8437224', '3099475', '21029140', '26635783', '2698324', '2930100', '6891569', '23148043', '24839861', '1251171', '1857775', '1296100']
+2025-11-28 18:41:17,648 - root - INFO - ---- Task end ----
+2025-11-28 18:41:17,649 - websocietysimulator - INFO - Simulation finished for task 20
+2025-11-28 18:41:17,652 - root - INFO - === Experiment config ===
+2025-11-28 18:41:17,652 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:17,652 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:17,652 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:17,653 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:17,653 - root - INFO - ---- Task start ---- user_id=e422faf589ad74cbc2033061f70009df  #cands=20
+2025-11-28 18:41:18,665 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['self_improvement_focus', 'manga_preference', 'practical_application_interest']
+2025-11-28 18:41:18,687 - root - INFO - RAW REASONING OUTPUT:
+```python
+["3954188", "799861", "13429657", "23399213", "20775815", "1002088", "1302740", "384502", "34618636", "24771402", "11512342", "10080823", "23561605", "21472051", "318278", "225202", "885181", "105921", "396141", "8265087"]
+```
+2025-11-28 18:41:18,687 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:18,687 - root - INFO - Ranked list (pre-pairwise): ['3954188', '799861', '13429657', '23399213', '20775815', '1002088', '1302740', '384502', '34618636', '24771402', '11512342', '10080823', '23561605', '21472051', '318278', '225202', '885181', '105921', '396141', '8265087']
+2025-11-28 18:41:18,688 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:18,834 - root - INFO - RAW REASONING OUTPUT:
+["26029285", "22533396", "22678222", "32180809", "1357589", "494307", "292653", "11420745", "16091376", "8559193", "11145688", "34085460", "3827042", "26132464", "1583532", "7576838", "1664879", "669593", "1208068", "3297896"]
+
+2025-11-28 18:41:18,835 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:18,835 - root - INFO - Ranked list (pre-pairwise): ['26029285', '22533396', '22678222', '32180809', '1357589', '494307', '292653', '11420745', '16091376', '8559193', '11145688', '34085460', '3827042', '26132464', '1583532', '7576838', '1664879', '669593', '1208068', '3297896']
+2025-11-28 18:41:18,835 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:20,225 - root - INFO - RAW REASONING OUTPUT:
+["69159", "256691", "9701205", "31678525", "28260411", "18329410", "18954301", "1692874", "10454305", "7951006", "878996", "18130340", "22459980", "25896980", "21592145", "1768186", "708035", "1778008", "17295483", "25313145"]
+
+2025-11-28 18:41:20,227 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:20,227 - root - INFO - Ranked list (pre-pairwise): ['69159', '256691', '9701205', '31678525', '28260411', '18329410', '18954301', '1692874', '10454305', '7951006', '878996', '18130340', '22459980', '25896980', '21592145', '1768186', '708035', '1778008', '17295483', '25313145']
+2025-11-28 18:41:20,227 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:20,423 - root - INFO - RAW REASONING OUTPUT:
+["26827193", "28114447", "235872", "32873867", "2181042", "1320527", "2205945", "10164155", "18144909", "23491052", "27221780", "10497699", "136744", "26198927", "9564531", "28205546", "24958527", "1417903", "12995330", "19187099"]
+
+2025-11-28 18:41:20,423 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:20,424 - root - INFO - Ranked list (pre-pairwise): ['26827193', '28114447', '235872', '32873867', '2181042', '1320527', '2205945', '10164155', '18144909', '23491052', '27221780', '10497699', '136744', '26198927', '9564531', '28205546', '24958527', '1417903', '12995330', '19187099']
+2025-11-28 18:41:20,424 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:21,240 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:21,241 - root - INFO - Ranked list (post-pairwise): ['25220856', '6601795', '26244590', '14342146', '26252823', '1759648', '2166968', '2803401', '211514', '6375187', '24387947', '9321869', '13572355', '253525', '8531602', '2155644', '6640852', '12979103', '20879098', '18007645']
+2025-11-28 18:41:21,241 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:21,241 - root - INFO - Ranked list : ['25220856', '6601795', '26244590', '14342146', '26252823', '1759648', '2166968', '2803401', '211514', '6375187', '24387947', '9321869', '13572355', '253525', '8531602', '2155644', '6640852', '12979103', '20879098', '18007645']
+2025-11-28 18:41:21,242 - root - INFO - ---- Task end ----
+2025-11-28 18:41:21,243 - websocietysimulator - INFO - Simulation finished for task 21
+2025-11-28 18:41:21,251 - root - INFO - === Experiment config ===
+2025-11-28 18:41:21,251 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:21,251 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:21,251 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:21,251 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:21,252 - root - INFO - ---- Task start ---- user_id=e5349f9232db517fdfb473641811ac06  #cands=20
+2025-11-28 18:41:21,332 - root - INFO - RAW REASONING OUTPUT:
+```python
+['9066585', '2108958', '3359002', '9566560', '314131', '43043', '30826337', '1216391', '1309506', '35482862', '378722', '28472535', '1525659', '13618', '18003874', '12612620', '3390365', '2316135', '4886921', '10079869']
+```
+2025-11-28 18:41:21,333 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:21,333 - root - INFO - Ranked list (pre-pairwise): ['9066585', '2108958', '3359002', '9566560', '314131', '43043', '30826337', '1216391', '1309506', '35482862', '378722', '28472535', '1525659', '13618', '18003874', '12612620', '3390365', '2316135', '4886921', '10079869']
+2025-11-28 18:41:21,333 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:21,624 - root - INFO - RAW REASONING OUTPUT:
+['13392107', '9218950', '534963', '23705128', '22315259', '313064', '455934', '844031', '1656103', '16082441', '13409960', '24106041', '18444809', '24797568', '859259', '32025118', '4702086', '2314378', '23865216', '1232498']
+
+2025-11-28 18:41:21,625 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:21,625 - root - INFO - Ranked list (pre-pairwise): ['13392107', '9218950', '534963', '23705128', '22315259', '313064', '455934', '844031', '1656103', '16082441', '13409960', '24106041', '18444809', '24797568', '859259', '32025118', '4702086', '2314378', '23865216', '1232498']
+2025-11-28 18:41:21,626 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:22,060 - root - INFO - RAW REASONING OUTPUT:
+["396005", "23565310", "11567526", "1806908", "12090960", "30419647", "28411655", "9368356", "17134359", "1383019", "28107820", "15980425", "22052198", "27412681", "17735916", "574753", "6559551", "17858852", "2246250", "1159556"]
+
+2025-11-28 18:41:22,064 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:22,064 - root - INFO - Ranked list (pre-pairwise): ['396005', '23565310', '11567526', '1806908', '12090960', '30419647', '28411655', '9368356', '17134359', '1383019', '28107820', '15980425', '22052198', '27412681', '17735916', '574753', '6559551', '17858852', '2246250', '1159556']
+2025-11-28 18:41:22,064 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:22,117 - websocietysimulator - INFO - ✓ User profile keys: ['author_preference', 'writing_style_preference', 'genre_preference']
+2025-11-28 18:41:22,118 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['author_preference', 'writing_style_preference', 'genre_preference']
+2025-11-28 18:41:23,476 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:23,476 - root - INFO - Ranked list (post-pairwise): ['13429657', '3954188', '799861', '23399213', '20775815', '1002088', '1302740', '384502', '34618636', '24771402', '11512342', '10080823', '23561605', '21472051', '318278', '225202', '885181', '105921', '396141', '8265087']
+2025-11-28 18:41:23,477 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:23,477 - root - INFO - Ranked list : ['13429657', '3954188', '799861', '23399213', '20775815', '1002088', '1302740', '384502', '34618636', '24771402', '11512342', '10080823', '23561605', '21472051', '318278', '225202', '885181', '105921', '396141', '8265087']
+2025-11-28 18:41:23,477 - root - INFO - ---- Task end ----
+2025-11-28 18:41:23,478 - websocietysimulator - INFO - Simulation finished for task 24
+2025-11-28 18:41:23,483 - root - INFO - === Experiment config ===
+2025-11-28 18:41:23,483 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:23,483 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:23,483 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:23,483 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:23,484 - root - INFO - ---- Task start ---- user_id=9a8f102734c3fe451ca9ac3acba31ed2  #cands=20
+2025-11-28 18:41:24,267 - root - INFO - RAW REASONING OUTPUT:
+["364963", "19120674", "6298669", "8657908", "34229055", "5049055", "23494740", "305769", "9278187", "19100368", "6695173", "6125073", "12696987", "143211", "381039", "2187237", "16113663", "916043", "10547150", "1538360"]
+
+2025-11-28 18:41:24,268 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:24,268 - root - INFO - Ranked list (pre-pairwise): ['364963', '19120674', '6298669', '8657908', '34229055', '5049055', '23494740', '305769', '9278187', '19100368', '6695173', '6125073', '12696987', '143211', '381039', '2187237', '16113663', '916043', '10547150', '1538360']
+2025-11-28 18:41:24,268 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:24,412 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:24,413 - root - INFO - Ranked list (post-pairwise): ['1357589', '26029285', '22533396', '22678222', '32180809', '494307', '292653', '11420745', '16091376', '8559193', '11145688', '34085460', '3827042', '26132464', '1583532', '7576838', '1664879', '669593', '1208068', '3297896']
+2025-11-28 18:41:24,413 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:24,413 - root - INFO - Ranked list : ['1357589', '26029285', '22533396', '22678222', '32180809', '494307', '292653', '11420745', '16091376', '8559193', '11145688', '34085460', '3827042', '26132464', '1583532', '7576838', '1664879', '669593', '1208068', '3297896']
+2025-11-28 18:41:24,414 - root - INFO - ---- Task end ----
+2025-11-28 18:41:24,415 - websocietysimulator - INFO - Simulation finished for task 22
+2025-11-28 18:41:24,419 - root - INFO - === Experiment config ===
+2025-11-28 18:41:24,419 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:24,419 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:24,419 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:24,419 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:24,420 - root - INFO - ---- Task start ---- user_id=ca565b0f5e96163489a0ebd0c9117269  #cands=20
+2025-11-28 18:41:24,785 - websocietysimulator - INFO - ✓ User profile keys: ['childrens_literature_preference', 'biography_preference', 'positive_review_sentiment', 'illustration_quality_appreciation']
+2025-11-28 18:41:24,786 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['childrens_literature_preference', 'biography_preference', 'positive_review_sentiment', 'illustration_quality_appreciation']
+2025-11-28 18:41:25,020 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:25,021 - root - INFO - Ranked list (post-pairwise): ['28260411', '69159', '256691', '9701205', '31678525', '18329410', '18954301', '1692874', '10454305', '7951006', '878996', '18130340', '22459980', '25896980', '21592145', '1768186', '708035', '1778008', '17295483', '25313145']
+2025-11-28 18:41:25,021 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:25,021 - root - INFO - Ranked list : ['28260411', '69159', '256691', '9701205', '31678525', '18329410', '18954301', '1692874', '10454305', '7951006', '878996', '18130340', '22459980', '25896980', '21592145', '1768186', '708035', '1778008', '17295483', '25313145']
+2025-11-28 18:41:25,022 - root - INFO - ---- Task end ----
+2025-11-28 18:41:25,023 - websocietysimulator - INFO - Simulation finished for task 28
+2025-11-28 18:41:25,029 - root - INFO - === Experiment config ===
+2025-11-28 18:41:25,029 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:25,029 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:25,029 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:25,029 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:25,029 - root - INFO - ---- Task start ---- user_id=6bb4b55aa4ea143f873aff213f31659b  #cands=20
+2025-11-28 18:41:25,343 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:25,343 - root - INFO - Ranked list (post-pairwise): ['2181042', '26827193', '28114447', '235872', '32873867', '1320527', '2205945', '10164155', '18144909', '23491052', '27221780', '10497699', '136744', '26198927', '9564531', '28205546', '24958527', '1417903', '12995330', '19187099']
+2025-11-28 18:41:25,343 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:25,343 - root - INFO - Ranked list : ['2181042', '26827193', '28114447', '235872', '32873867', '1320527', '2205945', '10164155', '18144909', '23491052', '27221780', '10497699', '136744', '26198927', '9564531', '28205546', '24958527', '1417903', '12995330', '19187099']
+2025-11-28 18:41:25,343 - root - INFO - ---- Task end ----
+2025-11-28 18:41:25,343 - websocietysimulator - INFO - Simulation finished for task 27
+2025-11-28 18:41:25,346 - root - INFO - === Experiment config ===
+2025-11-28 18:41:25,346 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:25,346 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:25,346 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:25,346 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:25,346 - root - INFO - ---- Task start ---- user_id=7b7a66ba55a2a7094a5465f4ea267cff  #cands=20
+2025-11-28 18:41:26,403 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['author_preference', 'writing_style_preference', 'genre_preference']
+2025-11-28 18:41:26,430 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:26,431 - root - INFO - Ranked list (post-pairwise): ['9066585', '2108958', '3359002', '9566560', '314131', '43043', '30826337', '1216391', '1309506', '35482862', '378722', '28472535', '1525659', '13618', '18003874', '12612620', '3390365', '2316135', '4886921', '10079869']
+2025-11-28 18:41:26,431 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:26,431 - root - INFO - Ranked list : ['9066585', '2108958', '3359002', '9566560', '314131', '43043', '30826337', '1216391', '1309506', '35482862', '378722', '28472535', '1525659', '13618', '18003874', '12612620', '3390365', '2316135', '4886921', '10079869']
+2025-11-28 18:41:26,431 - root - INFO - ---- Task end ----
+2025-11-28 18:41:26,432 - websocietysimulator - INFO - Simulation finished for task 23
+2025-11-28 18:41:26,435 - root - INFO - === Experiment config ===
+2025-11-28 18:41:26,435 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:26,435 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:26,435 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:26,435 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:26,435 - root - INFO - ---- Task start ---- user_id=4990cb7cc4cc39dae96234be305d73ae  #cands=20
+2025-11-28 18:41:27,980 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:27,980 - root - INFO - Ranked list (post-pairwise): ['23565310', '396005', '11567526', '1806908', '12090960', '30419647', '28411655', '9368356', '17134359', '1383019', '28107820', '15980425', '22052198', '27412681', '17735916', '574753', '6559551', '17858852', '2246250', '1159556']
+2025-11-28 18:41:27,983 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:27,983 - root - INFO - Ranked list : ['23565310', '396005', '11567526', '1806908', '12090960', '30419647', '28411655', '9368356', '17134359', '1383019', '28107820', '15980425', '22052198', '27412681', '17735916', '574753', '6559551', '17858852', '2246250', '1159556']
+2025-11-28 18:41:27,984 - root - INFO - ---- Task end ----
+2025-11-28 18:41:27,981 - websocietysimulator - INFO - ✓ User profile keys: ['review_sentiment', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:41:27,985 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['review_sentiment', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:41:27,987 - websocietysimulator - INFO - Simulation finished for task 25
+2025-11-28 18:41:27,992 - websocietysimulator - INFO - ✓ User profile keys: ['interest_in_biographies', 'preference_for_illustrated_books', 'positive_review_sentiment', 'price_sensitivity']
+2025-11-28 18:41:27,993 - root - INFO - === Experiment config ===
+2025-11-28 18:41:27,993 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['interest_in_biographies', 'preference_for_illustrated_books', 'positive_review_sentiment', 'price_sensitivity']
+2025-11-28 18:41:27,993 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:27,994 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:27,994 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:27,994 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:27,995 - root - INFO - ---- Task start ---- user_id=9e35e27df7bc08e40fe0a15857e8d089  #cands=20
+2025-11-28 18:41:28,171 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:28,171 - root - INFO - Ranked list (post-pairwise): ['22315259', '13392107', '9218950', '534963', '23705128', '313064', '455934', '844031', '1656103', '16082441', '13409960', '24106041', '18444809', '24797568', '859259', '32025118', '4702086', '2314378', '23865216', '1232498']
+2025-11-28 18:41:28,172 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:28,172 - root - INFO - Ranked list : ['22315259', '13392107', '9218950', '534963', '23705128', '313064', '455934', '844031', '1656103', '16082441', '13409960', '24106041', '18444809', '24797568', '859259', '32025118', '4702086', '2314378', '23865216', '1232498']
+2025-11-28 18:41:28,172 - root - INFO - ---- Task end ----
+2025-11-28 18:41:28,173 - websocietysimulator - INFO - Simulation finished for task 26
+2025-11-28 18:41:28,177 - root - INFO - === Experiment config ===
+2025-11-28 18:41:28,177 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:28,177 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:28,177 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:28,178 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:28,178 - root - INFO - ---- Task start ---- user_id=c6f4799bd4b5993bc4d4bbe230b0f3ab  #cands=20
+2025-11-28 18:41:29,026 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:29,027 - root - INFO - Ranked list (post-pairwise): ['19120674', '364963', '6298669', '8657908', '34229055', '5049055', '23494740', '305769', '9278187', '19100368', '6695173', '6125073', '12696987', '143211', '381039', '2187237', '16113663', '916043', '10547150', '1538360']
+2025-11-28 18:41:29,027 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:29,027 - root - INFO - Ranked list : ['19120674', '364963', '6298669', '8657908', '34229055', '5049055', '23494740', '305769', '9278187', '19100368', '6695173', '6125073', '12696987', '143211', '381039', '2187237', '16113663', '916043', '10547150', '1538360']
+2025-11-28 18:41:29,027 - root - INFO - ---- Task end ----
+2025-11-28 18:41:29,028 - websocietysimulator - INFO - Simulation finished for task 29
+2025-11-28 18:41:29,034 - root - INFO - === Experiment config ===
+2025-11-28 18:41:29,035 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:29,035 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:29,035 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:29,035 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:29,035 - root - INFO - ---- Task start ---- user_id=b3a56d5bb26e7a264f685d63fd5486f6  #cands=20
+2025-11-28 18:41:29,604 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'theme_preference', 'review_sentiment']
+2025-11-28 18:41:29,605 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'theme_preference', 'review_sentiment']
+2025-11-28 18:41:29,951 - websocietysimulator - INFO - ✓ User profile keys: ['review_sentiment', 'plot_complexity', 'reading_style']
+2025-11-28 18:41:29,952 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['review_sentiment', 'plot_complexity', 'reading_style']
+2025-11-28 18:41:30,419 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['childrens_literature_preference', 'biography_preference', 'positive_review_sentiment', 'illustration_quality_appreciation']
+2025-11-28 18:41:30,884 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['author_preference', 'writing_style_preference', 'genre_preference']
+2025-11-28 18:41:31,377 - websocietysimulator - INFO - ✓ User profile keys: ['nostalgia', 'childrens_literature', 'positive_sentiment']
+2025-11-28 18:41:31,378 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['nostalgia', 'childrens_literature', 'positive_sentiment']
+2025-11-28 18:41:31,750 - websocietysimulator - INFO - ✓ User profile keys: ['theme_preference', 'review_sentiment', 'cultural_context_preference']
+2025-11-28 18:41:31,751 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['theme_preference', 'review_sentiment', 'cultural_context_preference']
+2025-11-28 18:41:32,561 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['review_sentiment', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:41:33,552 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['interest_in_biographies', 'preference_for_illustrated_books', 'positive_review_sentiment', 'price_sensitivity']
+2025-11-28 18:41:33,552 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'character_preference', 'writing_style_preference']
+2025-11-28 18:41:33,553 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'character_preference', 'writing_style_preference']
+2025-11-28 18:41:34,168 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'theme_preference', 'review_sentiment']
+2025-11-28 18:41:34,580 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['review_sentiment', 'plot_complexity', 'reading_style']
+2025-11-28 18:41:34,781 - websocietysimulator - INFO - ✓ User profile keys: ['character_preference', 'theme_preference', 'genre_preference', 'writing_style_preference']
+2025-11-28 18:41:34,781 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['character_preference', 'theme_preference', 'genre_preference', 'writing_style_preference']
+2025-11-28 18:41:35,356 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['childrens_literature_preference', 'biography_preference', 'positive_review_sentiment', 'illustration_quality_appreciation']
+2025-11-28 18:41:35,533 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['author_preference', 'writing_style_preference', 'genre_preference']
+2025-11-28 18:41:36,340 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['theme_preference', 'review_sentiment', 'cultural_context_preference']
+2025-11-28 18:41:36,750 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['review_sentiment', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:41:36,895 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['nostalgia', 'childrens_literature', 'positive_sentiment']
+2025-11-28 18:41:37,857 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'character_preference', 'writing_style_preference']
+2025-11-28 18:41:38,666 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['interest_in_biographies', 'preference_for_illustrated_books', 'positive_review_sentiment', 'price_sensitivity']
+2025-11-28 18:41:39,167 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'theme_preference', 'review_sentiment']
+2025-11-28 18:41:39,250 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['review_sentiment', 'plot_complexity', 'reading_style']
+2025-11-28 18:41:39,807 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['character_preference', 'theme_preference', 'genre_preference', 'writing_style_preference']
+2025-11-28 18:41:40,763 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['theme_preference', 'review_sentiment', 'cultural_context_preference']
+2025-11-28 18:41:41,176 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['review_sentiment', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:41:41,381 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['childrens_literature_preference', 'biography_preference', 'positive_review_sentiment', 'illustration_quality_appreciation']
+2025-11-28 18:41:41,669 - root - INFO - RAW REASONING OUTPUT:
+["7786942", "626691", "927779", "33534288", "30624733", "11545242", "36061362", "5986543", "21744158", "62245", "11620817", "24352555", "691076", "10746773", "28687142", "1875980", "1219437", "226643", "10376482", "9282872"]
+
+2025-11-28 18:41:41,670 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:41,671 - root - INFO - Ranked list (pre-pairwise): ['7786942', '626691', '927779', '33534288', '30624733', '11545242', '36061362', '5986543', '21744158', '62245', '11620817', '24352555', '691076', '10746773', '28687142', '1875980', '1219437', '226643', '10376482', '9282872']
+2025-11-28 18:41:41,671 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:41,697 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['nostalgia', 'childrens_literature', 'positive_sentiment']
+2025-11-28 18:41:42,725 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'character_preference', 'writing_style_preference']
+2025-11-28 18:41:43,547 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['review_sentiment', 'plot_complexity', 'reading_style']
+2025-11-28 18:41:43,699 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['interest_in_biographies', 'preference_for_illustrated_books', 'positive_review_sentiment', 'price_sensitivity']
+2025-11-28 18:41:43,809 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'theme_preference', 'review_sentiment']
+2025-11-28 18:41:44,591 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['character_preference', 'theme_preference', 'genre_preference', 'writing_style_preference']
+2025-11-28 18:41:45,637 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['theme_preference', 'review_sentiment', 'cultural_context_preference']
+2025-11-28 18:41:46,683 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['nostalgia', 'childrens_literature', 'positive_sentiment']
+2025-11-28 18:41:47,153 - root - INFO - RAW REASONING OUTPUT:
+["25938053", "27422209", "3868903", "2232896", "15813672", "540026", "183161", "2490255", "9837031", "29565743", "234951", "7872925", "2481832", "11547143", "27313703", "12814612", "17925547", "30096041", "20347020", "6506158"]
+
+2025-11-28 18:41:47,154 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:47,154 - root - INFO - Ranked list (pre-pairwise): ['25938053', '27422209', '3868903', '2232896', '15813672', '540026', '183161', '2490255', '9837031', '29565743', '234951', '7872925', '2481832', '11547143', '27313703', '12814612', '17925547', '30096041', '20347020', '6506158']
+2025-11-28 18:41:47,155 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:47,178 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'character_preference', 'writing_style_preference']
+2025-11-28 18:41:47,294 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:47,295 - root - INFO - Ranked list (post-pairwise): ['626691', '7786942', '927779', '33534288', '30624733', '11545242', '36061362', '5986543', '21744158', '62245', '11620817', '24352555', '691076', '10746773', '28687142', '1875980', '1219437', '226643', '10376482', '9282872']
+2025-11-28 18:41:47,295 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:47,295 - root - INFO - Ranked list : ['626691', '7786942', '927779', '33534288', '30624733', '11545242', '36061362', '5986543', '21744158', '62245', '11620817', '24352555', '691076', '10746773', '28687142', '1875980', '1219437', '226643', '10376482', '9282872']
+2025-11-28 18:41:47,295 - root - INFO - ---- Task end ----
+2025-11-28 18:41:47,296 - websocietysimulator - INFO - Simulation finished for task 30
+2025-11-28 18:41:47,299 - root - INFO - === Experiment config ===
+2025-11-28 18:41:47,299 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:47,299 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:47,299 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:47,299 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:47,299 - root - INFO - ---- Task start ---- user_id=f9ca71329670f4a7a303ddc3bab0d3f1  #cands=20
+2025-11-28 18:41:48,468 - root - INFO - RAW REASONING OUTPUT:
+```python
+["741429", "13517756", "646040", "33359704", "827260", "6203342", "29741418", "9951085", "534180", "17999159", "12140102", "7987574", "63477", "2880751", "5945516", "275624", "27398274", "1998313", "1292972", "26226676"]
+```
+2025-11-28 18:41:48,469 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:48,469 - root - INFO - Ranked list (pre-pairwise): ['741429', '13517756', '646040', '33359704', '827260', '6203342', '29741418', '9951085', '534180', '17999159', '12140102', '7987574', '63477', '2880751', '5945516', '275624', '27398274', '1998313', '1292972', '26226676']
+2025-11-28 18:41:48,469 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:49,193 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['character_preference', 'theme_preference', 'genre_preference', 'writing_style_preference']
+2025-11-28 18:41:49,896 - root - INFO - RAW REASONING OUTPUT:
+["11904233", "23291162", "19429386", "29478035", "20644398", "9044229", "12323153", "1119070", "3347521", "23349942", "11248563", "26778312", "26161140", "24464117", "1202542", "11389406", "261359", "18775363", "7469188", "791639"]
+
+2025-11-28 18:41:49,897 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:49,897 - root - INFO - Ranked list (pre-pairwise): ['11904233', '23291162', '19429386', '29478035', '20644398', '9044229', '12323153', '1119070', '3347521', '23349942', '11248563', '26778312', '26161140', '24464117', '1202542', '11389406', '261359', '18775363', '7469188', '791639']
+2025-11-28 18:41:49,897 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:50,147 - root - INFO - RAW REASONING OUTPUT:
+["854861", "33651938", "27137791", "24150694", "23282322", "18891076", "1156976", "19427077", "756258", "8839053", "6543777", "22561387", "16702392", "13003576", "555372", "25221108", "1259468", "1313376", "25987889", "18970400"]
+
+2025-11-28 18:41:50,148 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:50,148 - root - INFO - Ranked list (pre-pairwise): ['854861', '33651938', '27137791', '24150694', '23282322', '18891076', '1156976', '19427077', '756258', '8839053', '6543777', '22561387', '16702392', '13003576', '555372', '25221108', '1259468', '1313376', '25987889', '18970400']
+2025-11-28 18:41:50,149 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:50,348 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'author_preference', 'theme_preference']
+2025-11-28 18:41:50,349 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'author_preference', 'theme_preference']
+2025-11-28 18:41:50,466 - root - INFO - RAW REASONING OUTPUT:
+```python
+['10891219', '24496462', '12213010', '67384', '11131065', '6748407', '948611', '1433507', '887383', '3278907', '34316948', '96254', '5986776', '2426625', '1479055', '6164612', '6095547', '16094065', '2395993', '3954269']
+```
+2025-11-28 18:41:50,466 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:50,466 - root - INFO - Ranked list (pre-pairwise): ['10891219', '24496462', '12213010', '67384', '11131065', '6748407', '948611', '1433507', '887383', '3278907', '34316948', '96254', '5986776', '2426625', '1479055', '6164612', '6095547', '16094065', '2395993', '3954269']
+2025-11-28 18:41:50,466 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:51,750 - root - INFO - RAW REASONING OUTPUT:
+```python
+["11797680", "16083134", "5014007", "7378029", "17830333", "1617279", "17444989", "9519211", "17368880", "6224254", "1906135", "28800176", "18285536", "1281011", "342551", "15765711", "18989816", "2680462", "35820905", "18942097"]
+```
+2025-11-28 18:41:51,752 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:51,752 - root - INFO - Ranked list (pre-pairwise): ['11797680', '16083134', '5014007', '7378029', '17830333', '1617279', '17444989', '9519211', '17368880', '6224254', '1906135', '28800176', '18285536', '1281011', '342551', '15765711', '18989816', '2680462', '35820905', '18942097']
+2025-11-28 18:41:51,754 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:52,948 - root - INFO - RAW REASONING OUTPUT:
+["1632965", "292018", "1906135", "9775473", "24388433", "630132", "18269303", "1207236", "24846308", "22070685", "293883", "31145131", "26246328", "3211582", "16056713", "17456413", "27414499", "199032", "26026400", "18524609"]
+
+2025-11-28 18:41:52,949 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:52,949 - root - INFO - Ranked list (pre-pairwise): ['1632965', '292018', '1906135', '9775473', '24388433', '630132', '18269303', '1207236', '24846308', '22070685', '293883', '31145131', '26246328', '3211582', '16056713', '17456413', '27414499', '199032', '26026400', '18524609']
+2025-11-28 18:41:52,950 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:53,009 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:53,010 - root - INFO - Ranked list (post-pairwise): ['3868903', '25938053', '27422209', '2232896', '15813672', '540026', '183161', '2490255', '9837031', '29565743', '234951', '7872925', '2481832', '11547143', '27313703', '12814612', '17925547', '30096041', '20347020', '6506158']
+2025-11-28 18:41:53,010 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:53,010 - root - INFO - Ranked list : ['3868903', '25938053', '27422209', '2232896', '15813672', '540026', '183161', '2490255', '9837031', '29565743', '234951', '7872925', '2481832', '11547143', '27313703', '12814612', '17925547', '30096041', '20347020', '6506158']
+2025-11-28 18:41:53,010 - root - INFO - ---- Task end ----
+2025-11-28 18:41:53,012 - websocietysimulator - INFO - Simulation finished for task 33
+2025-11-28 18:41:53,017 - root - INFO - === Experiment config ===
+2025-11-28 18:41:53,017 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:53,017 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:53,018 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:53,018 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:53,018 - root - INFO - ---- Task start ---- user_id=8164bab600519db40bccf7330e5214ff  #cands=20
+2025-11-28 18:41:53,381 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:53,382 - root - INFO - Ranked list (post-pairwise): ['741429', '13517756', '646040', '33359704', '827260', '6203342', '29741418', '9951085', '534180', '17999159', '12140102', '7987574', '63477', '2880751', '5945516', '275624', '27398274', '1998313', '1292972', '26226676']
+2025-11-28 18:41:53,382 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:53,382 - root - INFO - Ranked list : ['741429', '13517756', '646040', '33359704', '827260', '6203342', '29741418', '9951085', '534180', '17999159', '12140102', '7987574', '63477', '2880751', '5945516', '275624', '27398274', '1998313', '1292972', '26226676']
+2025-11-28 18:41:53,382 - root - INFO - ---- Task end ----
+2025-11-28 18:41:53,383 - websocietysimulator - INFO - Simulation finished for task 31
+2025-11-28 18:41:53,390 - root - INFO - === Experiment config ===
+2025-11-28 18:41:53,391 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:53,391 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:53,391 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:53,391 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:53,391 - root - INFO - ---- Task start ---- user_id=c0daf7238eca327e6b74f1b961cc146d  #cands=20
+2025-11-28 18:41:53,935 - root - INFO - RAW REASONING OUTPUT:
+```python
+["32934710", "44018", "25205538", "7157834", "25454142", "693939", "19043138", "696758", "5965449", "26826438", "24423372", "15784159", "621385", "3548092", "6462635", "17285396", "1499270", "9039187", "23951719", "35059628"]
+```
+2025-11-28 18:41:53,936 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:53,936 - root - INFO - Ranked list (pre-pairwise): ['32934710', '44018', '25205538', '7157834', '25454142', '693939', '19043138', '696758', '5965449', '26826438', '24423372', '15784159', '621385', '3548092', '6462635', '17285396', '1499270', '9039187', '23951719', '35059628']
+2025-11-28 18:41:53,936 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:54,403 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:54,404 - root - INFO - Ranked list (post-pairwise): ['20644398', '11904233', '23291162', '19429386', '29478035', '9044229', '12323153', '1119070', '3347521', '23349942', '11248563', '26778312', '26161140', '24464117', '1202542', '11389406', '261359', '18775363', '7469188', '791639']
+2025-11-28 18:41:54,404 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:54,404 - root - INFO - Ranked list : ['20644398', '11904233', '23291162', '19429386', '29478035', '9044229', '12323153', '1119070', '3347521', '23349942', '11248563', '26778312', '26161140', '24464117', '1202542', '11389406', '261359', '18775363', '7469188', '791639']
+2025-11-28 18:41:54,404 - root - INFO - ---- Task end ----
+2025-11-28 18:41:54,405 - websocietysimulator - INFO - Simulation finished for task 35
+2025-11-28 18:41:54,411 - root - INFO - === Experiment config ===
+2025-11-28 18:41:54,411 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:54,411 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:54,411 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:54,411 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:54,412 - root - INFO - ---- Task start ---- user_id=9c705d573943f354e90b5d033871e894  #cands=20
+2025-11-28 18:41:54,920 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:54,921 - root - INFO - Ranked list (post-pairwise): ['24496462', '10891219', '12213010', '67384', '11131065', '6748407', '948611', '1433507', '887383', '3278907', '34316948', '96254', '5986776', '2426625', '1479055', '6164612', '6095547', '16094065', '2395993', '3954269']
+2025-11-28 18:41:54,921 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:54,921 - root - INFO - Ranked list : ['24496462', '10891219', '12213010', '67384', '11131065', '6748407', '948611', '1433507', '887383', '3278907', '34316948', '96254', '5986776', '2426625', '1479055', '6164612', '6095547', '16094065', '2395993', '3954269']
+2025-11-28 18:41:54,921 - root - INFO - ---- Task end ----
+2025-11-28 18:41:54,922 - websocietysimulator - INFO - Simulation finished for task 36
+2025-11-28 18:41:54,926 - root - INFO - === Experiment config ===
+2025-11-28 18:41:54,926 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:54,926 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:54,927 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:54,927 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:54,927 - root - INFO - ---- Task start ---- user_id=c783faf61466129f0e5178b137d2ad4d  #cands=20
+2025-11-28 18:41:55,208 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:55,210 - root - INFO - Ranked list (post-pairwise): ['23282322', '854861', '33651938', '27137791', '24150694', '18891076', '1156976', '19427077', '756258', '8839053', '6543777', '22561387', '16702392', '13003576', '555372', '25221108', '1259468', '1313376', '25987889', '18970400']
+2025-11-28 18:41:55,210 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:55,211 - root - INFO - Ranked list : ['23282322', '854861', '33651938', '27137791', '24150694', '18891076', '1156976', '19427077', '756258', '8839053', '6543777', '22561387', '16702392', '13003576', '555372', '25221108', '1259468', '1313376', '25987889', '18970400']
+2025-11-28 18:41:55,211 - root - INFO - ---- Task end ----
+2025-11-28 18:41:55,212 - websocietysimulator - INFO - Simulation finished for task 32
+2025-11-28 18:41:55,218 - root - INFO - === Experiment config ===
+2025-11-28 18:41:55,219 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:55,219 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:55,219 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:55,219 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:55,220 - root - INFO - ---- Task start ---- user_id=0140743b48eb158f9bbf90c825f80766  #cands=20
+2025-11-28 18:41:55,379 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'author_preference', 'theme_preference']
+2025-11-28 18:41:55,524 - root - INFO - RAW REASONING OUTPUT:
+['8424366', '707896', '15854631', '2565852', '17347373', '25707941', '407712', '13573821', '2020685', '9019393', '2125649', '920782', '1979364', '1829017', '3241075', '1168336', '25030905', '17868012', '15747886', '2449546']
+
+2025-11-28 18:41:55,524 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:41:55,525 - root - INFO - Ranked list (pre-pairwise): ['8424366', '707896', '15854631', '2565852', '17347373', '25707941', '407712', '13573821', '2020685', '9019393', '2125649', '920782', '1979364', '1829017', '3241075', '1168336', '25030905', '17868012', '15747886', '2449546']
+2025-11-28 18:41:55,525 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:41:55,526 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:55,527 - root - INFO - Ranked list (post-pairwise): ['11797680', '16083134', '5014007', '7378029', '17830333', '1617279', '17444989', '9519211', '17368880', '6224254', '1906135', '28800176', '18285536', '1281011', '342551', '15765711', '18989816', '2680462', '35820905', '18942097']
+2025-11-28 18:41:55,527 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:55,527 - root - INFO - Ranked list : ['11797680', '16083134', '5014007', '7378029', '17830333', '1617279', '17444989', '9519211', '17368880', '6224254', '1906135', '28800176', '18285536', '1281011', '342551', '15765711', '18989816', '2680462', '35820905', '18942097']
+2025-11-28 18:41:55,528 - root - INFO - ---- Task end ----
+2025-11-28 18:41:55,528 - websocietysimulator - INFO - Simulation finished for task 34
+2025-11-28 18:41:55,533 - root - INFO - === Experiment config ===
+2025-11-28 18:41:55,533 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:55,533 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:55,534 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:55,534 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:55,534 - root - INFO - ---- Task start ---- user_id=9e03fe3a7420727d2ff233a4216c5871  #cands=20
+2025-11-28 18:41:57,857 - websocietysimulator - INFO - ✓ User profile keys: ['character_preference', 'reading_style', 'plot_complexity']
+2025-11-28 18:41:57,858 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['character_preference', 'reading_style', 'plot_complexity']
+2025-11-28 18:41:57,943 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:41:57,943 - root - INFO - Ranked list (post-pairwise): ['1632965', '292018', '1906135', '9775473', '24388433', '630132', '18269303', '1207236', '24846308', '22070685', '293883', '31145131', '26246328', '3211582', '16056713', '17456413', '27414499', '199032', '26026400', '18524609']
+2025-11-28 18:41:57,943 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:41:57,943 - root - INFO - Ranked list : ['1632965', '292018', '1906135', '9775473', '24388433', '630132', '18269303', '1207236', '24846308', '22070685', '293883', '31145131', '26246328', '3211582', '16056713', '17456413', '27414499', '199032', '26026400', '18524609']
+2025-11-28 18:41:57,943 - root - INFO - ---- Task end ----
+2025-11-28 18:41:57,944 - websocietysimulator - INFO - Simulation finished for task 37
+2025-11-28 18:41:57,946 - websocietysimulator - INFO - ✓ User profile keys: ['humor_preference', 'tolerance_for_absurdity', 'plot_coherence_preference']
+2025-11-28 18:41:57,946 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['humor_preference', 'tolerance_for_absurdity', 'plot_coherence_preference']
+2025-11-28 18:41:57,950 - root - INFO - === Experiment config ===
+2025-11-28 18:41:57,950 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:41:57,951 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:41:57,951 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:41:57,951 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:41:57,951 - root - INFO - ---- Task start ---- user_id=540307e366474a71e276b55a6baa3bc6  #cands=20
+2025-11-28 18:41:58,899 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'author_preference', 'format_preference', 'character_growth']
+2025-11-28 18:41:58,899 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'author_preference', 'format_preference', 'character_growth']
+2025-11-28 18:42:00,007 - websocietysimulator - INFO - ✓ User profile keys: ['theme_preference', 'review_sentiment', 'impact_preference']
+2025-11-28 18:42:00,010 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['theme_preference', 'review_sentiment', 'impact_preference']
+2025-11-28 18:42:00,301 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'author_preference', 'theme_preference']
+2025-11-28 18:42:00,386 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:42:00,386 - root - INFO - Ranked list (post-pairwise): ['2565852', '8424366', '707896', '15854631', '17347373', '25707941', '407712', '13573821', '2020685', '9019393', '2125649', '920782', '1979364', '1829017', '3241075', '1168336', '25030905', '17868012', '15747886', '2449546']
+2025-11-28 18:42:00,386 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:42:00,386 - root - INFO - Ranked list : ['2565852', '8424366', '707896', '15854631', '17347373', '25707941', '407712', '13573821', '2020685', '9019393', '2125649', '920782', '1979364', '1829017', '3241075', '1168336', '25030905', '17868012', '15747886', '2449546']
+2025-11-28 18:42:00,386 - root - INFO - ---- Task end ----
+2025-11-28 18:42:00,386 - websocietysimulator - INFO - Simulation finished for task 39
+2025-11-28 18:42:00,389 - root - INFO - === Experiment config ===
+2025-11-28 18:42:00,389 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:42:00,389 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:42:00,389 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:42:00,389 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:42:00,390 - root - INFO - ---- Task start ---- user_id=e8fd5d4276f864fc6bc8e12cb7d31e63  #cands=20
+2025-11-28 18:42:00,945 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:42:00,945 - root - INFO - Ranked list (post-pairwise): ['44018', '32934710', '25205538', '7157834', '25454142', '693939', '19043138', '696758', '5965449', '26826438', '24423372', '15784159', '621385', '3548092', '6462635', '17285396', '1499270', '9039187', '23951719', '35059628']
+2025-11-28 18:42:00,945 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:42:00,945 - root - INFO - Ranked list : ['44018', '32934710', '25205538', '7157834', '25454142', '693939', '19043138', '696758', '5965449', '26826438', '24423372', '15784159', '621385', '3548092', '6462635', '17285396', '1499270', '9039187', '23951719', '35059628']
+2025-11-28 18:42:00,945 - root - INFO - ---- Task end ----
+2025-11-28 18:42:00,946 - websocietysimulator - INFO - Simulation finished for task 38
+2025-11-28 18:42:00,950 - root - INFO - === Experiment config ===
+2025-11-28 18:42:00,950 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:42:00,950 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:42:00,950 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:42:00,950 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:42:00,951 - root - INFO - ---- Task start ---- user_id=e4934905c05cc212531a500a4e1f2409  #cands=20
+2025-11-28 18:42:01,059 - websocietysimulator - INFO - ✓ User profile keys: ['theme_preference', 'review_sentiment', 'reading_age']
+2025-11-28 18:42:01,059 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['theme_preference', 'review_sentiment', 'reading_age']
+2025-11-28 18:42:01,227 - websocietysimulator - INFO - ✓ User profile keys: ['reading_state_sensitivity', 'review_sentiment', 'plot_complexity']
+2025-11-28 18:42:01,227 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['reading_state_sensitivity', 'review_sentiment', 'plot_complexity']
+2025-11-28 18:42:02,040 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'author_awareness', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:42:02,041 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'author_awareness', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:42:02,125 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['character_preference', 'reading_style', 'plot_complexity']
+2025-11-28 18:42:02,798 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['humor_preference', 'tolerance_for_absurdity', 'plot_coherence_preference']
+2025-11-28 18:42:03,907 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'author_preference', 'format_preference', 'character_growth']
+2025-11-28 18:42:04,832 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'author_preference', 'theme_preference']
+2025-11-28 18:42:05,129 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'reading_style', 'experience_level']
+2025-11-28 18:42:05,131 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'reading_style', 'experience_level']
+2025-11-28 18:42:05,558 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['theme_preference', 'review_sentiment', 'impact_preference']
+2025-11-28 18:42:05,620 - websocietysimulator - INFO - ✓ User profile keys: ['review_sentiment', 'plot_complexity', 'adaptation_potential']
+2025-11-28 18:42:05,621 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['review_sentiment', 'plot_complexity', 'adaptation_potential']
+2025-11-28 18:42:06,148 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['reading_state_sensitivity', 'review_sentiment', 'plot_complexity']
+2025-11-28 18:42:06,355 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['theme_preference', 'review_sentiment', 'reading_age']
+2025-11-28 18:42:07,435 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['character_preference', 'reading_style', 'plot_complexity']
+2025-11-28 18:42:07,664 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'author_awareness', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:42:07,692 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['humor_preference', 'tolerance_for_absurdity', 'plot_coherence_preference']
+2025-11-28 18:42:08,636 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'author_preference', 'format_preference', 'character_growth']
+2025-11-28 18:42:09,774 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'reading_style', 'experience_level']
+2025-11-28 18:42:10,272 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['review_sentiment', 'plot_complexity', 'adaptation_potential']
+2025-11-28 18:42:10,384 - root - INFO - RAW REASONING OUTPUT:
+["24268832", "13604217", "646195", "1652718", "34819227", "2268422", "13541329", "9571209", "15734532", "6743741", "12617579", "25899729", "18857905", "28960211", "20507718", "6657097", "29100318", "2248374", "30538", "31137359"]
+
+2025-11-28 18:42:10,385 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:42:10,385 - root - INFO - Ranked list (pre-pairwise): ['24268832', '13604217', '646195', '1652718', '34819227', '2268422', '13541329', '9571209', '15734532', '6743741', '12617579', '25899729', '18857905', '28960211', '20507718', '6657097', '29100318', '2248374', '30538', '31137359']
+2025-11-28 18:42:10,385 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:42:10,675 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['theme_preference', 'review_sentiment', 'impact_preference']
+2025-11-28 18:42:10,762 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['reading_state_sensitivity', 'review_sentiment', 'plot_complexity']
+2025-11-28 18:42:11,228 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['theme_preference', 'review_sentiment', 'reading_age']
+2025-11-28 18:42:12,375 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['character_preference', 'reading_style', 'plot_complexity']
+2025-11-28 18:42:12,483 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['humor_preference', 'tolerance_for_absurdity', 'plot_coherence_preference']
+2025-11-28 18:42:13,412 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'author_awareness', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:42:14,261 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'author_preference', 'format_preference', 'character_growth']
+2025-11-28 18:42:14,361 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'reading_style', 'experience_level']
+2025-11-28 18:42:15,337 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['review_sentiment', 'plot_complexity', 'adaptation_potential']
+2025-11-28 18:42:15,337 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['theme_preference', 'review_sentiment', 'impact_preference']
+2025-11-28 18:42:15,441 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['reading_state_sensitivity', 'review_sentiment', 'plot_complexity']
+2025-11-28 18:42:15,642 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:42:15,642 - root - INFO - Ranked list (post-pairwise): ['1652718', '24268832', '13604217', '646195', '34819227', '2268422', '13541329', '9571209', '15734532', '6743741', '12617579', '25899729', '18857905', '28960211', '20507718', '6657097', '29100318', '2248374', '30538', '31137359']
+2025-11-28 18:42:15,642 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:42:15,642 - root - INFO - Ranked list : ['1652718', '24268832', '13604217', '646195', '34819227', '2268422', '13541329', '9571209', '15734532', '6743741', '12617579', '25899729', '18857905', '28960211', '20507718', '6657097', '29100318', '2248374', '30538', '31137359']
+2025-11-28 18:42:15,642 - root - INFO - ---- Task end ----
+2025-11-28 18:42:15,644 - websocietysimulator - INFO - Simulation finished for task 40
+2025-11-28 18:42:16,709 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['theme_preference', 'review_sentiment', 'reading_age']
+2025-11-28 18:42:18,547 - root - INFO - RAW REASONING OUTPUT:
+```python
+["524214", "18467736", "11368154", "30174693", "18666071", "17789746", "6605134", "11089150", "6939299", "304917", "18714267", "4439260", "21849366", "21073019", "604229", "16291612", "200756", "688115", "6411339", "3768441"]
+```
+2025-11-28 18:42:18,550 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:42:18,550 - root - INFO - Ranked list (pre-pairwise): ['524214', '18467736', '11368154', '30174693', '18666071', '17789746', '6605134', '11089150', '6939299', '304917', '18714267', '4439260', '21849366', '21073019', '604229', '16291612', '200756', '688115', '6411339', '3768441']
+2025-11-28 18:42:18,550 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:42:19,044 - root - INFO - RAW REASONING OUTPUT:
+```python
+["370862", "17797765", "23705631", "23129858", "15990283", "17333561", "32598915", "630361", "14654400", "2065447", "11468888", "17689678", "6668742", "15896703", "20881436", "4163923", "991745", "6146070", "23653570", "1654076"]
+```
+2025-11-28 18:42:19,045 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:42:19,045 - root - INFO - Ranked list (pre-pairwise): ['370862', '17797765', '23705631', '23129858', '15990283', '17333561', '32598915', '630361', '14654400', '2065447', '11468888', '17689678', '6668742', '15896703', '20881436', '4163923', '991745', '6146070', '23653570', '1654076']
+2025-11-28 18:42:19,045 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:42:19,125 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'reading_style', 'experience_level']
+2025-11-28 18:42:19,243 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'author_awareness', 'plot_complexity', 'writing_style_preference']
+2025-11-28 18:42:20,115 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['review_sentiment', 'plot_complexity', 'adaptation_potential']
+2025-11-28 18:42:21,164 - root - INFO - RAW REASONING OUTPUT:
+['18121181', '30624683', '12841591', '26014886', '8073504', '111879', '7502355', '1435989', '13537232', '1090454', '6478948', '1370511', '17707440', '17861908', '6225998', '28953419', '13609412', '8088503', '1406512', '7557970']
+
+2025-11-28 18:42:21,165 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:42:21,166 - root - INFO - Ranked list (pre-pairwise): ['18121181', '30624683', '12841591', '26014886', '8073504', '111879', '7502355', '1435989', '13537232', '1090454', '6478948', '1370511', '17707440', '17861908', '6225998', '28953419', '13609412', '8088503', '1406512', '7557970']
+2025-11-28 18:42:21,166 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:42:21,395 - root - INFO - RAW REASONING OUTPUT:
+["31420408", "23604401", "2774944", "6447482", "18813251", "32674306", "2649190", "5633015", "941011", "615071", "25614401", "13647960", "22529472", "31435317", "8232072", "12567775", "482885", "11201951", "17557517", "6396053"]
+
+2025-11-28 18:42:21,396 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:42:21,397 - root - INFO - Ranked list (pre-pairwise): ['31420408', '23604401', '2774944', '6447482', '18813251', '32674306', '2649190', '5633015', '941011', '615071', '25614401', '13647960', '22529472', '31435317', '8232072', '12567775', '482885', '11201951', '17557517', '6396053']
+2025-11-28 18:42:21,397 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:42:22,264 - root - INFO - RAW REASONING OUTPUT:
+['34136348', '21357902', '28863276', '6597316', '22664469', '15105614', '12744585', '1896607', '3734696', '105955', '1865022', '54285', '23492376', '3150378', '10212767', '2532599', '293173', '176587', '28594909', '568018']
+
+2025-11-28 18:42:22,265 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:42:22,266 - root - INFO - Ranked list (pre-pairwise): ['34136348', '21357902', '28863276', '6597316', '22664469', '15105614', '12744585', '1896607', '3734696', '105955', '1865022', '54285', '23492376', '3150378', '10212767', '2532599', '293173', '176587', '28594909', '568018']
+2025-11-28 18:42:22,266 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:42:22,907 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:42:22,907 - root - INFO - Ranked list (post-pairwise): ['30174693', '524214', '18467736', '11368154', '18666071', '17789746', '6605134', '11089150', '6939299', '304917', '18714267', '4439260', '21849366', '21073019', '604229', '16291612', '200756', '688115', '6411339', '3768441']
+2025-11-28 18:42:22,907 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:42:22,908 - root - INFO - Ranked list : ['30174693', '524214', '18467736', '11368154', '18666071', '17789746', '6605134', '11089150', '6939299', '304917', '18714267', '4439260', '21849366', '21073019', '604229', '16291612', '200756', '688115', '6411339', '3768441']
+2025-11-28 18:42:22,908 - root - INFO - ---- Task end ----
+2025-11-28 18:42:22,909 - websocietysimulator - INFO - Simulation finished for task 41
+2025-11-28 18:42:23,114 - root - INFO - RAW REASONING OUTPUT:
+["18137898", "13479136", "18668007", "2004357", "23359708", "6329953", "27253486", "6320601", "3319544", "18318318", "11955219", "1724476", "22752598", "25184536", "17167955", "11737282", "19359008", "182154", "2032873", "22238987"]
+
+2025-11-28 18:42:23,114 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:42:23,115 - root - INFO - Ranked list (pre-pairwise): ['18137898', '13479136', '18668007', '2004357', '23359708', '6329953', '27253486', '6320601', '3319544', '18318318', '11955219', '1724476', '22752598', '25184536', '17167955', '11737282', '19359008', '182154', '2032873', '22238987']
+2025-11-28 18:42:23,115 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:42:24,549 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:42:24,549 - root - INFO - Ranked list (post-pairwise): ['370862', '17797765', '23705631', '23129858', '15990283', '17333561', '32598915', '630361', '14654400', '2065447', '11468888', '17689678', '6668742', '15896703', '20881436', '4163923', '991745', '6146070', '23653570', '1654076']
+2025-11-28 18:42:24,549 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:42:24,549 - root - INFO - Ranked list : ['370862', '17797765', '23705631', '23129858', '15990283', '17333561', '32598915', '630361', '14654400', '2065447', '11468888', '17689678', '6668742', '15896703', '20881436', '4163923', '991745', '6146070', '23653570', '1654076']
+2025-11-28 18:42:24,549 - root - INFO - ---- Task end ----
+2025-11-28 18:42:24,551 - websocietysimulator - INFO - Simulation finished for task 43
+2025-11-28 18:42:24,576 - root - INFO - RAW REASONING OUTPUT:
+["3003458", "25042152", "2995836", "273756", "24853097", "5826193", "1076323", "274703", "864997", "35863488", "7703583", "1893373", "1110992", "13260292", "22438391", "2822500", "10040937", "1476100", "2651455", "1190061"]
+
+2025-11-28 18:42:24,576 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:42:24,576 - root - INFO - Ranked list (pre-pairwise): ['3003458', '25042152', '2995836', '273756', '24853097', '5826193', '1076323', '274703', '864997', '35863488', '7703583', '1893373', '1110992', '13260292', '22438391', '2822500', '10040937', '1476100', '2651455', '1190061']
+2025-11-28 18:42:24,576 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:42:26,041 - root - INFO - RAW REASONING OUTPUT:
+["212199", "9442413", "347319", "17213619", "22731266", "20890364", "45973", "3699108", "17670510", "2414863", "2476115", "2924136", "1286040", "1835342", "7922", "1827075", "7966441", "1425017", "1903233", "30987933"]
+
+2025-11-28 18:42:26,042 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:42:26,042 - root - INFO - Ranked list (pre-pairwise): ['212199', '9442413', '347319', '17213619', '22731266', '20890364', '45973', '3699108', '17670510', '2414863', '2476115', '2924136', '1286040', '1835342', '7922', '1827075', '7966441', '1425017', '1903233', '30987933']
+2025-11-28 18:42:26,042 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:42:26,087 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:42:26,089 - root - INFO - Ranked list (post-pairwise): ['26014886', '18121181', '30624683', '12841591', '8073504', '111879', '7502355', '1435989', '13537232', '1090454', '6478948', '1370511', '17707440', '17861908', '6225998', '28953419', '13609412', '8088503', '1406512', '7557970']
+2025-11-28 18:42:26,089 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:42:26,089 - root - INFO - Ranked list : ['26014886', '18121181', '30624683', '12841591', '8073504', '111879', '7502355', '1435989', '13537232', '1090454', '6478948', '1370511', '17707440', '17861908', '6225998', '28953419', '13609412', '8088503', '1406512', '7557970']
+2025-11-28 18:42:26,089 - root - INFO - ---- Task end ----
+2025-11-28 18:42:26,090 - websocietysimulator - INFO - Simulation finished for task 45
+2025-11-28 18:42:26,147 - root - INFO - RAW REASONING OUTPUT:
+["18166929", "6267430", "2006534", "29779242", "22718657", "1611887", "838978", "2328028", "27919688", "27230905", "29152344", "11477944", "23546840", "882944", "3384013", "22885813", "26067683", "14744381", "11357494", "26139659"]
+
+2025-11-28 18:42:26,147 - root - INFO - RANKED LIST BEFORE PAIRWISE (len=20)
+2025-11-28 18:42:26,148 - root - INFO - Ranked list (pre-pairwise): ['18166929', '6267430', '2006534', '29779242', '22718657', '1611887', '838978', '2328028', '27919688', '27230905', '29152344', '11477944', '23546840', '882944', '3384013', '22885813', '26067683', '14744381', '11357494', '26139659']
+2025-11-28 18:42:26,148 - root - INFO - [Pairwise] Reranking top 5 candidates (have 5 profiles)
+2025-11-28 18:42:26,756 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:42:26,756 - root - INFO - Ranked list (post-pairwise): ['18813251', '31420408', '23604401', '2774944', '6447482', '32674306', '2649190', '5633015', '941011', '615071', '25614401', '13647960', '22529472', '31435317', '8232072', '12567775', '482885', '11201951', '17557517', '6396053']
+2025-11-28 18:42:26,756 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:42:26,756 - root - INFO - Ranked list : ['18813251', '31420408', '23604401', '2774944', '6447482', '32674306', '2649190', '5633015', '941011', '615071', '25614401', '13647960', '22529472', '31435317', '8232072', '12567775', '482885', '11201951', '17557517', '6396053']
+2025-11-28 18:42:26,756 - root - INFO - ---- Task end ----
+2025-11-28 18:42:26,757 - websocietysimulator - INFO - Simulation finished for task 42
+2025-11-28 18:42:27,605 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:42:27,606 - root - INFO - Ranked list (post-pairwise): ['28863276', '34136348', '21357902', '6597316', '22664469', '15105614', '12744585', '1896607', '3734696', '105955', '1865022', '54285', '23492376', '3150378', '10212767', '2532599', '293173', '176587', '28594909', '568018']
+2025-11-28 18:42:27,606 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:42:27,606 - root - INFO - Ranked list : ['28863276', '34136348', '21357902', '6597316', '22664469', '15105614', '12744585', '1896607', '3734696', '105955', '1865022', '54285', '23492376', '3150378', '10212767', '2532599', '293173', '176587', '28594909', '568018']
+2025-11-28 18:42:27,606 - root - INFO - ---- Task end ----
+2025-11-28 18:42:27,608 - websocietysimulator - INFO - Simulation finished for task 46
+2025-11-28 18:42:27,663 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:42:27,663 - root - INFO - Ranked list (post-pairwise): ['3003458', '25042152', '2995836', '273756', '24853097', '5826193', '1076323', '274703', '864997', '35863488', '7703583', '1893373', '1110992', '13260292', '22438391', '2822500', '10040937', '1476100', '2651455', '1190061']
+2025-11-28 18:42:27,663 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:42:27,663 - root - INFO - Ranked list : ['3003458', '25042152', '2995836', '273756', '24853097', '5826193', '1076323', '274703', '864997', '35863488', '7703583', '1893373', '1110992', '13260292', '22438391', '2822500', '10040937', '1476100', '2651455', '1190061']
+2025-11-28 18:42:27,663 - root - INFO - ---- Task end ----
+2025-11-28 18:42:27,665 - websocietysimulator - INFO - Simulation finished for task 49
+2025-11-28 18:42:29,522 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:42:29,523 - root - INFO - Ranked list (post-pairwise): ['2004357', '18137898', '13479136', '18668007', '23359708', '6329953', '27253486', '6320601', '3319544', '18318318', '11955219', '1724476', '22752598', '25184536', '17167955', '11737282', '19359008', '182154', '2032873', '22238987']
+2025-11-28 18:42:29,523 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:42:29,523 - root - INFO - Ranked list : ['2004357', '18137898', '13479136', '18668007', '23359708', '6329953', '27253486', '6320601', '3319544', '18318318', '11955219', '1724476', '22752598', '25184536', '17167955', '11737282', '19359008', '182154', '2032873', '22238987']
+2025-11-28 18:42:29,523 - root - INFO - ---- Task end ----
+2025-11-28 18:42:29,524 - websocietysimulator - INFO - Simulation finished for task 47
+2025-11-28 18:42:31,254 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:42:31,255 - root - INFO - Ranked list (post-pairwise): ['22731266', '212199', '9442413', '347319', '17213619', '20890364', '45973', '3699108', '17670510', '2414863', '2476115', '2924136', '1286040', '1835342', '7922', '1827075', '7966441', '1425017', '1903233', '30987933']
+2025-11-28 18:42:31,255 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:42:31,255 - root - INFO - Ranked list : ['22731266', '212199', '9442413', '347319', '17213619', '20890364', '45973', '3699108', '17670510', '2414863', '2476115', '2924136', '1286040', '1835342', '7922', '1827075', '7966441', '1425017', '1903233', '30987933']
+2025-11-28 18:42:31,255 - root - INFO - ---- Task end ----
+2025-11-28 18:42:31,257 - websocietysimulator - INFO - Simulation finished for task 48
+2025-11-28 18:42:32,012 - root - INFO - RANKED LIST AFTER PAIRWISE (len=20)
+2025-11-28 18:42:32,012 - root - INFO - Ranked list (post-pairwise): ['22718657', '18166929', '6267430', '2006534', '29779242', '1611887', '838978', '2328028', '27919688', '27230905', '29152344', '11477944', '23546840', '882944', '3384013', '22885813', '26067683', '14744381', '11357494', '26139659']
+2025-11-28 18:42:32,012 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-28 18:42:32,012 - root - INFO - Ranked list : ['22718657', '18166929', '6267430', '2006534', '29779242', '1611887', '838978', '2328028', '27919688', '27230905', '29152344', '11477944', '23546840', '882944', '3384013', '22885813', '26067683', '14744381', '11357494', '26139659']
+2025-11-28 18:42:32,012 - root - INFO - ---- Task end ----
+2025-11-28 18:42:32,013 - websocietysimulator - INFO - Simulation finished for task 44
+2025-11-28 18:42:32,028 - websocietysimulator - INFO - Simulation finished
+2025-11-28 18:42:32,028 - websocietysimulator - INFO - Evaluating simulation results
+2025-11-28 18:42:32,029 - websocietysimulator - INFO - Evaluation finished
+2025-11-28 18:42:32,035 - root - INFO - === Experiment config ===
+2025-11-28 18:42:32,036 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:42:32,036 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:42:32,036 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:42:32,036 - root - INFO - Use pairwise rerank: True
+2025-11-28 18:42:32,039 - root - INFO - === Experiment config ===
+2025-11-28 18:42:32,039 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 18:42:32,040 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 18:42:32,040 - root - INFO - Memory module: MemoryDILU
+2025-11-28 18:42:32,040 - root - INFO - Use pairwise rerank: True

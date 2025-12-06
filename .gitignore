@@ -3,9 +3,6 @@ data/
 data_processed/
 db/
 
-# Task files - too large for git
-example/track1/
-example/track2/
 
 # Python cache
 __pycache__/

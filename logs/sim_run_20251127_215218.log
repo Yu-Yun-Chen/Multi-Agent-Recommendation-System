@@ -1,0 +1,52 @@
+2025-11-27 21:52:18,300 - websocietysimulator - INFO - Start initializing Simulator
+2025-11-27 21:52:18,300 - websocietysimulator - INFO - Using Normal InteractionTool
+2025-11-27 21:52:18,300 - websocietysimulator - INFO - Initializing InteractionTool with data directory: ./data
+2025-11-27 21:52:18,300 - websocietysimulator - INFO - Loading item data from ./data/item.json
+2025-11-27 21:52:30,133 - websocietysimulator - INFO - Loading user data from ./data/user.json
+2025-11-27 21:52:35,462 - websocietysimulator - INFO - Loading review data from ./data/review.json
+2025-11-27 21:53:12,906 - websocietysimulator - INFO - Building review indices
+2025-11-27 21:53:25,889 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-27 21:53:27,459 - websocietysimulator - INFO - Simulator initialized
+2025-11-27 21:53:27,549 - websocietysimulator - INFO - Loaded 400 task-groundtruth pairs
+2025-11-27 21:53:27,550 - websocietysimulator - INFO - Agent class set
+2025-11-27 21:53:27,550 - websocietysimulator - INFO - LLM set
+2025-11-27 21:53:27,550 - websocietysimulator - INFO - Running simulation
+2025-11-27 21:53:27,550 - websocietysimulator - INFO - Total tasks: 10
+2025-11-27 21:53:27,550 - websocietysimulator - INFO - Running with 4 threads
+2025-11-27 21:53:27,654 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-27 21:53:27,755 - root - INFO - === Experiment config ===
+2025-11-27 21:53:27,755 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 21:53:27,756 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 21:53:27,756 - root - INFO - Memory module: MemoryDILU
+2025-11-27 21:53:27,757 - root - INFO - ---- Task start ---- user_id=5c23d6183093168f20213c7ff6cfc065  #cands=20
+2025-11-27 21:53:27,758 - root - INFO - === Experiment config ===
+2025-11-27 21:53:27,758 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 21:53:27,759 - root - INFO - === Experiment config ===
+2025-11-27 21:53:27,759 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 21:53:27,759 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 21:53:27,759 - root - INFO - Memory module: MemoryDILU
+2025-11-27 21:53:27,759 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 21:53:27,760 - root - INFO - ---- Task start ---- user_id=672a15b10b7c8a981a4291d48cf58627  #cands=20
+2025-11-27 21:53:27,760 - root - INFO - Memory module: MemoryDILU
+2025-11-27 21:53:27,761 - root - INFO - ---- Task start ---- user_id=1c944ee4877ea9829e3c8c019e5122c3  #cands=20
+2025-11-27 21:53:27,772 - root - INFO - === Experiment config ===
+2025-11-27 21:53:27,772 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 21:53:27,772 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 21:53:27,772 - root - INFO - Memory module: MemoryDILU
+2025-11-27 21:53:27,772 - root - INFO - ---- Task start ---- user_id=d0a94b65475b4578576aa87867bba70e  #cands=20
+2025-11-27 21:53:47,791 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'theme_preference', 'writing_style_preference']
+2025-11-27 21:53:47,792 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'theme_preference', 'writing_style_preference']
+2025-11-27 21:53:50,964 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 're_reading_preference', 'childhood_themes_preference']
+2025-11-27 21:53:50,965 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 're_reading_preference', 'childhood_themes_preference']
+2025-11-27 21:53:54,140 - websocietysimulator - INFO - ✓ User profile keys: ['author_preference', 'plot_progression', 'reading_style_preference']
+2025-11-27 21:53:54,140 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['author_preference', 'plot_progression', 'reading_style_preference']
+2025-11-27 21:54:04,224 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'character_preference', 'plot_complexity']
+2025-11-27 21:54:04,225 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'character_preference', 'plot_complexity']
+2025-11-27 21:54:25,018 - websocietysimulator - WARNING - Gemini output truncated by max tokens (finish_reason=FinishReason.MAX_TOKENS [MAX_TOKENS]); using partial content.
+2025-11-27 21:54:25,019 - websocietysimulator - ERROR - Gemini: Empty content parts (no valid Part in candidate).
+2025-11-27 21:54:25,019 - websocietysimulator - ERROR -   [SchemaFitter] JSON decode error: Expecting value: line 1 column 2 (char 1)
+2025-11-27 21:54:25,019 - websocietysimulator - ERROR -   [SchemaFitter] FAILED to extract valid JSON array from LLM response!
+2025-11-27 21:54:36,320 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['author_preference', 'plot_progression', 'reading_style_preference']
+2025-11-27 21:54:42,698 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'character_preference', 'plot_complexity']
+2025-11-27 21:54:45,463 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 're_reading_preference', 'childhood_themes_preference']
+2025-11-27 21:54:56,222 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'theme_preference', 'writing_style_preference']

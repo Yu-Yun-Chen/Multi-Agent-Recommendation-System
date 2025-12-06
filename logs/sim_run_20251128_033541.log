@@ -1,0 +1,327 @@
+2025-11-28 03:35:41,610 - websocietysimulator - INFO - Start initializing Simulator
+2025-11-28 03:35:41,610 - websocietysimulator - INFO - Using Normal InteractionTool
+2025-11-28 03:35:41,610 - websocietysimulator - INFO - Initializing InteractionTool with data directory: ./data
+2025-11-28 03:35:41,610 - websocietysimulator - INFO - Loading item data from ./data/item.json
+2025-11-28 03:35:53,522 - websocietysimulator - INFO - Loading user data from ./data/user.json
+2025-11-28 03:35:58,041 - websocietysimulator - INFO - Loading review data from ./data/review.json
+2025-11-28 03:36:35,766 - websocietysimulator - INFO - Building review indices
+2025-11-28 03:36:48,530 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-28 03:36:50,037 - websocietysimulator - INFO - Simulator initialized
+2025-11-28 03:36:50,138 - websocietysimulator - INFO - Loaded 400 task-groundtruth pairs
+2025-11-28 03:36:50,139 - websocietysimulator - INFO - Agent class set
+2025-11-28 03:36:50,139 - websocietysimulator - INFO - LLM set
+2025-11-28 03:36:50,139 - websocietysimulator - INFO - Running simulation
+2025-11-28 03:36:50,139 - websocietysimulator - INFO - Total tasks: 30
+2025-11-28 03:36:50,139 - websocietysimulator - INFO - Running with 10 threads
+2025-11-28 03:36:50,269 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-28 03:36:50,366 - root - INFO - === Experiment config ===
+2025-11-28 03:36:50,366 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:36:50,366 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:36:50,366 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:36:50,367 - root - INFO - ---- Task start ---- user_id=3c888db39b6a45539d24783e9fecba6e  #cands=20
+2025-11-28 03:36:50,368 - root - INFO - === Experiment config ===
+2025-11-28 03:36:50,368 - root - INFO - === Experiment config ===
+2025-11-28 03:36:50,369 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:36:50,369 - root - INFO - === Experiment config ===
+2025-11-28 03:36:50,370 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:36:50,371 - root - INFO - === Experiment config ===
+2025-11-28 03:36:50,372 - root - INFO - === Experiment config ===
+2025-11-28 03:36:50,372 - root - INFO - === Experiment config ===
+2025-11-28 03:36:50,372 - root - INFO - === Experiment config ===
+2025-11-28 03:36:50,372 - root - INFO - === Experiment config ===
+2025-11-28 03:36:50,373 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:36:50,373 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:36:50,374 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:36:50,374 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:36:50,374 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:36:50,374 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:36:50,374 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:36:50,375 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:36:50,375 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:36:50,375 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:36:50,375 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:36:50,375 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:36:50,375 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:36:50,380 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:36:50,380 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:36:50,381 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:36:50,381 - root - INFO - ---- Task start ---- user_id=02d5dd00d4e653f7ded9f185e5eb42e3  #cands=20
+2025-11-28 03:36:50,381 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:36:50,381 - root - INFO - ---- Task start ---- user_id=5c23d6183093168f20213c7ff6cfc065  #cands=20
+2025-11-28 03:36:50,381 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:36:50,382 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:36:50,382 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:36:50,382 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:36:50,382 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:36:50,383 - root - INFO - ---- Task start ---- user_id=d0a94b65475b4578576aa87867bba70e  #cands=20
+2025-11-28 03:36:50,384 - root - INFO - ---- Task start ---- user_id=78ebcb5ac91acf19fcae2c0d8f136001  #cands=20
+2025-11-28 03:36:50,387 - root - INFO - ---- Task start ---- user_id=3aaad4ffd2ef6a2f357156131fd9b923  #cands=20
+2025-11-28 03:36:50,388 - root - INFO - ---- Task start ---- user_id=6551622f988381066adf56bc3ef9ccc4  #cands=20
+2025-11-28 03:36:50,390 - root - INFO - ---- Task start ---- user_id=1c944ee4877ea9829e3c8c019e5122c3  #cands=20
+2025-11-28 03:36:50,391 - root - INFO - ---- Task start ---- user_id=4903bdbe3fd2daa637aa6a2f190dd329  #cands=20
+2025-11-28 03:36:50,403 - root - INFO - === Experiment config ===
+2025-11-28 03:36:50,403 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:36:50,403 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:36:50,403 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:36:50,404 - root - INFO - ---- Task start ---- user_id=672a15b10b7c8a981a4291d48cf58627  #cands=20
+2025-11-28 03:36:52,623 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:52,629 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:52,641 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:52,641 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:52,641 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:52,643 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:52,647 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:52,739 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:52,805 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:52,842 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:55,695 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:55,698 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:55,719 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:55,719 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:55,720 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:55,722 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:55,723 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:55,804 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:55,863 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:55,917 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:58,765 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:58,765 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:58,788 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:58,790 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:58,791 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:58,791 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:58,791 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:58,873 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:58,934 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:36:58,982 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:02,832 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:02,833 - websocietysimulator - ERROR - Task 4 failed with error: RetryError[<Future at 0x957023c40 state=finished raised NotFound>]
+2025-11-28 03:37:02,836 - root - INFO - === Experiment config ===
+2025-11-28 03:37:02,837 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:02,837 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:02,837 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:02,837 - root - INFO - ---- Task start ---- user_id=0a9511019f60ac6ea799a790e3eb440d  #cands=20
+2025-11-28 03:37:02,840 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:02,840 - websocietysimulator - ERROR - Task 0 failed with error: RetryError[<Future at 0x957022920 state=finished raised NotFound>]
+2025-11-28 03:37:02,844 - root - INFO - === Experiment config ===
+2025-11-28 03:37:02,844 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:02,844 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:02,844 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:02,844 - root - INFO - ---- Task start ---- user_id=aaf35b749e968a89676c6c8f45b2da9a  #cands=20
+2025-11-28 03:37:02,857 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:02,858 - websocietysimulator - ERROR - Task 5 failed with error: RetryError[<Future at 0x957023df0 state=finished raised NotFound>]
+2025-11-28 03:37:02,859 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:02,859 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:02,860 - websocietysimulator - ERROR - Task 1 failed with error: RetryError[<Future at 0x957022f50 state=finished raised NotFound>]
+2025-11-28 03:37:02,860 - websocietysimulator - ERROR - Task 6 failed with error: RetryError[<Future at 0x957023a60 state=finished raised NotFound>]
+2025-11-28 03:37:02,861 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:02,864 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:02,866 - root - INFO - === Experiment config ===
+2025-11-28 03:37:02,866 - websocietysimulator - ERROR - Task 3 failed with error: RetryError[<Future at 0x957021780 state=finished raised NotFound>]
+2025-11-28 03:37:02,866 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:02,868 - websocietysimulator - ERROR - Task 8 failed with error: RetryError[<Future at 0x957022590 state=finished raised NotFound>]
+2025-11-28 03:37:02,869 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:02,870 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:02,871 - root - INFO - ---- Task start ---- user_id=3325d9b5842708cc6b3db1795548cedb  #cands=20
+2025-11-28 03:37:02,871 - root - INFO - === Experiment config ===
+2025-11-28 03:37:02,871 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:02,873 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:02,873 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:02,874 - root - INFO - ---- Task start ---- user_id=24c821382733a44eb2ce4efbb58ae7b1  #cands=20
+2025-11-28 03:37:02,878 - root - INFO - === Experiment config ===
+2025-11-28 03:37:02,878 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:02,878 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:02,878 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:02,878 - root - INFO - ---- Task start ---- user_id=d57fc8f035470fd3a6114bf6805eadf0  #cands=20
+2025-11-28 03:37:02,880 - root - INFO - === Experiment config ===
+2025-11-28 03:37:02,880 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:02,880 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:02,880 - root - INFO - === Experiment config ===
+2025-11-28 03:37:02,880 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:02,880 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:02,881 - root - INFO - ---- Task start ---- user_id=6f2bf4437d2c0e567d244fc94b13f363  #cands=20
+2025-11-28 03:37:02,881 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:02,881 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:02,882 - root - INFO - ---- Task start ---- user_id=e85b3b9b7225e383624c7a47089ff023  #cands=20
+2025-11-28 03:37:02,936 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:02,937 - websocietysimulator - ERROR - Task 2 failed with error: RetryError[<Future at 0x9570be4a0 state=finished raised NotFound>]
+2025-11-28 03:37:02,941 - root - INFO - === Experiment config ===
+2025-11-28 03:37:02,941 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:02,942 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:02,942 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:02,942 - root - INFO - ---- Task start ---- user_id=9ee520bec5c186b64cdb635fa464bf80  #cands=20
+2025-11-28 03:37:03,001 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:03,001 - websocietysimulator - ERROR - Task 9 failed with error: RetryError[<Future at 0x9570e5300 state=finished raised NotFound>]
+2025-11-28 03:37:03,005 - root - INFO - === Experiment config ===
+2025-11-28 03:37:03,005 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:03,005 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:03,005 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:03,005 - root - INFO - ---- Task start ---- user_id=16056d352cf6b070595ff1ce6b1cd2cd  #cands=20
+2025-11-28 03:37:03,047 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:03,047 - websocietysimulator - ERROR - Task 7 failed with error: RetryError[<Future at 0x9570e6c80 state=finished raised NotFound>]
+2025-11-28 03:37:03,051 - root - INFO - === Experiment config ===
+2025-11-28 03:37:03,051 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:03,051 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:03,051 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:03,052 - root - INFO - ---- Task start ---- user_id=6a9e56c4cdef2dadaf1bf82fc747e50b  #cands=20
+2025-11-28 03:37:03,142 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:03,173 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:03,176 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:03,181 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:03,183 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:03,188 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:03,355 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:03,367 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:03,389 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:03,398 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:06,206 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:06,247 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:06,249 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:06,249 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:06,258 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:06,260 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:06,427 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:06,582 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:06,592 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:06,612 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:09,274 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:09,307 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:09,315 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:09,339 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:09,339 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:09,466 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:09,492 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:09,649 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:09,751 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:09,751 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,343 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,343 - websocietysimulator - ERROR - Task 11 failed with error: RetryError[<Future at 0x9570e6350 state=finished raised NotFound>]
+2025-11-28 03:37:13,348 - root - INFO - === Experiment config ===
+2025-11-28 03:37:13,348 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:13,348 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:13,348 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:13,348 - root - INFO - ---- Task start ---- user_id=930e505746d0f45ee9c2b923887c82e4  #cands=20
+2025-11-28 03:37:13,369 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,370 - websocietysimulator - ERROR - Task 16 failed with error: RetryError[<Future at 0x9571198a0 state=finished raised NotFound>]
+2025-11-28 03:37:13,373 - root - INFO - === Experiment config ===
+2025-11-28 03:37:13,373 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:13,373 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:13,373 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:13,373 - root - INFO - ---- Task start ---- user_id=ac2d6ef9ded2f9865504dee03d329fcf  #cands=20
+2025-11-28 03:37:13,376 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,376 - websocietysimulator - ERROR - Task 13 failed with error: RetryError[<Future at 0x9571193f0 state=finished raised NotFound>]
+2025-11-28 03:37:13,379 - root - INFO - === Experiment config ===
+2025-11-28 03:37:13,379 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:13,379 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:13,379 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:13,379 - root - INFO - ---- Task start ---- user_id=4990cb7cc4cc39dae96234be305d73ae  #cands=20
+2025-11-28 03:37:13,403 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,404 - websocietysimulator - ERROR - Task 12 failed with error: RetryError[<Future at 0x9571185b0 state=finished raised NotFound>]
+2025-11-28 03:37:13,407 - root - INFO - === Experiment config ===
+2025-11-28 03:37:13,407 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:13,407 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:13,407 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:13,407 - root - INFO - ---- Task start ---- user_id=65ee9dee6ef86e582b027df48f2919e3  #cands=20
+2025-11-28 03:37:13,530 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,531 - websocietysimulator - ERROR - Task 10 failed with error: RetryError[<Future at 0x957119ed0 state=finished raised NotFound>]
+2025-11-28 03:37:13,533 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,534 - root - INFO - === Experiment config ===
+2025-11-28 03:37:13,534 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:13,534 - websocietysimulator - ERROR - Task 14 failed with error: RetryError[<Future at 0x9571185e0 state=finished raised NotFound>]
+2025-11-28 03:37:13,534 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:13,535 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:13,535 - root - INFO - ---- Task start ---- user_id=51521e5245a0f518c1a5055767527b44  #cands=20
+2025-11-28 03:37:13,538 - root - INFO - === Experiment config ===
+2025-11-28 03:37:13,538 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:13,538 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:13,538 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:13,539 - root - INFO - ---- Task start ---- user_id=b3a56d5bb26e7a264f685d63fd5486f6  #cands=20
+2025-11-28 03:37:13,560 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,561 - websocietysimulator - ERROR - Task 18 failed with error: RetryError[<Future at 0x957119270 state=finished raised NotFound>]
+2025-11-28 03:37:13,564 - root - INFO - === Experiment config ===
+2025-11-28 03:37:13,565 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:13,565 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:13,565 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:13,565 - root - INFO - ---- Task start ---- user_id=4575c86f152f3db28ac9158476c08fbc  #cands=20
+2025-11-28 03:37:13,628 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,636 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,651 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,749 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,750 - websocietysimulator - ERROR - Task 19 failed with error: RetryError[<Future at 0x95711bca0 state=finished raised NotFound>]
+2025-11-28 03:37:13,753 - root - INFO - === Experiment config ===
+2025-11-28 03:37:13,753 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:13,753 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:13,753 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:13,753 - root - INFO - ---- Task start ---- user_id=7af09cfa5b899110ae322b5d112435e8  #cands=20
+2025-11-28 03:37:13,760 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,821 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,821 - websocietysimulator - ERROR - Task 17 failed with error: RetryError[<Future at 0x8fdfc4d90 state=finished raised NotFound>]
+2025-11-28 03:37:13,825 - root - INFO - === Experiment config ===
+2025-11-28 03:37:13,825 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:13,825 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:13,825 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:13,826 - root - INFO - ---- Task start ---- user_id=11e289989ced10c6dc4f231f42cd671a  #cands=20
+2025-11-28 03:37:13,829 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,830 - websocietysimulator - ERROR - Task 15 failed with error: RetryError[<Future at 0x8fdfc5f30 state=finished raised NotFound>]
+2025-11-28 03:37:13,832 - root - INFO - === Experiment config ===
+2025-11-28 03:37:13,832 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:13,832 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:13,832 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:13,832 - root - INFO - ---- Task start ---- user_id=6a68da763689252a0331c20d88de58a8  #cands=20
+2025-11-28 03:37:13,964 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,984 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:13,994 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:14,021 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:14,177 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:14,255 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:16,698 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:16,821 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:16,860 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:16,860 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:17,028 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:17,049 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:17,055 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:17,090 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:17,238 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:17,322 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:19,774 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:19,891 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:19,918 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:19,926 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:20,092 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:20,119 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:20,121 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:20,160 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:20,300 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:20,386 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:23,842 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:23,843 - websocietysimulator - ERROR - Task 20 failed with error: RetryError[<Future at 0x8fdfc7b20 state=finished raised NotFound>]
+2025-11-28 03:37:23,960 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:23,960 - websocietysimulator - ERROR - Task 21 failed with error: RetryError[<Future at 0x9570e66b0 state=finished raised NotFound>]
+2025-11-28 03:37:23,985 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:23,985 - websocietysimulator - ERROR - Task 22 failed with error: RetryError[<Future at 0x95711a290 state=finished raised NotFound>]
+2025-11-28 03:37:23,995 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:23,995 - websocietysimulator - ERROR - Task 23 failed with error: RetryError[<Future at 0x95711b190 state=finished raised NotFound>]
+2025-11-28 03:37:24,148 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:24,149 - websocietysimulator - ERROR - Task 24 failed with error: RetryError[<Future at 0x9571183a0 state=finished raised NotFound>]
+2025-11-28 03:37:24,178 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:24,179 - websocietysimulator - ERROR - Task 26 failed with error: RetryError[<Future at 0x957153ac0 state=finished raised NotFound>]
+2025-11-28 03:37:24,186 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:24,186 - websocietysimulator - ERROR - Task 25 failed with error: RetryError[<Future at 0x9570e5720 state=finished raised NotFound>]
+2025-11-28 03:37:24,222 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:24,222 - websocietysimulator - ERROR - Task 27 failed with error: RetryError[<Future at 0x9570befe0 state=finished raised NotFound>]
+2025-11-28 03:37:24,378 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:24,379 - websocietysimulator - ERROR - Task 28 failed with error: RetryError[<Future at 0x8fdfc4670 state=finished raised NotFound>]
+2025-11-28 03:37:24,459 - websocietysimulator - ERROR - Gemini API Exception: 404 models/gemini-3-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-28 03:37:24,459 - websocietysimulator - ERROR - Task 29 failed with error: RetryError[<Future at 0x9571503a0 state=finished raised NotFound>]
+2025-11-28 03:37:24,463 - websocietysimulator - INFO - Simulation finished
+2025-11-28 03:37:24,463 - websocietysimulator - INFO - Evaluating simulation results
+2025-11-28 03:37:24,463 - websocietysimulator - INFO - Evaluation finished
+2025-11-28 03:37:24,467 - root - INFO - === Experiment config ===
+2025-11-28 03:37:24,467 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:24,467 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:24,467 - root - INFO - Memory module: MemoryDILU
+2025-11-28 03:37:24,469 - root - INFO - === Experiment config ===
+2025-11-28 03:37:24,469 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-28 03:37:24,469 - root - INFO - Reasoning module: ReasoningIO
+2025-11-28 03:37:24,469 - root - INFO - Memory module: MemoryDILU

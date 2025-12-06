@@ -1,0 +1,17 @@
+2025-12-03 17:08:31,152 - websocietysimulator - INFO - Start initializing Simulator
+2025-12-03 17:08:31,153 - websocietysimulator - INFO - Using CacheInteractionTool
+2025-12-03 17:08:31,153 - websocietysimulator - INFO - Initializing InteractionTool with data directory: /Users/hoshuhan/Documents/UCLA/CS245/coursework/AgentSocietyChallenge/data_processed
+2025-12-03 17:08:31,866 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-12-03 17:08:33,077 - websocietysimulator - INFO - Simulator initialized
+2025-12-03 17:08:33,104 - websocietysimulator - INFO - Loaded 400 task-groundtruth pairs
+2025-12-03 17:08:33,105 - websocietysimulator - INFO - Agent class set
+2025-12-03 17:08:33,123 - websocietysimulator - INFO - LLM set
+2025-12-03 17:08:33,123 - websocietysimulator - INFO - Running simulation
+2025-12-03 17:08:33,123 - websocietysimulator - INFO - Total tasks: 50
+2025-12-03 17:08:33,137 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-12-03 17:08:46,990 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'character_preference', 'artwork_preference']
+2025-12-03 17:08:46,992 - websocietysimulator - INFO - ✓ Batch 1/2 (items 1-5) using keys: ['genre_preference', 'character_preference', 'artwork_preference']
+2025-12-03 17:09:06,946 - websocietysimulator - INFO - ✓ Batch 2/2 (items 6-10) using keys: ['genre_preference', 'character_preference', 'artwork_preference']
+2025-12-03 17:09:48,760 - websocietysimulator - INFO - Simulation finished for task 0
+2025-12-03 17:10:04,833 - websocietysimulator - INFO - ✓ User profile keys: ['target_audience', 'genre_preference', 'engagement_factor']
+2025-12-03 17:10:04,833 - websocietysimulator - INFO - ✓ Batch 1/2 (items 1-5) using keys: ['target_audience', 'genre_preference', 'engagement_factor']

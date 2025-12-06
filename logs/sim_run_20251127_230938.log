@@ -1,0 +1,179 @@
+2025-11-27 23:09:38,498 - websocietysimulator - INFO - Start initializing Simulator
+2025-11-27 23:09:38,498 - websocietysimulator - INFO - Using Normal InteractionTool
+2025-11-27 23:09:38,498 - websocietysimulator - INFO - Initializing InteractionTool with data directory: ./data
+2025-11-27 23:09:38,498 - websocietysimulator - INFO - Loading item data from ./data/item.json
+2025-11-27 23:09:49,499 - websocietysimulator - INFO - Loading user data from ./data/user.json
+2025-11-27 23:09:53,709 - websocietysimulator - INFO - Loading review data from ./data/review.json
+2025-11-27 23:10:27,036 - websocietysimulator - INFO - Building review indices
+2025-11-27 23:10:36,853 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-27 23:10:38,465 - websocietysimulator - INFO - Simulator initialized
+2025-11-27 23:10:38,547 - websocietysimulator - INFO - Loaded 400 task-groundtruth pairs
+2025-11-27 23:10:38,548 - websocietysimulator - INFO - Agent class set
+2025-11-27 23:10:38,549 - websocietysimulator - INFO - LLM set
+2025-11-27 23:10:38,549 - websocietysimulator - INFO - Running simulation
+2025-11-27 23:10:38,549 - websocietysimulator - INFO - Total tasks: 10
+2025-11-27 23:10:38,549 - websocietysimulator - INFO - Running with 8 threads
+2025-11-27 23:10:38,660 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-27 23:10:38,734 - root - INFO - === Experiment config ===
+2025-11-27 23:10:38,734 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:10:38,734 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 23:10:38,734 - root - INFO - === Experiment config ===
+2025-11-27 23:10:38,735 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:10:38,736 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:10:38,737 - root - INFO - === Experiment config ===
+2025-11-27 23:10:38,737 - root - INFO - ---- Task start ---- user_id=1c944ee4877ea9829e3c8c019e5122c3  #cands=20
+2025-11-27 23:10:38,737 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 23:10:38,737 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:10:38,738 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:10:38,738 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 23:10:38,739 - root - INFO - ---- Task start ---- user_id=672a15b10b7c8a981a4291d48cf58627  #cands=20
+2025-11-27 23:10:38,739 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:10:38,740 - root - INFO - === Experiment config ===
+2025-11-27 23:10:38,740 - root - INFO - ---- Task start ---- user_id=6551622f988381066adf56bc3ef9ccc4  #cands=20
+2025-11-27 23:10:38,741 - root - INFO - === Experiment config ===
+2025-11-27 23:10:38,741 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:10:38,742 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:10:38,742 - root - INFO - === Experiment config ===
+2025-11-27 23:10:38,742 - root - INFO - === Experiment config ===
+2025-11-27 23:10:38,742 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 23:10:38,743 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 23:10:38,743 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:10:38,743 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:10:38,744 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:10:38,744 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:10:38,744 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 23:10:38,744 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 23:10:38,744 - root - INFO - ---- Task start ---- user_id=d0a94b65475b4578576aa87867bba70e  #cands=20
+2025-11-27 23:10:38,744 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:10:38,744 - root - INFO - ---- Task start ---- user_id=3aaad4ffd2ef6a2f357156131fd9b923  #cands=20
+2025-11-27 23:10:38,745 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:10:38,745 - root - INFO - ---- Task start ---- user_id=5c23d6183093168f20213c7ff6cfc065  #cands=20
+2025-11-27 23:10:38,746 - root - INFO - ---- Task start ---- user_id=4903bdbe3fd2daa637aa6a2f190dd329  #cands=20
+2025-11-27 23:10:38,763 - root - INFO - === Experiment config ===
+2025-11-27 23:10:38,763 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:10:38,763 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 23:10:38,763 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:10:38,763 - root - INFO - ---- Task start ---- user_id=02d5dd00d4e653f7ded9f185e5eb42e3  #cands=20
+2025-11-27 23:10:55,322 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:10:55,323 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:10:59,214 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'reading_style', 'theme_preference']
+2025-11-27 23:10:59,215 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'reading_style', 'theme_preference']
+2025-11-27 23:11:00,940 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'writing_style_preference', 'theme_preference', 'author_preference']
+2025-11-27 23:11:00,941 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'writing_style_preference', 'theme_preference', 'author_preference']
+2025-11-27 23:11:01,397 - websocietysimulator - INFO - ✓ User profile keys: ['theme_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-27 23:11:01,397 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['theme_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-27 23:11:01,426 - websocietysimulator - INFO - ✓ User profile keys: ['author_preference', 'reading_style', 'plot_progression']
+2025-11-27 23:11:01,426 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['author_preference', 'reading_style', 'plot_progression']
+2025-11-27 23:11:03,096 - websocietysimulator - INFO - ✓ User profile keys: ['review_sentiment', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:11:03,097 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['review_sentiment', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:11:10,002 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'nostalgia_preference', 'plot_complexity']
+2025-11-27 23:11:10,004 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'nostalgia_preference', 'plot_complexity']
+2025-11-27 23:11:15,292 - websocietysimulator - INFO - ✓ User profile keys: ['genre_preference', 'character_preference', 'plot_complexity', 'theme_preference']
+2025-11-27 23:11:15,293 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['genre_preference', 'character_preference', 'plot_complexity', 'theme_preference']
+2025-11-27 23:11:30,339 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:11:35,051 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['theme_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-27 23:11:36,550 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'writing_style_preference', 'theme_preference', 'author_preference']
+2025-11-27 23:11:36,698 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['review_sentiment', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:11:44,984 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'reading_style', 'theme_preference']
+2025-11-27 23:11:46,574 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['author_preference', 'reading_style', 'plot_progression']
+2025-11-27 23:11:57,885 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'character_preference', 'plot_complexity', 'theme_preference']
+2025-11-27 23:12:00,034 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:12:08,944 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['genre_preference', 'nostalgia_preference', 'plot_complexity']
+2025-11-27 23:12:14,795 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['theme_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-27 23:12:18,681 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'writing_style_preference', 'theme_preference', 'author_preference']
+2025-11-27 23:12:22,855 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['review_sentiment', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:12:26,261 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'reading_style', 'theme_preference']
+2025-11-27 23:12:26,661 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['author_preference', 'reading_style', 'plot_progression']
+2025-11-27 23:12:34,444 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'character_preference', 'plot_complexity', 'theme_preference']
+2025-11-27 23:12:36,138 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:12:46,735 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['genre_preference', 'nostalgia_preference', 'plot_complexity']
+2025-11-27 23:12:51,338 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['theme_preference', 'plot_complexity', 'writing_style_preference']
+2025-11-27 23:12:55,895 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'writing_style_preference', 'theme_preference', 'author_preference']
+2025-11-27 23:13:01,683 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['review_sentiment', 'theme_preference', 'writing_style_preference']
+2025-11-27 23:13:11,102 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'reading_style', 'theme_preference']
+2025-11-27 23:13:11,633 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['author_preference', 'reading_style', 'plot_progression']
+2025-11-27 23:13:14,487 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'character_preference', 'plot_complexity', 'theme_preference']
+2025-11-27 23:13:18,473 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['genre_preference', 'nostalgia_preference', 'plot_complexity']
+2025-11-27 23:13:31,041 - root - INFO - RAW REASONING OUTPUT:
+['624846', '7615837', '184530', '28150579', '30747804', '34864388', '8560645', '18901028', '25636238', '8602476', '3182751', '571596', '1341870', '1520287', '13259450', '30324426', '12972163', '22552754', '881528', '1917353']
+2025-11-27 23:13:31,042 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-27 23:13:31,043 - root - INFO - Ranked list : ['624846', '7615837', '184530', '28150579', '30747804', '34864388', '8560645', '18901028', '25636238', '8602476', '3182751', '571596', '1341870', '1520287', '13259450', '30324426', '12972163', '22552754', '881528', '1917353']
+2025-11-27 23:13:31,043 - root - INFO - ---- Task end ----
+2025-11-27 23:13:31,047 - websocietysimulator - INFO - Simulation finished for task 2
+2025-11-27 23:13:31,055 - root - INFO - === Experiment config ===
+2025-11-27 23:13:31,055 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:13:31,055 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 23:13:31,055 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:13:31,056 - root - INFO - ---- Task start ---- user_id=78ebcb5ac91acf19fcae2c0d8f136001  #cands=20
+2025-11-27 23:13:55,545 - websocietysimulator - INFO - ✓ User profile keys: ['author_preference', 'genre_preference', 'theme_preference', 'discovery_method_preference']
+2025-11-27 23:13:55,547 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['author_preference', 'genre_preference', 'theme_preference', 'discovery_method_preference']
+2025-11-27 23:13:57,767 - root - INFO - RAW REASONING OUTPUT:
+["1338653", "1243179", "15798749", "2296575", "497720", "2482127", "2739795", "509901", "861964", "9518184", "378498", "1524135", "1603588", "16059574", "1492200", "25779146", "190957", "869904", "26198228", "26760572"]
+2025-11-27 23:13:57,768 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-27 23:13:57,769 - root - INFO - Ranked list : ['1338653', '1243179', '15798749', '2296575', '497720', '2482127', '2739795', '509901', '861964', '9518184', '378498', '1524135', '1603588', '16059574', '1492200', '25779146', '190957', '869904', '26198228', '26760572']
+2025-11-27 23:13:57,769 - root - INFO - ---- Task end ----
+2025-11-27 23:13:57,771 - websocietysimulator - INFO - Simulation finished for task 6
+2025-11-27 23:13:57,782 - root - INFO - === Experiment config ===
+2025-11-27 23:13:57,782 - root - INFO - Planning module: PlanningDEPSCustom
+2025-11-27 23:13:57,782 - root - INFO - Reasoning module: ReasoningIO
+2025-11-27 23:13:57,782 - root - INFO - Memory module: MemoryDILU
+2025-11-27 23:13:57,782 - root - INFO - ---- Task start ---- user_id=3c888db39b6a45539d24783e9fecba6e  #cands=20
+2025-11-27 23:14:05,177 - root - INFO - RAW REASONING OUTPUT:
+["23704821", "17131770", "273530", "1126033", "89407", "2244445", "24406", "34506502", "30227898", "13728575", "17243918", "16276859", "5822198", "7945004", "604540", "18875477", "611258", "20425111", "23259285", "18490099"]
+2025-11-27 23:14:05,177 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-27 23:14:05,177 - root - INFO - Ranked list : ['23704821', '17131770', '273530', '1126033', '89407', '2244445', '24406', '34506502', '30227898', '13728575', '17243918', '16276859', '5822198', '7945004', '604540', '18875477', '611258', '20425111', '23259285', '18490099']
+2025-11-27 23:14:05,177 - root - INFO - ---- Task end ----
+2025-11-27 23:14:05,178 - websocietysimulator - INFO - Simulation finished for task 7
+2025-11-27 23:14:08,344 - root - INFO - RAW REASONING OUTPUT:
+['2884', '662601', '25243596', '8147691', '585270', '17850524', '8092513', '10311228', '19612261', '23510865', '4594022', '422449', '259990', '10381720', '21529997', '28575466', '338809', '17310179', '2710762', '9841508']
+2025-11-27 23:14:08,344 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-27 23:14:08,345 - root - INFO - Ranked list : ['2884', '662601', '25243596', '8147691', '585270', '17850524', '8092513', '10311228', '19612261', '23510865', '4594022', '422449', '259990', '10381720', '21529997', '28575466', '338809', '17310179', '2710762', '9841508']
+2025-11-27 23:14:08,345 - root - INFO - ---- Task end ----
+2025-11-27 23:14:08,346 - websocietysimulator - INFO - Simulation finished for task 0
+2025-11-27 23:14:10,776 - root - INFO - RAW REASONING OUTPUT:
+["26158693", "10065", "1178234", "5067281", "15797187", "56886", "17352907", "7825834", "16115687", "17394827", "25810027", "575597", "2383129", "76817", "7829945", "6350299", "11859432", "352719", "16300688", "26042653"]
+2025-11-27 23:14:10,777 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-27 23:14:10,778 - root - INFO - Ranked list : ['26158693', '10065', '1178234', '5067281', '15797187', '56886', '17352907', '7825834', '16115687', '17394827', '25810027', '575597', '2383129', '76817', '7829945', '6350299', '11859432', '352719', '16300688', '26042653']
+2025-11-27 23:14:10,778 - root - INFO - ---- Task end ----
+2025-11-27 23:14:10,781 - websocietysimulator - INFO - Simulation finished for task 5
+2025-11-27 23:14:14,796 - root - INFO - RAW REASONING OUTPUT:
+['9837105', '3699552', '228310', '20695', '6593983', '98574', '19524892', '7672852', '16637412', '10301546', '7999585', '6779496', '18757956', '27260027', '1357589', '9851926', '300705', '29598737', '11347795', '11213866']
+2025-11-27 23:14:14,797 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-27 23:14:14,798 - root - INFO - Ranked list : ['9837105', '3699552', '228310', '20695', '6593983', '98574', '19524892', '7672852', '16637412', '10301546', '7999585', '6779496', '18757956', '27260027', '1357589', '9851926', '300705', '29598737', '11347795', '11213866']
+2025-11-27 23:14:14,798 - root - INFO - ---- Task end ----
+2025-11-27 23:14:14,800 - websocietysimulator - INFO - Simulation finished for task 4
+2025-11-27 23:14:23,703 - root - INFO - RAW REASONING OUTPUT:
+["34371954", "29844797", "18948255", "9275510", "32919029", "3576697", "30736455", "13231664", "25546648", "15794626", "275692", "8160588", "1664788", "2470271", "13111611", "20345432", "16193192", "2221880", "17349198", "921532"]
+2025-11-27 23:14:23,704 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-27 23:14:23,704 - root - INFO - Ranked list : ['34371954', '29844797', '18948255', '9275510', '32919029', '3576697', '30736455', '13231664', '25546648', '15794626', '275692', '8160588', '1664788', '2470271', '13111611', '20345432', '16193192', '2221880', '17349198', '921532']
+2025-11-27 23:14:23,704 - root - INFO - ---- Task end ----
+2025-11-27 23:14:23,706 - websocietysimulator - INFO - Simulation finished for task 3
+2025-11-27 23:14:25,345 - websocietysimulator - INFO - ✓ User profile keys: ['theme_preference', 'plot_complexity', 'writing_style_preference', 'reading_style']
+2025-11-27 23:14:25,345 - websocietysimulator - INFO - ✓ Batch 1/4 (items 1-5) using keys: ['theme_preference', 'plot_complexity', 'writing_style_preference', 'reading_style']
+2025-11-27 23:14:30,462 - root - INFO - RAW REASONING OUTPUT:
+["17214317", "244117", "20011917", "839950", "67243", "26890708", "20522385", "17667229", "32798617", "5711347", "662577", "3323104", "17131870", "846425", "661257", "5990135", "2693804", "170373", "1330929", "12372294"]
+2025-11-27 23:14:30,463 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-27 23:14:30,464 - root - INFO - Ranked list : ['17214317', '244117', '20011917', '839950', '67243', '26890708', '20522385', '17667229', '32798617', '5711347', '662577', '3323104', '17131870', '846425', '661257', '5990135', '2693804', '170373', '1330929', '12372294']
+2025-11-27 23:14:30,464 - root - INFO - ---- Task end ----
+2025-11-27 23:14:30,465 - websocietysimulator - INFO - Simulation finished for task 1
+2025-11-27 23:14:37,223 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['author_preference', 'genre_preference', 'theme_preference', 'discovery_method_preference']
+2025-11-27 23:15:12,920 - websocietysimulator - INFO - ✓ Batch 2/4 (items 6-10) using keys: ['theme_preference', 'plot_complexity', 'writing_style_preference', 'reading_style']
+2025-11-27 23:15:29,346 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['author_preference', 'genre_preference', 'theme_preference', 'discovery_method_preference']
+2025-11-27 23:15:56,675 - websocietysimulator - INFO - ✓ Batch 3/4 (items 11-15) using keys: ['theme_preference', 'plot_complexity', 'writing_style_preference', 'reading_style']
+2025-11-27 23:16:15,388 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['author_preference', 'genre_preference', 'theme_preference', 'discovery_method_preference']
+2025-11-27 23:16:34,701 - websocietysimulator - INFO - ✓ Batch 4/4 (items 16-20) using keys: ['theme_preference', 'plot_complexity', 'writing_style_preference', 'reading_style']
+2025-11-27 23:17:12,795 - root - INFO - RAW REASONING OUTPUT:
+["30278847", "10646081", "22749739", "25761466", "28379525", "4347623", "9439348", "10123327", "1291930", "29363377", "17428683", "1745347", "6541502", "6270484", "18802341", "1435647", "20931383", "15896717", "1024467", "7137667"]
+2025-11-27 23:17:12,796 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-27 23:17:12,797 - root - INFO - Ranked list : ['30278847', '10646081', '22749739', '25761466', '28379525', '4347623', '9439348', '10123327', '1291930', '29363377', '17428683', '1745347', '6541502', '6270484', '18802341', '1435647', '20931383', '15896717', '1024467', '7137667']
+2025-11-27 23:17:12,797 - root - INFO - ---- Task end ----
+2025-11-27 23:17:12,798 - websocietysimulator - INFO - Simulation finished for task 8
+2025-11-27 23:18:01,765 - root - INFO - RAW REASONING OUTPUT:
+['361802', '9235835', '20340532', '18042314', '294965', '7739838', '300887', '527786', '35432967', '29774832', '12349342', '23181896', '2876735', '11818849', '33790898', '295419', '4724350', '9316172', '16078976', '1870489']
+2025-11-27 23:18:01,767 - root - INFO - FINAL RANKED LIST (len=20)
+2025-11-27 23:18:01,767 - root - INFO - Ranked list : ['361802', '9235835', '20340532', '18042314', '294965', '7739838', '300887', '527786', '35432967', '29774832', '12349342', '23181896', '2876735', '11818849', '33790898', '295419', '4724350', '9316172', '16078976', '1870489']
+2025-11-27 23:18:01,768 - root - INFO - ---- Task end ----
+2025-11-27 23:18:01,769 - websocietysimulator - INFO - Simulation finished for task 9
+2025-11-27 23:18:01,772 - websocietysimulator - INFO - Simulation finished
+2025-11-27 23:18:01,772 - websocietysimulator - INFO - Evaluating simulation results
+2025-11-27 23:18:01,772 - websocietysimulator - INFO - Evaluation finished
