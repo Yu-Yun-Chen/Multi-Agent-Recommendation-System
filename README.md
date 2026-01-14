@@ -1,3 +1,25 @@
+# Multi-Agent Recommendation System (AgentSociety Challenge)
+
+## Overview
+This project implements a multi-agent recommendation system developed for the WWW'25 AgentSociety Challenge.  
+The system integrates multiple functional modules into a unified agent-based framework to simulate user–item interactions and generate recommendations.
+This project was developed as a team project.  
+
+## My Contributions
+I designed and implemented a **pairwise re-ranking mechanism** on top of the existing multi-agent framework to improve recommendation accuracy.
+
+By enabling pairwise re-ranking while keeping the planner, orchestration, and reasoning components fixed, the system achieved:
+- HR@1 improvement from **0.14 → 0.22**
+- Average hit rate improvement from **0.38 → 0.43**
+- HR score improvement from **0.31 → 0.37**
+
+The pairwise re-ranking operates within the top-K candidate set (K = 5), leveraging user review history to reorder candidates and promote the ground-truth item to the top position.  
+As a result, this design improves **top-1 recommendation quality** without altering the candidate generation stage.
+
+---
+
+## Challenge Background (Official Description)
+
 <div style="text-align: center; display: flex; align-items: center; justify-content: center; background-color: white; padding: 20px; border-radius: 30px;">
   <img src="./static/ASC.jpg" alt="AgentSociety Challenge Logo" width="100" style="margin-right: 20px; border-radius: 10%;">
   <h1 style="color: black; margin: 0; font-size: 2em;">WWW'25 AgentSociety Challenge: WebSocietySimulator</h1>
